@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acesse All Areas</title>
+    <link rel="stylesheet" href="../css/Chat.css">
+</head>
+<body>
+ 
+    <body id="bodyon">
+        <!--Menu-->
+        <div class="menu">
+         <div id="logo">
+             <img src="../img/provisoria.jfif" width="180px" height="90px">
+         </div>
+         <nav class="nav">
+             <ul>
+                 <li><a href="../pages/Cadastro.html">Home</a></li>
+                 <li><a href="../pages/Depoimentos.html">Galeria</a></li>
+                 <li><a href="../pages/Login.html">Depoimentos</a></li>
+                 <li><a href="../pages/Mapa.html">Contato</a></li>
+                 <li><a class="ativado" href="Chat.html">Chat</a></li>
+       
+             </ul>
+       </nav>       
+     </div>
+     <!--fim do menu -->
+     
+       <!--"menu lateral"-->
+       <div class="container">
+     
+         <div class="side-bar">
+     
+           <div class="side-bar-brand">
+            
+             <div class="button">
+            
+            
+     
+             </div>
+           </div>
+     
+     
+           <div class="list-item">
+             <ul>
+               <li><a href=""><img src="../img/provisoria.jfif"><p class="text">informações</p></a></li>
+               <li><a href="">
+                   <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<br>Contrary to popular belief, Lorem Ipsum is not simply random text<br>
+                     </p>
+                 </a></li>
+     
+             </ul>
+           </div>
+     
+           <div class="social-netwark">
+             <div><i class="fab fa-facebook"></i></div>
+             <div><i class="fab fa-twitter"></i></div>
+             <div><i class="fab fa-instagram"></i></div>
+             <div><i class="fab fa-github"></i></div>
+           </div>
+     
+         </div>
+     
+     
+       <!--chat-->
+       <div class="chat-container">
+         <div class="chat">
+             <div class="message">
+                 <div class="user">Profissional</div>
+                 <div class="text">Olá, como posso ajudar?</div>
+                 <div class="time"></div>
+             </div>
+             <!-- Mais mensagens viriam aqui -->
+         </div>
+         <div class="send">
+             <input type="text" id="messageInput" placeholder="Digite sua mensagem">
+             <button id="sendMessage">Enviar</button>
+         </div>
+       </div>
+     
+           
+      
+     <!--Botão do auto contraste-->
+     
+     
+     <button onclick="autocontrastehome()" id="btnTop" title="Auto-Contraste"><span class="material-symbols-outlined">
+     </span><img src="../img/provisoria.jfif" width="50px" height="50px"><p>Auto Contraste</p></button>
+     
+     <div vw class="enabled">
+       <div vw-access-button class="active"></div>
+       <div vw-plugin-wrapper>
+         <div class="vw-plugin-top-wrapper"></div>
+       </div>
+     </div>
+     
+     <!--libras-->
+     <div class="libras-container">
+     
+       <div class="side-bar-libras">
+     
+     
+          
+       </div>
+           </div>
+         </div>
+     
+     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+     <script>
+       new window.VLibras.Widget('https://vlibras.gov.br/app');
+     </script>
+     <script src="../js/chat.js"></script>
+     
+       
+     </body>
+     </html>
