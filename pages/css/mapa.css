@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: rgb(174, 240, 188);
+}
+
+
+.logo img {
+    width: 100px;
+    border-radius: 20%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+    font-size: large;
+}
+
+/* cor e tamanho da fonte da nav */
+nav ul li a {
+    text-decoration: none;
+    color: #000000; 
+    font-weight: bold; 
+}
+
+/* cor da fonte quando aperta em cima */
+nav ul li a:hover {
+    color: #5ea345;
+}
+
+.auth-buttons {
+    display: flex;
+}
+
+.auth-buttons a {
+    text-decoration: none;
+    margin-left: 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.login {
+    color: #000000;
+    font-size: large;
+}
+
+.demo {
+    background-color: #f3f4f6;
+    color: #333;
+}
+
+.signup {
+    background-color: #1a4d29;
+    color: white;
+}
+
+.stats-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: rgb(174, 240, 188);
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+.stat {
+    width: 30%;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 10px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.stat h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #1a4d29;
+}
+
+.stat p {
+    font-size: 16px;
+    color: #000000;
+}
