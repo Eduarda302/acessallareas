@@ -1,8 +1,9 @@
 * {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
+
 body {
     background-color: #ffffff93;
 }
@@ -16,7 +17,7 @@ header {
     background-color: rgb(174, 240, 188);
 }
 
-
+/*Foto da logo*/
 .logo img {
     width: 100px;
     border-radius: 20%;
@@ -37,8 +38,8 @@ nav ul li {
 /* cor e tamanho da fonte da nav */
 nav ul li a {
     text-decoration: none;
-    color: #000000; 
-    font-weight: bold; 
+    color: #000000;
+    font-weight: bold;
 }
 
 /* cor da fonte quando aperta em cima */
@@ -72,7 +73,8 @@ nav ul li a:hover {
     background-color: #1a4d29;
     color: white;
 }
-/* Inicio da página*/
+
+/* Inicio da página Home*/
 
 .hero {
     display: flex;
@@ -99,31 +101,59 @@ nav ul li a:hover {
 
 .hero-image img {
     max-width: 400px;
-    border-radius: 100px;
-    
+    border-radius: 0px;
     background-color: #ffffff;
-    
 }
 
 
- /* Sessão Cards */
+/* Sessão Cards */
 
- .stats-section {
-    padding: 40px 20px;
+.grid-curiosidade {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 3 colunas com largura igual */
+    grid-template-rows: auto;
+    /* Altura automática para as linhas */
+    gap: 20px;
+    /* Espaçamento entre os itens do grid */
+    padding: 40px;
+    background-color: #bdbdbd56;
+}
+
+.grid-item {
+    border-radius: 3px;
+    overflow: hidden;
     text-align: center;
-    background-color: #ffffff00;
+    padding: 10px;
+    height: 30vh;
 }
 
-.stats-container {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 40px;
-    background-color: rgb(255, 255, 255);
-    
-    
+.grid-item img {
+    background-color: #ffffff;
+    width: 80%;
+    height: 100%;
+    border-radius: 0%;
 }
-.stat {
-    width: 20%;
+
+.grid-item p {
+    margin: 10px 0 0;
+    color: white;
+}
+
+/*Sessão sobre*/
+
+.grid-sobre {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5%;
+    padding-top: 5%;
+}
+
+.texto-sobre {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 10px 0px 20px rgba(8, 3, 3, 0.4);
