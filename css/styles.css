@@ -13,7 +13,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px;
+    padding: 30px;
     background-color: rgb(174, 240, 188);
 }
 
@@ -121,11 +121,11 @@ nav ul li a:hover {
 }
 
 .grid-item {
-    border-radius: 3px;
+    border-radius: 0px;
     overflow: hidden;
     text-align: center;
-    padding: 10px;
-    height: 30vh;
+    padding: 15px;
+    height: 40vh;
 }
 
 .grid-item img {
@@ -140,35 +140,104 @@ nav ul li a:hover {
     color: white;
 }
 
-/*Sessão sobre*/
+/*Sessão conversa*/
+.conversa-section {
+    display: flex;
+    flex-direction: column;
+}
 
-.grid-sobre {
-    display: grid;
-    grid-template-columns: 1fr 2fr 2fr 1fr;
-    justify-content: center;
-    align-items: center;
+.cta {
+    background-color: #f8f8f8;
+    padding: 70px 50px;
     width: 100%;
-    height: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    align-items: center;
+}
+
+.cta p {
+    font-size: 18px;
     margin-bottom: 5%;
-    padding-top: 5%;
+    margin-bottom: 50px;
+    margin-left: 35%;
 }
 
-.texto-sobre {
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 10px 0px 20px rgba(8, 3, 3, 0.4);
-}
-
-.stat h2 {
-    font-size: 32px;
+.cta-button {
+    background-color: #8701f5;
+    color: #fff;
+    padding: 20px 35px;
+    text-decoration: none;
+    border-radius: 5px;
     font-weight: bold;
-    color: #333;
+    transition: background-color 0.3s ease;
+    margin-left: 45%;
 }
 
-.stat p {
-    font-size: 16px;
-    color: #666;
+.cta-button:hover {
+    background-color: #570f9b;
 }
+
+/*Formulário*/
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 40px;
+    margin-left: 200px;
+}
+
+form h2 {
+    margin-top: 5px;
+    color: #000000;
+    text-align: left;
+    
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea, select {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #164e64;
+    color: #fff;
+
+    padding: 15px 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #6734c7;
+}
+
+input[type="file"] {
+    width: 90%;
+    padding: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.img-form {
+    
+    background-color: #e0e0e0;
+    border-left: 30px;
+    
+}
+
 
 /*Footer*/
 
