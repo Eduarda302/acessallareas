@@ -1,65 +1,123 @@
-
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient();
-    color: #333;
-    padding: 20px;
-    background-color: #49d8b4; /* cor de fundo da página */
-}
-
-.login-container {
-    width: 100%;
-    max-width: 300px; /* Ajuste o valor conforme necessário */
-    margin: 0 auto; /* Centraliza o container horizontalmente */
-    padding: 20px;
+* {
+    margin: 0;
+    padding: 0;
+    /*Recetar o css*/
     box-sizing: border-box;
 }
 
-
-form {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 40px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-form h2 {
-    margin-top: 0;
-    color: #49d8b4;
-    text-align: center;
-}
-
-label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-input[type="text"]
+body {
     
+    background: url("https://img.jagranjosh.com/imported/images/E/Others/IT_campus_for_persons_with_disabilities.jpg");
+    /* link da imagem de fundo*/
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    /*altura minima do body*/
+    display: flex;
+    /*ajuda a centralizar a div*/
+    align-items: center;
+    justify-content: center;
 
 
-input[type="email"],
-textarea {
-    width: 90%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #85d8ff;
-    border-radius: 4px;
+}
+.container {
+    width: 420px;
+    /*largura*/
+    background: transparent;
+    border: 2px solid #dfd0d0;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    padding: 30px 40px;
 }
 
-input[type="submit"] {
-    background-color: #0c0305;
+h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #dfd0d0
+}
+
+.input-container {
+    position: relative;
+    width: 100px;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-container input {
+    width: 335%;
+    height: 80%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(255, 255, 255, .2);
+    border-radius: 10px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+
+}
+
+.input-container input::placeholder {
+    /*para editar o placeholder*/
     color: #fff;
 
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
 }
 
-input[type="submit"]:hover {
-    background-color: #4f5e2c;
+.input-container img {
+    position: absolute;
+    right: 30px;
+    /*30px para a direita*/
+    top: 20%;
+    margin-top: 5px;
+}
+
+.input-container a {
+    font-size: 16px;
+    margin-top: 5px;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.input-container a:hover {
+    text-decoration: underline;
+    /*para o underline aparecer quando eu colocar o mouser*/
+
+}
+
+.submit-button {
+    width: 100%;
+    height: 50px;
+    background-color: #012e1b;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 24px;
+    /*para ficar a mãozinha quando passa em cima */
+    outline: none;
+    font-size: 16px;
+    /* tamanho da letra*/
+}
+
+.submit-button:hover {
+    background-color: #014428;
+}
+
+.register-link  a{
+    font-size: 16px;
+    color:#fff;
+    font-weight: 500;
+
+}
+
+.register-link p a{
+    font-size: 16px;
+    color:#fff;
+    font-weight: 700;
+    text-decoration: none; /*deixar um pouco mais grosso*/
+
+}
+.register-link p a:hover{
+    text-decoration: underline;
 }

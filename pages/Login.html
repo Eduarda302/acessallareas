@@ -1,25 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de login</title>
     <link rel="stylesheet" href="../css/styles-login.css">
-    <!--Tela de login-->
 </head>
+<!--Tela de login-->
 <body>
-    <div class="login-container">
-    <h1></h1>
-    <form>
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required><br><br>
-        <label for="password">Senha:</label>
-        <input type="password" id="password" name="password" required><br><br>
-        
-        <input type="submit" value="Enviar">
-    </form>
-</div>
-    
-    
+    <div class="container">
+        <form>
+            <h1>Login</h1>
+            <div class="input-container">
+                <input placeholder="Email" type="email" required>
+                <img width="20" height="20" src="https://img.icons8.com/ios/50/password--v1.png" alt="user--v1" />
+                <!--Link da imagem do user-->
+            </div>
+            <div class="input-container">
+                <input placeholder="Senha" type="password" required>
+                <img width="20" height="20" src="https://img.icons8.com/ios/50/password--v1.png"
+                    alt="password--v1" /><!--Link da imagem do cadiado -->
+                <a href="#">Esqueci minha senha</a>
+                
+            </div>
+            <button type="submit" class="submit-button">Enviar</button>
+            <div class="register-link">
+                <p>Não está cadastrado <a href="#">Cadastrar</a></p>
+            </div>
+        </form>
+    </div>
+
 </body>
+
 </html>
