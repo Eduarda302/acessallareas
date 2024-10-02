@@ -9,8 +9,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px;
+    padding: 10px;
     background-color:rgb(174, 240, 188);
+    background: radial-gradient(circle, rgba(177,238,174,1) 41%, rgb(173, 233, 151) 100%);
 }
 
 
@@ -34,13 +35,14 @@ nav ul li {
 /* cor e tamanho da fonte da nav */
 nav ul li a {
     text-decoration: none;
-    color: #000000; 
+    color: #1a4d29; 
     font-weight: bold; 
+    text-align: center;
 }
 
 /* cor da fonte quando aperta em cima */
 nav ul li a:hover {
-    color: #5ea345;
+    color: #000000;
 }
 
 .auth-buttons {
@@ -106,9 +108,16 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #f3f4f6;
+    background-color: rgb(174, 240, 188);
     padding: 20px 0;
     text-align: center;
+
 }
 
+.stat img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+    
+}
 
