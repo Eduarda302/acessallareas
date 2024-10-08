@@ -1,143 +1,249 @@
-
-/*menu*/
-.bodyon{
-  font-family: 'Open Sans', sans-serif;
-  margin: 0 auto;
-  padding: 0;
-
+body {
+  margin: auto;
 }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background-color: rgb(174, 240, 188);
+}
+
+
+.logo img {
+  width: 100px;
+  border-radius: 20%;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+  font-size: large;
+}
+
+/* cor e tamanho da fonte da nav */
+nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+/* cor da fonte quando aperta em cima */
+nav ul li a:hover {
+  color: #7eff4f;
+}
+
+.auth-buttons {
+  display: flex;
+}
+
+.auth-buttons a {
+  text-decoration: none;
+  margin-left: 15px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.login {
+  color: #000000;
+  font-size: large;
+}
+
+.demo {
+  background-color: #f3f4f6;
+  color: #333;
+}
+
+.signup {
+  background-color: #1a4d29;
+  color: white;
+}
+
+
+
 
 /* Estilos para o contêiner principal */
 .container {
-  background: #e1e5f7; /* Cor de fundo do contêiner principal */
+  background: #e1e5f7;
+  /* Cor de fundo do contêiner principal */
   position: relative;
-  height: 85vh; /* Altura igual à altura da janela do navegador */
-  width: 100%; /* Largura igual à largura da janela do navegador */
-  display:flex;
+  /* Altura igual à altura da janela do navegador */
+  width: 100%;
+  /* Largura igual à largura da janela do navegador */
+  display: flex;
   justify-content: space-between;
 }
 
 /* Estilos para modificar a posição do elemento com a classe "position" */
 .container .position {
-  left: -480px !important; /* Move o elemento para a esquerda (-480px) com importância */
+  left: -400px !important;
+  /* Move o elemento para a esquerda (-480px) com importância */
 }
 
 /* Estilos para a barra lateral */
 .container .side-bar {
-  width: 700px; /* Largura da barra lateral */
-  background: #f0f0f1; /* Cor de fundo da barra lateral */
-  padding: 20px; /* Espaçamento interno da barra lateral */
-  position: inherit; /* Posicionamento absoluto em relação ao contêiner principal */
-  -webkit-transition: all 0.5s ease; /* Transição suave de propriedades durante 0.5 segundos (para animações) */
+  height: auto;
+  width: 500px;
+  /* Largura da barra lateral */
+  background: #f0f0f1;
+  /* Cor de fundo da barra lateral */
+  padding: 0px;
+  /* Espaçamento interno da barra lateral */
+  position: inherit;
+  /* Posicionamento absoluto em relação ao contêiner principal */
+  -webkit-transition: all 0.5s ease;
+  /* Transição suave de propriedades durante 0.5 segundos (para animações) */
   transition: all 0.5s ease;
 
 }
 
 /* Estilos para a marca na barra lateral */
 .container .side-bar .side-bar-brand {
-  display: flex; /* Exibe os elementos como um flex container */
+  display: flex;
+  /* Exibe os elementos como um flex container */
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; /* Espaçamento uniforme entre os elementos filhos */
+  justify-content: space-between;
+  /* Espaçamento uniforme entre os elementos filhos */
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; /* Alinha verticalmente os elementos ao centro */
-/* Espaçamento inferior para separar dos elementos seguintes */
- 
+  align-items: center;
+  /* Alinha verticalmente os elementos ao centro */
+  /* Espaçamento inferior para separar dos elementos seguintes */
+
 }
 
 
 /* Estilos para o botão na barra lateral */
 .container .side-bar .side-bar-brand .button {
-  position: relative; /* Posicionamento relativo para elementos filhos */
-  -webkit-transform: rotate(45deg); /* Rotação de 45 graus */
+  position: relative;
+  /* Posicionamento relativo para elementos filhos */
+  -webkit-transform: rotate(45deg);
+  /* Rotação de 45 graus */
   transform: rotate(45deg);
-  cursor: pointer; /* Cursor do mouse em forma de mão ao passar por cima */
+  cursor: pointer;
+  /* Cursor do mouse em forma de mão ao passar por cima */
 }
 
 /* Estilos para as linhas do botão na barra lateral */
 .container .side-bar .side-bar-brand .button div {
-  height: 4px; /* Altura das linhas */
-  width: 20px; /* Largura das linhas */
-  background: #df1818; /* Cor de fundo das linhas */
-/* Borda arredondada */
+  height: 4px;
+  /* Altura das linhas */
+  width: 20px;
+  /* Largura das linhas */
+  background: #df1818;
+  /* Cor de fundo das linhas */
+  /* Borda arredondada */
 }
 
 /* Estilos específicos para a primeira linha do botão na barra lateral */
 .container .side-bar .side-bar-brand .button div:nth-child(1) {
   position: relative;
-  top: 4px; /* Posicionamento relativo para a primeira linha */
-  -webkit-transform: rotate(90deg); /* Rotação de 90 graus */
+  top: 4px;
+  /* Posicionamento relativo para a primeira linha */
+  -webkit-transform: rotate(90deg);
+  /* Rotação de 90 graus */
   transform: rotate(90deg);
 }
 
 /* Estilos para os itens da lista na barra lateral */
 .container .side-bar .list-item ul li {
-  list-style-type: none; /* Remove os marcadores de lista */
-  margin-bottom: 20px; /* Espaçamento inferior entre os itens da lista */
+  list-style-type: none;
+  /* Remove os marcadores de lista */
+  margin-bottom: 20px;
+  /* Espaçamento inferior entre os itens da lista */
 }
 
 /* Estilos para os links nos itens da lista na barra lateral */
 .container .side-bar .list-item ul li a {
-  text-decoration: none; /* Remove sublinhado dos links */
-  font-size: 18px; /* Tamanho da fonte */
-  color: #17528a; /* Cor do texto */
+  text-decoration: none;
+  /* Remove sublinhado dos links */
+  font-size: 18px;
+  /* Tamanho da fonte */
+  color: #26c0a6;
+  /* Cor do texto */
 }
 
 /* Estilos para o contêiner de links de redes sociais na barra lateral */
 .container .side-bar .social-netwark {
-  position: absolute; /* Posicionamento absoluto em relação ao contêiner principal */
-/* Alinhado à parte inferior a 100px da borda inferior */
-  left: 0; /* Alinhado à esquerda do contêiner principal */
+  position: absolute;
+  /* Posicionamento absoluto em relação ao contêiner principal */
 
-  display: flex; /* Exibe os elementos como um flex container */
+  /* Alinhado à parte inferior a 100px da borda inferior */
+  left: 0;
+  /* Alinhado à esquerda do contêiner principal */
+  display: flex;
+  /* Exibe os elementos como um flex container */
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center; /* Espaçamento uniforme entre os elementos filhos */
+  justify-content: center;
+  /* Espaçamento uniforme entre os elementos filhos */
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; /* Alinha verticalmente os elementos ao centro */
-  width: 80%; /* Largura igual à largura do contêiner principal */
+  align-items: center;
+  /* Alinha verticalmente os elementos ao centro */
+  width: 80%;
+  /* Largura igual à largura do contêiner principal */
   height: auto;
 }
 
 /* Estilos para os elementos dentro do contêiner de links de redes sociais */
 .container .side-bar .social-netwark div {
-  margin: 0 10px; /* Espaçamento horizontal entre os elementos */
+  margin: 0 10px;
+  /* Espaçamento horizontal entre os elementos */
 }
 
 /* Estilos para os ícones dentro do contêiner de links de redes sociais */
 .container .side-bar .social-netwark div i {
-  font-size: 20px; /* Tamanho da fonte dos ícones */
-  cursor: pointer; /* Cursor do mouse em forma de mão ao passar por cima */
-  color: #2998ff; /* Cor dos ícones */
+  font-size: 20px;
+  /* Tamanho da fonte dos ícones */
+  cursor: pointer;
+  /* Cursor do mouse em forma de mão ao passar por cima */
+  color: #26c0a6;
+  /* Cor dos ícones */
 }
 
 /* Estilos para o botão de menu no contêiner principal */
 .container .menu-btn {
-  position: absolute; /* Posicionamento absoluto em relação ao contêiner principal */
-  top: 0; /* Alinhado ao topo do contêiner principal */
-  right: 0; /* Alinhado à direita do contêiner principal */
-  padding: 15px 20px; /* Espaçamento interno do botão de menu */
-  cursor: pointer; /* Cursor do mouse em forma de mão ao passar por cima */
+  position: absolute;
+  /* Posicionamento ao contêiner principal */
+  top: 0;
+  /* Alinhado ao topo do contêiner principal */
+  right: 0;
+  /* Alinhado à direita do contêiner principal */
+  padding: 15px 20px;
+  /* Espaçamento interno do botão de menu */
+  cursor: pointer;
+  /* Cursor do mouse em forma de mão ao passar por cima */
 }
 
 /* Estilos para as linhas do botão de menu */
 .container .menu-btn div {
-  width: 40px; /* Largura das linhas do botão */
-  height: 4px; /* Altura das linhas do botão */
-  background: #2998ff; /* Cor de fundo das linhas do botão */
+  width: 40px;
+  /* Largura das linhas do botão */
+  height: 4px;
+  /* Altura das linhas do botão */
+  background: #26c0a6;
+  /* Cor de fundo das linhas do botão */
 
 }
 
 /*Imagem do usuario*/
-  
+
 .container .list-item img {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 150px;
+  width: 170px;
   height: 150px;
 }
 
@@ -147,78 +253,81 @@
   background-image: url("../img/");
 }
 
-.high-contrast p{
+.high-contrast p {
   color: white;
 }
 
-.high-contrast h1{
+.high-contrast h1 {
   color: white;
 }
 
-.high-contrast h3{
+.high-contrast h3 {
   color: white;
 }
 
-.high-contrast .chat-container{
+.high-contrast .chat-container {
   color: white;
   background-color: #1a1a1a;
 }
 
-.high-contrast .libras-container{
+.high-contrast .libras-container {
   background: #1a1a1a;
 }
 
-.high-contrast .side-bar{
-  background: #223b95;
+.high-contrast .side-bar {
+  background: #26c0a6;
 }
 
-  
-  @media screen and (min-width: 900px) {
-  
-  
-    /*nav*/
-  
-    nav {
-      flex-direction: row;
-      justify-content: space-around;
-    }
-  
-  
-    nav ul {
-      flex-direction: row;
-      width: 20%;
-    }
+
+@media screen and (min-width: 900px) {
+
+
+  /*nav*/
+
+  nav {
+    flex-direction: row;
+    justify-content: space-around;
   }
 
-  /*chat*/
- 
-  .chat-container {
-    display: flex;
-    flex-direction: column;
-    position: inherit;
-    width: 100%;
-    background-color: #fff5f5;
-    padding-left: 2%;
-    padding-right: 2%;
-    
+
+  nav ul {
+    flex-direction: row;
+    width: 20%;
+  }
 }
- 
+
+/*chat*/
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  position: inherit;
+  width: 100%;
+  background-color: #fff5f5;
+  padding-left: 2%;
+  padding-right: 2%;
+
+}
+
 .message {
   margin: 10px 0;
   background-color: #9ab8d8;
-  max-width: 30%; 
+  max-width: 30%;
   padding: 10px;
   border-radius: 10px;
 
 }
+
 .user {
   font-weight: bold;
-  color: #007BFF;
+  color: #0f6633;
   margin-bottom: 5%;
 }
+
 .text {
   color: #000;
 }
+
 .time {
   font-size: 12px;
   color: #000;
@@ -233,17 +342,19 @@
   justify-content: right;
   align-items: end;
   margin: 10px 0;
-  background-color: #82cce9;
+  background-color: #26c0a6;
   margin-left: 65%;
   padding: 10px;
   border-radius: 10px;
-  
+
 }
+
 .user2 {
   font-weight: bold;
-  color: #007BFF;
+  color: #053029;
   margin-bottom: 5%;
 }
+
 .text2 {
   color: #000;
 }
@@ -255,13 +366,15 @@
   text-align: right;
 
 }
-.send{
+
+.send {
   display: flex;
   width: 80%;
   position: absolute;
   bottom: 10px;
 
 }
+
 #messageInput {
   width: 100%;
   padding: 10px;
@@ -275,33 +388,35 @@
   width: 20%;
   padding: 10px;
   margin-top: 10px;
-  background-color: #007BFF;
+  background-color: #26c0a6;
   color: #fff;
   border: none;
   cursor: pointer;
 }
 
 #sendMessage:hover {
-  background-color: #82cce9;
+  background-color: #4226c0;
   color: #000;
   background-image: url("./img/bob.png");
   background-repeat: no-repeat;
-  animation:slidebg 2s linear infinite;
+  animation: slidebg 2s linear infinite;
 }
 
 @keyframes slidebg {
   to {
-    background-position:10vw;
+    background-position: 10vw;
   }
 }
+
 /*libras*/
 
 
 .libras-container {
-  background: #ffffff; /* Cor de fundo do contêiner principal */
+  background: #ffffff;
+  /* Cor de fundo do contêiner principal */
   position: relative;
-  height: 85vh; /* Altura igual à altura da janela do navegador */
-  width: 50%; /* Largura igual à largura da janela do navegador */
-  display:flex;
+  height: 85vh;
+  /* Altura igual à altura da janela do navegador */
+  display: flex;
   justify-content: space-between;
 }
