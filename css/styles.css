@@ -176,14 +176,55 @@ nav ul li a:hover {
     background-color: #570f9b;
 }
 
+
+/* Estilos para a seção "Sobre" com texto e imagem */
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0px;
+    padding: 40px;
+}
+
+.about h1 {
+    color: #28c1f0;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.ong-info {
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: #fff;
+    margin: 0px;
+    border-radius: 0px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    width: 93%;
+}
+
+.ong-info img {
+    width: 30%;
+    height: auto;
+    border-radius: 5px;
+    margin: 0px;
+}
+
+
 /*Formulário*/
 form {
+    align-items: center;
     max-width: 500px;
-    margin: 0 auto;
+    margin: 10px auto;
     padding: 40px;
     background-color: #ffffff;
     border-radius: 40px;
-    margin-left: 200px;
+    margin-left: 290px;
 }
 
 form h2 {
@@ -231,12 +272,7 @@ input[type="file"] {
     border-radius: 4px;
 }
 
-.img-form {
-    
-    background-color: #e0e0e0;
-    border-left: 30px;
-    
-}
+
 
 
 /*Footer*/
