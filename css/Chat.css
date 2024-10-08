@@ -1,5 +1,14 @@
+
 body {
   margin: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background-color: rgb(174, 240, 188);
 }
 
 header {
@@ -38,6 +47,7 @@ nav ul li a {
 /* cor da fonte quando aperta em cima */
 nav ul li a:hover {
   color: #7eff4f;
+  color: #5ea345;
 }
 
 .auth-buttons {
@@ -96,6 +106,13 @@ nav ul li a:hover {
   background: #f0f0f1;
   /* Cor de fundo da barra lateral */
   padding: 0px;
+
+  width: 700px;
+  /* Largura da barra lateral */
+  background: #f0f0f1;
+  /* Cor de fundo da barra lateral */
+  padding: 20px;
+
   /* Espaçamento interno da barra lateral */
   position: inherit;
   /* Posicionamento absoluto em relação ao contêiner principal */
@@ -396,6 +413,7 @@ nav ul li a:hover {
 
 #sendMessage:hover {
   background-color: #4226c0;
+  background-color: #26c0a6;
   color: #000;
   background-image: url("./img/bob.png");
   background-repeat: no-repeat;
