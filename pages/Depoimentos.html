@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade 1 - Estilizando com CSS</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/styles-depoimento.css">
 </head>
 <style>
     /* inicio do style */
@@ -13,61 +13,84 @@
 
 <body>
     <header>
-        <h1>Depoimentos</h1>
+        <div class="navbar">
+            <a href="#home">Home</a>
+            <a href="#news">mapa</a>
+            <a href="#news">depoimentos</a>
+            <a href="#news">chat</a>
+            <a href="#news">login</a>
+            <div class="dropdown">
+             
+              </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#">home</a></li>
-            <li><a href="#">mapa</a></li>
-            <li><a href="#">Contato</a></li>
-            <li><a href="#">depoimento</a></li>
-            <li><a href="#">chat</a></li>
-            <li><a href="#">login</a></li>
-        </ul>
-    </nav>
+    
+        
     <main>
         <section>
-            <h2>Seção 1</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod
 
-                nisi nec est venenatis, sed varius est mollis.</p>
+            <h2>Seção 1</h2>
+
+            <div class="gallery">
+                <div class="image">
+                    <img src="../img/cadeiranteicon.png" alt="Imagem 1">
+                </div>
+                <div class="image">
+                    <img src="../img/" alt="Imagem 2">
+                </div>
+                <div class="image">
+                    <img src="../img/surdopretoiconcerto.png" alt="Imagem 3">
+                </div>
+            </div>
+        </section>
+
+        <h2>Seção 1</h2>
+        <section class="about">
+            <h1>opiniões sobre ....</h1>
+            <div class="ong-info">
+                <h3>
+                    <p>aaaaaaaaaa<br>aaaaaaaaa</p>
+                </h3> <img width="400" height="500" src="....." alt="gato ">
+                <!-- Imagem principal da página -->
+            </div>
+        </section>
+
+        </div>
         </section>
         <section>
             <h2>Seção 2</h2>
-            <p>Nulla facilisi. Suspendisse potenti. Ut finibus nisl eu ipsum
-                dapibus, id sollicitudin elit viverra.</p>
-            <section class="grid-container">
+            <!-- Divisão para os cards de notícias -->
+            <div class="news-cards">
                 <div class="card">
-                    <img src="https://via.placeholder.com/150" alt="Imagem 1">
-                    <h2>Título 1</h2>
-                    <p>Descrição do card 1.</p>
+                    <img src="imgscantoras/gatinho manguinha (1).jpg" alt="Notícia 1">
+                    <div class="card-content">
+                        <h3>aaaaaaa</h3>
+                        <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="imgscantoras/gatinho manguinha (3).jpg" alt="Notícia 2">
+                    <div class="card-content">
+                        <h3>aaaaaaaaaaaaaa</h3>
+                        <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="imgscantoras/gatinho manguinha (2).jpg" alt="Notícia 3">
+                    <div class="card-content">
+                        <h3>aaaaaaaaaaaaaa</h3>
+                        <p> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                    </div>
 
-                </div>
-                <div class="card">
-                    <img src="https://via.placeholder.com/150" alt="Imagem 2">
-                    <h2>Título 2</h2>
 
-                    <p>Descrição do card 2.</p>
-                </div>
-                <div class="card">
-                    <img src="https://via.placeholder.com/150" alt="Imagem 3">
-                    <h2>Título 3</h2>
-                    <p>Descrição do card 3.</p>
-                </div>
-                <div class="card">
-                    <img src="https://via.placeholder.com/150" alt="Imagem 4">
-                    <h2>Título 4</h2>
-                    <p>Descrição do card 4.</p>
-                </div>
-            </section>
+        </section>
 
     </main>
     </section>
-    
+
     <footer>
         <p>&copy; 2024 MicroProjeto Responsivo</p>
     </footer>
-  
+
 
 </body>
 
