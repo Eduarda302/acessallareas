@@ -231,7 +231,7 @@ form h2 {
     margin-top: 5px;
     color: #000000;
     text-align: left;
-    
+
 }
 
 label {
@@ -242,7 +242,8 @@ label {
 
 input[type="text"],
 input[type="email"],
-textarea, select {
+textarea,
+select {
     width: 90%;
     padding: 10px;
     margin-bottom: 10px;
@@ -272,6 +273,14 @@ input[type="file"] {
     border-radius: 4px;
 }
 
+/*Imagem footer*/
+
+img {
+    width: 120%;
+    padding: 0px;
+    
+    
+}
 
 
 
