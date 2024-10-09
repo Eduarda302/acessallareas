@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    /*Recetar o css*/
+    box-sizing: border-box;
+}
+
+body{
+    background: url();
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    /*altura minima do body*/
+    display: flex;
+    /*ajuda a centralizar a div*/
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container {
+    width: 420px;
+    /*largura*/
+    background: transparent;
+    border: 2px solid #dfd0d0;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    padding: 30px 40px;
+}
