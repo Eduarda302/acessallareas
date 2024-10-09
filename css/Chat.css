@@ -1,15 +1,10 @@
-
-body {
-  margin: auto;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5px;
-  background-color: rgb(174, 240, 188);
-}
 
 header {
   display: flex;
@@ -90,6 +85,7 @@ nav ul li a:hover {
   /* Largura igual à largura da janela do navegador */
   display: flex;
   justify-content: space-between;
+  height: 95vh;
 }
 
 /* Estilos para modificar a posição do elemento com a classe "position" */
