@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff93;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: rgb(174, 240, 188);
+}
+
+/*Foto da logo*/
+.logo img {
+    width: 100px;
+    border-radius: 20%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+    font-size: large;
+}
+
+/* cor e tamanho da fonte da nav */
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* cor da fonte quando aperta em cima */
+nav ul li a:hover {
+    color: #5ea345;
+}
+
+.auth-buttons {
+    display: flex;
+}
+
+.auth-buttons a {
+    text-decoration: none;
+    margin-left: 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.login {
+    color: #000000;
+    font-size: large;
+}
+
+.demo {
+    background-color: #f3f4f6;
+    color: #333;
+}
+
+.signup {
+    background-color: #1a4d29;
+    color: white;
+}
+
+/* Inicio da página Home*/
+
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: #c5c6ce46;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    color: #333;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #535353;
+}
+
+.hero-image img {
+    max-width: 400px;
+    border-radius: 0px;
+    background-color: #ffffff;
+}
+
+
+/* Sessão Cards */
+
+.grid-curiosidade {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 3 colunas com largura igual */
+    grid-template-rows: auto;
+    /* Altura automática para as linhas */
+    gap: 20px;
+    /* Espaçamento entre os itens do grid */
+    padding: 40px;
+    background-color: #bdbdbd56;
+}
+
+.grid-item {
+    border-radius: 0px;
+    overflow: hidden;
+    text-align: center;
+    padding: 15px;
+    height: 40vh;
+}
+
+.grid-item img {
+    background-color: #ffffff;
+    width: 80%;
+    height: 100%;
+    border-radius: 0%;
+}
+
+.grid-item p {
+    margin: 10px 0 0;
+    color: white;
+}
+
+/*Sessão conversa*/
+.conversa-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.cta {
+    background-color: #f8f8f8;
+    padding: 70px 50px;
+    width: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    align-items: center;
+}
+
+.cta p {
+    font-size: 18px;
+    margin-bottom: 5%;
+    margin-bottom: 50px;
+    margin-left: 35%;
+}
+
+.cta-button {
+    background-color: #8701f5;
+    color: #fff;
+    padding: 20px 35px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-left: 45%;
+}
+
+.cta-button:hover {
+    background-color: #570f9b;
+}
+
+
+/* Estilos para a seção "Sobre" com texto e imagem */
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0px;
+    padding: 40px;
+}
+
+.about h1 {
+    color: #28c1f0;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.ong-info {
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: #fff;
+    margin: 0px;
+    border-radius: 0px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    width: 93%;
+}
+
+.ong-info img {
+    width: 30%;
+    height: auto;
+    border-radius: 5px;
+    margin: 0px;
+}
+
+
+/*Formulário*/
+form {
+    align-items: center;
+    max-width: 500px;
+    margin: 10px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 40px;
+    margin-left: 290px;
+}
+
+form h2 {
+    margin-top: 5px;
+    color: #000000;
+    text-align: left;
+
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #164e64;
+    color: #fff;
+
+    padding: 15px 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #6734c7;
+}
+
+input[type="file"] {
+    width: 90%;
+    padding: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/*Imagem footer*/
+
+img {
+    width: 120%;
+    padding: 0px;
+    
+    
+}
+
+
+
+/*Footer*/
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F8F8F8;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    margin: 0 10px;
+    color: #666666;
+    text-decoration: none;
+}
+
+footer p {
+    font-size: 0.9em;
+    color: #666666;
+    margin: 0;
+}
