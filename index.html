@@ -15,16 +15,16 @@
         </div>
         <nav>
             <ul>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="#">Sobre</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Mapas</a></li>
-                <li><a href="#">Notícias</a></li>
-                <li><a href="#">Como ajudar</a></li>
+                <li><a href="pages/Mapa.html">Mapas</a></li>
+                <li><a href="pages/Depoimentos.html">Depoimentos</a></li>
+                <li><a href="pages/Chat.html">Chat</a></li>
             </ul>
         </nav>
         <div class="auth-buttons">
-            <a href="#" class="login">Login</a>
-            <a href="#" class="signup">Sign Up for Free</a>
+            <a href="pages/Login.html" class="login">Login</a>
+            <a href="pages/Cadastro.html" class="signup">Sign Up for Free</a>
         </div>
     </header>
 
@@ -127,9 +127,13 @@
         </div>
 
         <!--Formulario-->
-        <form action="/submit_form.php" method="post">
-            <h2>Entre em contato conosco!</h2>
-            <label for="nome">Nome:</label>
+        <section class="hero">
+            <div class="hero-content">
+        
+                <section class="hero">
+                    <div class="hero-content">
+                        <h1>Formulario</h1>
+                        <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" required><br><br>
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required><br><br>
@@ -145,9 +149,14 @@
             <label for="Enviar arquivo">Enviar Arquivo</label>
             <input type="file" id="file" name="file" required>
             <input type="submit" value="Enviar">
-            <img src="img/paralympic football 5-a-side-rafiki.png" alt="Photo 1">
+                    </div>
             
-        </form>
+                </section>
+            </div>
+            <div class="hero-image">
+                <img src="img/deficienteauditiva.png" alt="Cadeira de rodas">
+            </div>
+        </section>
 
         <!--Footer-->
         <footer>
