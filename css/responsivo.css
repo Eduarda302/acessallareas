@@ -1,0 +1,61 @@
+
+@media screen and (min-widht: 600px) {
+    /*nav*/
+
+    body {
+        font-size: 16px;
+    }
+
+
+    .menu{
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    nav ul {
+        flex-direction: row;
+        width: 20%;
+    }
+
+    .grid-dos-quedrados{
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+    }
+
+    }
+@media screen and (min-widht: 760px) {
+
+    body {
+        font-size: 16px;
+    }
+
+
+    footer{
+        display: flex;
+        width: auto;
+    }
+     
+    .card-membros{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .grid-dos-quedrados{
+        display: flex;
+        flex-direction: row;
+        width: 400px;
+    }
+}
+
+@media screen and (min-widht: 800px){
+    .grid-dos-quedrados{
+        display: flex;
+        flex-direction: row;
+        width: 400px;
+    }
+}
+
+
