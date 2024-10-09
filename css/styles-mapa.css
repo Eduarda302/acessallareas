@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* estilização do site */
@@ -14,6 +15,11 @@ header {
     background: radial-gradient(circle, rgba(177, 238, 174, 1) 41%, rgb(173, 233, 151) 100%);
 }
 
+.cta{
+    text-align: center;
+    margin: 5%;
+   
+}
 
 .logo img {
     width: 70px;
