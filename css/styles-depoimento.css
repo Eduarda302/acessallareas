@@ -5,8 +5,8 @@
 }
 
 header {
-    background-color: #a9b0ff;
-    color: #e9ebff;
+    background-color:#5b8b63;
+    color: #93e0aa;
     text-align: center;
     padding: 20px 0;
     
@@ -21,23 +21,17 @@ header {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 5px auto;
+    margin:  auto;
     padding: 20px;
 }
 .about h1 {
-    color: #d4d7ff;
-    font-size: 40px;
-    margin-bottom: 20px;
-}
-.about h1 {
-    color: #d4d7ff;
-    font-size: 40px;
+    color:#2e3c41;
+    font-size: 30px;
     margin-bottom: 20px;
 }
 
 .ong-info {
     display: flex;
-
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
@@ -45,7 +39,7 @@ header {
     background-color: #fff;
     margin: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 5px #a9b0ff;
+    box-shadow: 0 0 5px#5b8b63;
     width: 93%;
 }
 
@@ -62,8 +56,8 @@ header {
     margin: 10px;
     padding: 10px;
     border-radius: 5px;
-    box-shadow: 0 0 5px #a9b0ff;
-    background-color:#e9ebff;
+    box-shadow: 0 0 5px #2e3c41;
+    background-color:#93e0aa;
 
     text-align: center;
     width: 30%;
@@ -79,7 +73,7 @@ header {
 .image p {
     margin-top: 10px;
     font-size: 16px;
-    color: #f4b7f7;
+    color:#93e0aa;
 }
 /* Estilos para os cards de notícias */
 .news-cards {
@@ -106,14 +100,15 @@ header {
     transform: scale(1.05);
     transition: 0.3s;
     opacity: 1;
-    background-color:#a9b0ff !important;
+    background-color:#93e0aa !important;
 }
 
+/*imagens dos cards, card1*/
 .news-cards .card img {
-    width: 80%;
-    height: 100px;
+    width: 100%;
+    height: auto;
     object-fit: contain;
-    border-radius: 5px;
+    border-radius: 50%;
     margin: 20px;
 }
 
@@ -215,7 +210,7 @@ footer {
     color: #666;
     }
     footer {
-    background-color: #a9b0ff;
+    background-color:#93e0aa;
     color: #fff;
     text-align: center;
     padding: 10px 0;
