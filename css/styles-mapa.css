@@ -7,18 +7,10 @@
 }
 
 /* estilização do site */
-
 body {
     background-color: #eeead9;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color:  #86ce9b;
-}
 
 .cta{
     text-align: center;
@@ -55,36 +47,7 @@ nav ul li a {
 
 /* cor da fonte quando aperta em cima */
 nav ul li a:hover {
-    color: #faf1f1;
-}
-
-.auth-buttons {
-    display: flex;
-
-}
-
-.auth-buttons a {
-    text-decoration: none;
-    margin-left: 15px;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.login {
-    color: #ffffff;
-    font-size: large;
-    
-}
-
-.demo {
-    background-color: #f3f4f6;
-    color: #333;
-}
-
-.signup {
-    background-color: #2e3c41;
-    color: white;
+    color: #023807;
 }
 
 /*Footer*/
@@ -153,20 +116,6 @@ main {
     flex-direction: column;
 }
 
-.cta {
-    background-color: #f8f8f8;
-    padding: 40px 0px;
-    width: 95%;
-    left: 100%;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    align-items: center;
-}
-
-.cta p {
-    font-size: 18px;
-    margin-bottom: 5%;
-    margin-left: 0%;
-}
 
 
 
