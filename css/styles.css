@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    display: flex;;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 20%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #661010;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px #fff ;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p{
+    font-size: 16px;
+}
+input [type="text"]{
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: rgb(130, 130, 247);
+}
+#address-info{
+    margin-top: 20px;
+    text-align: left;
+}
