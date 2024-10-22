@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    /*Remove a margems padrão do corpo da página*/
+    /*Remove a margem padrão do corpo da página*/
 }
 
 .main-login {
@@ -8,7 +8,7 @@ body {
     /* vw é a porcentagem da largura da tela*/
     height: 100vh;
     /*vh altura do viewport (tela)*/
-    background: #2e3c41;
+    background: #201b2c;
     /*cor da div (do fundo)*/
     display: flex;
     /* para que as coisa fique lado a lado*/
@@ -18,6 +18,7 @@ body {
     /*para centralizar o eixo y no centro*/
 
 }
+
 .left-login {
     width: 50vh;
     /*para ocupar so 50% da tela*/
@@ -32,6 +33,7 @@ body {
     flex-direction: column;
     /* para a imagem ficar na parte de baixo*/
 }
+
 .left-login>h1 {
     /*titulo*/
     font-size: 3vw;
