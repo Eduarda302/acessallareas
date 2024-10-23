@@ -14,7 +14,7 @@ body {
 
 .cta{
     text-align: center;
-    margin: 5%;
+    margin: 2%;
 
 }
 
@@ -88,6 +88,7 @@ main {
     align-items: center;
     padding: 20px;
     text-align: center;
+    margin: 0%;
     
 }
 

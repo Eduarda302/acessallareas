@@ -43,6 +43,7 @@ body {
 
 .search-bar button:hover {
     background-color: #155cb5;
+
 }
 
 /* Estilos da barra de navegação */
@@ -53,12 +54,12 @@ body {
     /*distribuir o espaço entre o logo, o menu e o botão.*/
     align-items: center;
     padding: 20px;
-    background-color: #ffffff;
+    background-color: #317241;
 }
 
 .logo h1 {
     font-size: 24px;
-    color: #333;
+    color: #ffffff;
 }
 
 nav ul {
@@ -78,6 +79,8 @@ nav ul li a {
     /*Remove o sublinhado dos links.*/
     color: #333;
     font-weight: bold;
+    margin: 0 20px;
+    padding: 10px 20px;
 }
 
 .cta-button button {
@@ -89,13 +92,10 @@ nav ul li a {
     cursor: pointer;
 }
 
-.cta-button button:hover {
-    background-color: #155cb5;
-}
 
 /* Estilo da seção principal */
 .header-content {
-    background: linear-gradient(to right, #0033cc, #00ccff);
+    background: linear-gradient(to right, #145825, #5ad884);
     color: white;
     padding: 100px 20px;
     text-align: center;
