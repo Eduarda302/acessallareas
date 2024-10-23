@@ -9,69 +9,114 @@ body {
 }
 
 /* Header */
-header {
+.search-bar {
+    /*Define o container para a barra de pesquisa como um 
+    "flexbox", alinhando o campo de texto e o botão no centro */
+
     display: flex;
-    justify-content: space-between;
+    /*alinha os elementos dentro 
+    (campo de entrada e botão) em uma linha horizontal.*/
+
     align-items: center;
-    padding: 30px;
-    background-color: rgb(174, 240, 188);
 }
 
-/*Foto da logo*/
-.logo img {
-    width: 100px;
-    border-radius: 20%;
+.search-bar input {
+    padding: 10px;
+    /*Adiciona espaçamento interno ao redor 
+    do texto dentro do campo de entrada*/
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+    /* Espaço entre o campo de pesquisa e o botão */
+}
+
+.search-bar button {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    /*espaçamento interno ao botão. Isso faz com que ele fique mais "alto" 
+    (10px no topo e embaixo) e mais "largo" (20px nas laterais).*/
+    border-radius: 5px;
+    /*cantos do botão arredondados.*/
+    cursor: pointer;
+    /*cursor do mouse para uma "mãozinha"*/
+}
+
+.search-bar button:hover {
+    background-color: #155cb5;
+
+}
+
+/* Estilos da barra de navegação */
+.navbar {
+    display: flex;
+    /*alinhar os itens em linha*/
+    justify-content: space-between;
+    /*distribuir o espaço entre o logo, o menu e o botão.*/
+    align-items: center;
+    padding: 20px;
+    background-color: #317241;
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: #ffffff;
 }
 
 nav ul {
-    display: flex;
-    list-style: none;
+    list-style-type: none;
+    /*Remove os marcadores da lista*/
     margin: 0;
     padding: 0;
+    display: flex;
 }
 
 nav ul li {
-    margin: 0 15px;
-    font-size: large;
+    margin-right: 20px;
 }
 
 /* cor e tamanho da fonte da nav */
 nav ul li a {
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
     font-weight: bold;
+    margin: 0 20px;
+    padding: 10 20px;
 }
 
-/* cor da fonte quando aperta em cima */
-nav ul li a:hover {
-    color: #5ea345;
-}
-
-.auth-buttons {
-    display: flex;
-}
-
-.auth-buttons a {
-    text-decoration: none;
-    margin-left: 15px;
+.cta-button button {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
     padding: 10px 20px;
     border-radius: 5px;
-    font-weight: bold;
+    cursor: pointer;
 }
 
-.login {
-    color: #000000;
-    font-size: large;
-}
 
-.demo {
-    background-color: #f3f4f6;
-    color: #333;
-}
 
-.signup {
-    background-color: #1a4d29;
+/* Estilo da seção principal */
+.header-content {
+    background: linear-gradient(to right, #145825, #5ad884);
     color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.header-content h2 {
+    font-size: 36px;
+}
+
+.header-content p {
+    font-size: 18px;
+    margin-top: 10px;
+    max-width: 600px;
+    /*largura do texto a 600px, para que não se espalhe muito pela tela.*/
+    /*Centraliza o conteúdo dentro do seu container.*/
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Inicio da página Home*/
@@ -108,36 +153,67 @@ nav ul li a:hover {
 
 /* Sessão Cards */
 
-.grid-curiosidade {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    /* 3 colunas com largura igual */
-    grid-template-rows: auto;
-    /* Altura automática para as linhas */
-    gap: 20px;
-    /* Espaçamento entre os itens do grid */
-    padding: 40px;
-    background-color: #bdbdbd56;
+.services-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1850px;
+    margin: 20px auto;
+    margin-top: 1.5%;
+    margin-bottom:1.5%;
+    gap: 10px; /* Espaçamento entre os blocos */
 }
 
-.grid-item {
-    border-radius: 0px;
-    overflow: hidden;
+.service-box {
+    background-color: white;
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
     text-align: center;
-    padding: 15px;
-    height: 40vh;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
-.grid-item img {
-    background-color: #ffffff;
-    width: 80%;
-    height: 100%;
-    border-radius: 0%;
+.service-box:hover {
+    transform: translateY(-10px); /* Animação ao passar o mouse */
 }
 
-.grid-item p {
-    margin: 10px 0 0;
+.service-box.blue {
+    background-color: #2e3c41;
     color: white;
+}
+
+.service-box.orange {
+    background-color: #2e3c41;
+    color: white;
+}
+
+.icon img {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/* Responsividade para tablets */
+@media (max-width: 768px) {
+    .service-box {
+        flex-basis: calc(50% - 20px); /* Metade da largura para tablets */
+    }
+}
+
+/* Responsividade para smartphones */
+@media (max-width: 480px) {
+    .service-box {
+        flex-basis: 100%; /* Bloco ocupa toda a largura em dispositivos pequenos */
+    }
 }
 
 /*Sessão conversa*/
@@ -146,23 +222,23 @@ nav ul li a:hover {
     flex-direction: column;
 }
 
-.cta {
-    background-color: #f8f8f8;
+.cta2 {
+    background-color: #5b8b63;
     padding: 70px 50px;
     width: 100%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     align-items: center;
 }
 
-.cta p {
+.cta2 p {
     font-size: 18px;
     margin-bottom: 5%;
     margin-bottom: 50px;
     margin-left: 35%;
 }
 
-.cta-button {
-    background-color: #8701f5;
+.cta-button2 {
+    background-color: #2e3c41;
     color: #fff;
     padding: 20px 35px;
     text-decoration: none;
@@ -172,8 +248,8 @@ nav ul li a:hover {
     margin-left: 45%;
 }
 
-.cta-button:hover {
-    background-color: #570f9b;
+.cta-button2:hover {
+    background-color: #2e3c41;
 }
 
 

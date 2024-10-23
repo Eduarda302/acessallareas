@@ -6,81 +6,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/nav.css">
 </head>
 
 <body>
     <header>
-        <div class="logo">
-            <img src="/img/wheelchair.png" alt="Logo">
+        <div class="navbar"> <!--Contém a barra de navegação.-->
+            <div class="logo">
+
+                <h1>AcellAreas</h1> <!--logotipo e o título (o nome "WordStream").-->
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="pages/index.html">Home</a></li>
+                    <li><a href="pages/index.html">Sobre</a></li>
+                    <li><a href="pages/Mapa.HTML--">Mapa</a></li>
+                    <li><a href="pages/Depoimentos.html">Depoimentos</a></li>
+                    <li><a href="pages/Chat.html">Chat</a></li>
+                </ul>
+            </nav>
+
+            <!-- Adicionando o campo de pesquisa -->
+            <form class="search-bar" action="#" method="get">
+                <!--<form> define um formulário em HTML-->
+                <!--action="#" define para onde os dados do 
+                    formulário serão enviados quando o botão for clicado-->
+                <input type="text" placeholder="Search..." name="search">
+                <!--placeholder="Search..." define o texto que aparecerá 
+                no campo de pesquisa antes de o usuário digitar algo-->
+                <button type="submit">Login</button>
+            </form>
+
+            <div class="cta-button">
+                <button>qulkhuf</button>
+            </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Mapas</a></li>
-                <li><a href="#">Notícias</a></li>
-                <li><a href="#">Como ajudar</a></li>
-            </ul>
-        </nav>
-        <div class="auth-buttons">
-            <a href="#" class="login">Login</a>
-            <a href="#" class="signup">Sign Up for Free</a>
+
+        <div class="header-content">
+            <h2>TANANANANANANNANNAANANANNNANANANANANANANANANAAN<br>
+                TANANANANANANNANNAANANANNNANANANANANANANANANAAN</h2>
+            <p>Tanananananana</p>
         </div>
     </header>
 
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Tanananana</h1>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vehicula elit leo.
-                    Nulla tortor neque, consectetur at bibendum et, eleifend sed risus.
-                    Praesent pharetra mi in elit sollicitudin pretium.
-                    Nulla aliquam, magna non porttitor feugiat, sem eros efficitur dui, id ultricies sapien dui vitae
-                    ipsum.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vehicula elit leo. Nulla tortor
-                    neque, consectetur at bibendum et, eleifend sed risus.
-                    Praesent pharetra mi in elit sollicitudin pretium. Nulla tortor neque, consectetur at bibendum et,
-                    eleifend sed risus.
-                    Praesent pharetra mi in elit sollicitudin pretium. Nulla tortor neque, consectetur at bibendum et,
-                    eleifend sed risus.
-                    Praesent pharetra mi in elit sollicitudin pretium. Nulla tortor neque, consectetur at bibendum et,
-                    eleifend sed risus.
-                    Praesent pharetra mi in elit sollicitudin pretium. Nulla tortor neque, consectetur at bibendum et,
-                    eleifend sed risus.
-                    Praesent pharetra mi in elit sollicitudin pretium. Nulla tortor neque, consectetur at bibendum et,
-                    eleifend sed risus.
-                </p>
-            </div>
-            <div class="hero-image">
-                <img src="img/disabled.png">
-            </div>
-        </section>
-    </main>
+  
 
     <!--Sessão de Cards-->
 
-    <section class="grid-curiosidade">
-        <div class="grid-item">
-            <img src="img/paralympic winners podium-rafiki.png" alt="Photo 1">
-            <p>Imagem 1</p>
+    <section class="services-section">
+        <div class="service-box blue">
+            <div class="icon">
+                <!-- Exemplo de ícone (substitua pela imagem ou ícone real) -->
+                <img src="img/search-location.png" alt="Sites Profissionais">
+            </div>
+            <h3>TANANANA</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vehicula elit leo. <br>
+                Nulla tortor neque, consectetur at bibendum et, eleifend sed risus.</p>
         </div>
-        <div class="grid-item">
-            <img src="img/paralympic winners podium-rafiki.png" alt="Photo 2">
-            <p>Imagem 2</p>
+        <div class="service-box orange">
+            <div class="icon">
+                <img src="img/introduction (1).png" alt="E-Commerce Completo">
+            </div>
+            <h3>TANANANA</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vehicula elit leo. <br>
+                Nulla tortor neque, consectetur at bibendum et, eleifend sed risus.</p>
         </div>
-        <div class="grid-item">
-            <img src="img/paralympic winners podium-rafiki.png" alt="Photo 3">
-            <p>Imagem 3</p>
+        <div class="service-box blue">
+            <div class="icon">
+                <img src="img/messages-question.png" alt="Marketing Digital">
+            </div>
+            <h3>TANANANA</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vehicula elit leo. <br>
+                Nulla tortor neque, consectetur at bibendum et, eleifend sed risus.</p>
         </div>
-        <div class="grid-item">
-            <img src="img/paralympic winners podium-rafiki.png" alt="Photo 4">
-            <p>Imagem 4</p>
-        </div>
+        
     </section>
 
     <!--Sessão de conversa-->
     <div class="conversa-section">
-        <div class="cta">
+        <div class="cta2">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vehicula elit leo. <br>
                 Nulla tortor neque, consectetur at bibendum et, eleifend sed risus. Praesent pharetra <br>
                 mi in elit sollicitudin pretium. Nulla aliquam, magna non porttitor feugiat, sem eros<br>
@@ -88,7 +92,7 @@
                 adipiscing elit. Vivamus vehicula elit leo. Nulla tortor neque, consectetur at bibendum et, <br>
               <br>
                 </p>
-            <a href="#" class="cta-button">Botão de conversa</a>
+            <a href="#" class="cta-button2">Botão de conversa</a>
         </div>
     </div>
 
@@ -118,11 +122,11 @@
     
     <!--Sessão de conversa2-->
         <div class="conversa2-section">
-            <div class="cta">
+            <div class="cta2">
                 <p>TANANANANANANNANNAANANANNNANANANANANANANANANAAN<br>
                     TANANANANANANNANNAANANANNNANANANANANANANANANAAN<br>
                     TANANANANANANNANNAANANANNNANANANANANANANANANAAN<br></p>
-                <a href="#" class="cta-button">Botão de conversa</a>
+                <a href="#" class="cta-button2">Botão de conversa</a>
             </div>
         </div>
 
