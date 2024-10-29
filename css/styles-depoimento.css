@@ -1,0 +1,155 @@
+/* Estilos para o corpo da página */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-image: url("../img/imagemdefundopcd.png");
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color:#ffffffab;
+}
+
+
+/* Estilos para a seção "Sobre" com texto e imagem */
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 5px auto;
+    padding: 20px;
+}
+
+.about h1 {
+    color:#2e3c41;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.ong-info {
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #93e0aa;
+    margin: 20px;
+    border-radius: 5px;
+    /*colocar img nessa parte*/
+    box-shadow:#5b8b63;
+    width: 93%;
+}
+
+.ong-info img {
+    width: 20%;
+    height: auto;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+/* Estilos para os títulos */
+h2 {
+    padding: 20px;
+    color:#5b8b63;
+    text-align: center;
+}
+
+/* Estilos para a galeria de imagens */
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.image {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #2e3c41;
+    background-color: #fff;
+
+    text-align: center;
+    width: 30%;
+}
+
+.image img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.image p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ffffff17;
+}
+
+/* Estilos para os cards de notícias */
+.news-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-bottom: 100px;
+}
+
+.news-cards .card {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: #2e3c41;
+    background-color:#ffffff17;
+    text-align: center;
+    width: 30%;
+    opacity: 0.2;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+    opacity: 1;
+    background-color: #ffffffab !important;
+}
+
+.news-cards .card img {
+    width: 80%;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.news-cards .card .card-content h3 {
+    font-size: 20px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.news-cards .card .card-content p {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Estilos para o rodapé */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#ffffff04;
+    color: #ffffff;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
