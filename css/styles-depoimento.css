@@ -7,10 +7,9 @@
 
 
 body {
-    background-image: url("../img/imagemdefundopcd.png");
     font-family: Arial, sans-serif;
     background-color: #ffffff;
-    color:#ffffffab;
+    color: #ffffffab;
 }
 
 
@@ -23,17 +22,19 @@ body {
     width: 100%;
     margin: 5px auto;
     padding: 20px;
+
+
 }
 
 .about h1 {
-    color:#2e3c41;
+    color: #317241;
     font-size: 40px;
     margin-bottom: 20px;
 }
 
 .ong-info {
     display: flex;
-
+    background-image: url("../img/DALL·E\ 2024-10-29\ 15.38.03\ -\ A\ wallpaper\ featuring\ accessibility\ icons\ in\ lighter\ shades\ of\ green\,\ symbolizing\ inclusivity\ for\ people\ with\ disabilities\ \(PCDs\).\ The\ design\ includes.webp");
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
@@ -41,22 +42,27 @@ body {
     background-color: #93e0aa;
     margin: 20px;
     border-radius: 5px;
-    /*colocar img nessa parte*/
-    box-shadow:#5b8b63;
+    box-shadow: #5b8b63;
     width: 93%;
 }
 
-.ong-info img {
-    width: 20%;
-    height: auto;
-    border-radius: 5px;
-    margin: 10px;
+div.scroll-container {
+    
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 12;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
+
 
 /* Estilos para os títulos */
 h2 {
     padding: 20px;
-    color:#5b8b63;
+    color:#317241;
     text-align: center;
 }
 
@@ -73,7 +79,7 @@ h2 {
     margin: 10px;
     padding: 10px;
     border-radius: 5px;
-    box-shadow: 0 0 5px #2e3c41;
+    box-shadow: 0 0 5px #317241;
     background-color: #fff;
 
     text-align: center;
@@ -107,8 +113,8 @@ h2 {
     margin: 10px;
     padding: 10px;
     border-radius: 5px;
-    box-shadow: #2e3c41;
-    background-color:#ffffff17;
+    box-shadow: #317241;
+    background-color: #ffffff17;
     text-align: center;
     width: 30%;
     opacity: 0.2;
@@ -118,7 +124,7 @@ h2 {
     transform: scale(1.05);
     transition: 0.3s;
     opacity: 1;
-    background-color: #ffffffab !important;
+    background-color: #317241 !important;
 }
 
 .news-cards .card img {
@@ -131,25 +137,49 @@ h2 {
 
 .news-cards .card .card-content h3 {
     font-size: 20px;
-    color: #333;
+    color: #ffffff;
     margin-top: 10px;
 }
 
 .news-cards .card .card-content p {
     font-size: 16px;
-    color: #666;
+    color: #ffffff;
     margin-top: 10px;
 }
 
 /* Estilos para o rodapé */
+/*Footer*/
+
 footer {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    background-color:#ffffff04;
-    color: #ffffff;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    background-color: #1f6e1f;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    margin: 0 10px;
+    color: #666666;
+    text-decoration: none;
+}
+
+footer p {
+    font-size: 0.9em;
+    color: #666666;
+    margin: 0;
 }

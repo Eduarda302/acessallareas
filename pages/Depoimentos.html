@@ -6,70 +6,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeria de Imagens</title>
+    <title>Depoimento</title>
     <link rel="stylesheet" href="../css/styles-depoimento.css"> <!-- Ligação com o arquivo CSS externo
 -->
+<link rel="stylesheet" href="../css/nav.css">
 </head>
 
 <body>
+    <div class="navbar"> <!--Contém a barra de navegação.-->
+        <div class="logo">
+
+            <h1>AcessAllAreas</h1> <!--logotipo e o título (o nome "WordStream").-->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="pages/index.html">Home</a></li>
+                <li><a href="pages/index.html">Sobre</a></li>
+                <li><a href="pages/Mapa.html">Mapa</a></li>
+                <li><a href="pages/Depoimentos.html">Depoimentos</a></li>
+                <li><a href="pages/Chat.html">Chat</a></li>
+            </ul>
+        </nav>
+
+        <!-- Adicionando o campo de pesquisa -->
+        <form class="search-bar" action="#" method="get">
+            <!--<form> define um formulário em HTML-->
+            <!--action="#" define para onde os dados do 
+                formulário serão enviados quando o botão for clicado-->
+            <input type="text" placeholder="Search..." name="search">
+            <!--placeholder="Search..." define o texto que aparecerá 
+            no campo de pesquisa antes de o usuário digitar algo-->
+            <button type="submit">Login</button>
+        </form>
+    </div>
     <!-- Seção "Sobre" -->
     <section class="about">
-       
-        <div class="ong-info">
-           <h3><p>projeto<br>integrador</p></h3>
-            <img width="500" height="500" src="" alt="gato "> <!-- Imagem da ONG -->
+
+            <div class="ong-info">
+                <div class="scroll-container" id="scrollContainer">
+
+            <img width="500" height="500"> <!-- Img da entrada do site -->
         </div>
     </section>
-    <!-- Título da Galeria de Imagens -->
-    <h2>card do conteudo</h2>
+   
+    
 
-    <!-- Divisão para a galeria de imagens -->
-
-    <div class="gallery">
-        <div class="image">
-            <img src="../img/cegoicon.jpg" alt="Imagem 1">
-        </div>
-        <div class="image">
-            <img src="../img/surdoicon-Photoroom.png" alt="Imagem 2">
-        </div>
-        <div class="image">
-            <img src="..." alt="Imagem 3">
-        </div>
-    </div>
-    <!-- Título das Notícias da ONG -->
-    <h2>Notícias </h2>
+    <!-- Título do depoimeto de pcds -->
+    <h2>maiores problemas segundo opiniões</h2>
+   
     <!-- Divisão para os cards de notícias -->
     <div class="news-cards">
         <div class="card">
-            <img src="../" alt="Notícia 1">
+            <img src="../img/iconeverdedeusuario.webp" alt="Notícia 1">
             <div class="card-content">
-                <h3>...</h3>
-                <p>...</p>
+                <h3>Para uma pessoa que não possui mãos, navegar na internet pode ser um desafio considerável.</h3>
+                <p>Muitas interfaces são projetadas com o uso de mouse e teclado em mente, o que pode tornar a navegação complicada. Embora existam tecnologias de acessibilidade, como software de reconhecimento de voz e dispositivos de controle por cabeça, nem todos os sites são compatíveis com esses recursos, tornando a experiência frustrante. Além disso, a necessidade de clicar em botões pequenos ou interagir com elementos que exigem precisão pode ser uma barreira. A acessibilidade precisa ser uma prioridade para garantir que todos tenham uma experiência online fluida e eficiente.</p>
             </div>
         </div>
         <div class="card">
-            <img src="..." alt="Notícia 2">
+            <img src="../img/iconeverdedeusuario.webp" alt="Notícia 1">
             <div class="card-content">
-                <h3>...</h3>
-                <p>...</p>
+                <h3>Para uma pessoa muda, navegar na internet pode ser uma experiência bem interessante, mas também desafiadora.</h3> Em muitos casos, a comunicação é feita por meio de texto, o que pode ser vantajoso em plataformas de redes sociais e fóruns. No entanto, algumas interações que costumam ocorrer por voz, como chamadas de vídeo ou áudios, podem ser um obstáculo. Além disso, a falta de legendas em vídeos e transmissões ao vivo pode limitar o acesso a certos conteúdos. A inclusão de opções de texto e legenda é essencial para garantir que todos possam se comunicar e interagir plenamente na web. </p>
+            </div>
+        </div> <div class="card">
+            <img src="../img/iconeverdedeusuario.webp" alt="Notícia 1">
+            <div class="card-content">
+                <h3>Para uma pessoa com síndrome de Down, navegar na internet pode ser tanto uma ferramenta poderosa quanto um desafio. Por um lado, a internet oferece acesso a informações, entretenimento e a possibilidade de se conectar com outras pessoas, o que pode ser muito positivo.</h3>
+                <p>muitos sites têm uma estrutura complexa e usam linguagem difícil, o que pode dificultar a compreensão. Além disso, a sobrecarga de informações visuais pode ser desorientadora. Conteúdos com imagens e textos simples, além de vídeos que incluem legendas ou narração, podem ajudar a tornar a experiência online mais acessível e agradável.</p>
+            </div>
+        </div> <div class="card">
+            <img src="../img/iconeverdedeusuario.webp" alt="Notícia 1">
+            <div class="card-content">
+                <h3>Para uma pessoa cega, navegar na internet pode ser um desafio significativo. Muitas vezes, os sites não são otimizados para leitores de tela, o que torna difícil acessar informações.</h3>
+                <p>Além disso, muitos elementos visuais, como imagens e vídeos, não têm descrições textuais, deixando lacunas no conteúdo. A estrutura confusa de alguns sites pode dificultar a navegação, e a falta de compatibilidade com tecnologia assistiva pode tornar a experiência ainda mais frustrante.</p>
             </div>
         </div>
         <div class="card">
-            <img src="..." alt="Notícia 3">
+            <img src="../img/iconeverdedeusuario.webp" alt="Notícia 2">
             <div class="card-content">
-                <h3>...</h3>
-                <p>....<br> ......</p>
+                <h3>Navegar na internet para quem é surdo pode ser bem frustrante às vezes.</h3>
+                <p>Muitos sites e vídeos ainda não têm legendas ou interpretação em Libras, então boa parte do conteúdo acaba inacessível. Além disso, conteúdos em áudio, como podcasts e mensagens de voz, raramente têm uma transcrição disponível. Isso dificulta bastante o acesso à informação e a participação em redes sociais ou sites de notícia.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="../img/iconeverdedeusuario.webp" alt="Notícia 3">
+            <div class="card-content">
+                <h3>Navegar na internet pode ser bem complicado pra quem é autista</h3>
+                <p>Tem tanto estímulo visual e sonoro, pop-up, vídeo que toca sozinho… é um exagero.<br>Sem contar a confusão de alguns sites, com botões e menus que não fazem muito sentido. A linguagem também é um problema, cheia de gírias e metáforas que podem deixar qualquer um perdido.</p>
             </div>
         </div>
     </div>
     
     
-    <!-- Rodapé da página -->
-    <footer>
-        <p>
-          ............
-        </p>
-    </footer>
+    
+        <!--Footer-->
+        <footer>
+            <!--Links das redes sociais-->
+            <div class="social-icons">
+                <a href="#"><img src="../img/.png" alt="Whatsapp"></a>
+                <a href="#"><img src="../img/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="../img/linkedin.png" alt="LinkedIn"></a>
+            </div>
+            <div class="footer-links">
+                <a href="#">Tanananananana</a>
+                <a href="#">Tanananananana</a>
+                <a href="#">Tanananananana</a>
+            </div>
+            <p>&copy; 2024 Cotia</p>
+        </footer>
 
 </body>
 
