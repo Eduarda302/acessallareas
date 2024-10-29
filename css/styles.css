@@ -126,7 +126,8 @@ nav ul li a {
     justify-content: space-around;
     align-items: center;
     padding: 10px;
-    background-color: #c5c6ce46;
+    background-color: #ffffff;
+    margin-top: 10px;
 }
 
 .hero-content {
@@ -145,7 +146,7 @@ nav ul li a {
 }
 
 .hero-image img {
-    max-width: 400px;
+    max-width: 600px;
     border-radius: 0px;
     background-color: #ffffff;
 }
@@ -320,6 +321,35 @@ p {
   .contact-form .form-row {
     display: flex;
     gap: 20px;
+=======
+    max-width: 500px;
+    margin: 0px;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 40px;
+    margin-left: 290px;
+    margin-top: 100px;
+}
+
+form h2 {
+    margin-top: 5px;
+    color: #000000;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+   
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: 90%;
+    padding: 10px;
     margin-bottom: 10px;
   }
   
@@ -355,6 +385,27 @@ p {
     height: auto;
     margin-left: 35%;
   }
+}
+
+input[type="submit"]:hover {
+    background-color: #6734c7;
+}
+
+input[type="file"] {
+    width: 90%;
+    padding: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/*Imagem footer*/
+img {
+    width: 120%;
+    left: 150%;
+    right: 50%;
+    top: 50%;
+}
 
 
 

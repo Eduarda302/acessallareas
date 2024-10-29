@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* estilização do site */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(174, 240, 188);
+    background: radial-gradient(circle, rgba(177, 238, 174, 1) 41%, rgb(173, 233, 151) 100%);
+}
+
+.cta{
+    text-align: center;
+    margin: 5%;
+   
+}
+
+.logo img {
+    width: 70px;
+    border-radius: 60%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+    font-size: large;
+}
+
+/* cor e tamanho da fonte da nav */
+nav ul li a {
+    text-decoration: none;
+    color: #1a4d29;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* cor da fonte quando aperta em cima */
+nav ul li a:hover {
+    color: #000000;
+}
+
+.auth-buttons {
+    display: flex;
+}
+
+.auth-buttons a {
+    text-decoration: none;
+    margin-left: 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.login {
+    color: #000000;
+    font-size: large;
+}
+
+.demo {
+    background-color: #f3f4f6;
+    color: #333;
+}
+
+.signup {
+    background-color: #1a4d29;
+    color: white;
+}
+
+/*Footer*/
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(174, 240, 188);
+    padding: 20px 0;
+    text-align: center;
+
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 10px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    max-width: 200px;
+    border-radius: 90%;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1em;
+    color: #666;
+}

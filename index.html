@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/nav.css">
 </head>
-
+  
 <body>
     <header>
         <div class="navbar"> <!--Contém a barra de navegação.-->
@@ -46,6 +46,18 @@
             <h2>TANANANANANANNANNAANANANNNANANANANANANANANANAAN<br>
                 TANANANANANANNANNAANANANNNANANANANANANANANANAAN</h2>
             <p>Tanananananana</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="pages/Mapa.html">Mapas</a></li>
+                <li><a href="pages/Depoimentos.html">Depoimentos</a></li>
+                <li><a href="pages/Chat.html">Chat</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="pages/Login.html" class="login">Login</a>
+            <a href="pages/Cadastro.html" class="signup">Sign Up for Free</a>
         </div>
     </header>
 
@@ -118,7 +130,6 @@
                 <a href="#" class="cta-button2">Botão de conversa</a>
             </div>
         </div>
-
        <!--Formulario-->
        <section class="contact-section">
         <div class="contact-form">
@@ -142,6 +153,37 @@
           <img src="img/disabled.png" alt="Equipe trabalhando">
         </div>
       </section>
+        <!--Formulario-->
+        <section class="hero">
+            <div class="hero-content">
+        
+                <section class="hero">
+                    <div class="hero-content">
+                        <h1>Formulario</h1>
+                        <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <h2>Assunto:</h2>
+            <select id="linguagem" name="linguagem">
+                <option value="Selecione o assunto">Selecione assunto</option>
+                <option value="Erro">Erro de tanana</option>
+                <option value="Defeito">Defeito</option>
+                <option value="Outro">Outro</option>
+            </select>
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea><br><br>
+            <label for="Enviar arquivo">Enviar Arquivo</label>
+            <input type="file" id="file" name="file" required>
+            <input type="submit" value="Enviar">
+                    </div>
+            
+                </section>
+            </div>
+            <div class="hero-image">
+                <img src="img/deficienteauditiva.png" alt="Cadeira de rodas">
+            </div>
+        </section>
         <!--Footer-->
         <footer>
             <!--Links das redes sociais-->
