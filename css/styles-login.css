@@ -34,11 +34,12 @@ body {
     /* para a imagem ficar na parte de baixo*/
 }
 
-.left-login>h1 {
+.left-login h1 {
     /*titulo*/
     font-size: 3vw;
-    color: #77ffc0;
-}
+    color:#5b8b63;
+    width: 100%;
+    margin-top: 0;
 
 .left-login-image {
     width: 50vw;
@@ -145,5 +146,31 @@ body {
     cursor: pointer;
     /*indica que o botão é clicavel*/
     box-shadow: 0px 10px 40px -12pcd #00ff8052;
+}
 
+/*adicionando resposividade*/
+@media (max-width: 480px) {
+
+    .main-login{
+       flex-direction: column;
+    }
+    .left-login{
+        height: 30vw;
+    }
+
+    .left-login h1 {
+        /*titulo*/
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .left-login-image {
+        display: none;
+        /*tamanho da fonte*/
+    }
+    .card-login{
+        height: 70%;
+        
+    }
+    
 }
