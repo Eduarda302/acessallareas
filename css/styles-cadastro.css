@@ -3,12 +3,12 @@ body {
     /*Remove a margem padrão do corpo da página*/
 }
 
-.main-login {
+.main-cadastro {
     width: 100vw;
     /* vw é a porcentagem da largura da tela*/
     height: 100vh;
     /*vh altura do viewport (tela)*/
-    background: #201b2c;
+    background: #2e3c41;
     /*cor da div (do fundo)*/
     display: flex;
     /* para que as coisa fique lado a lado*/
@@ -19,7 +19,7 @@ body {
 
 }
 
-.left-login {
+.left-cadastro {
     width: 50vh;
     /*para ocupar so 50% da tela*/
     height: 100vh;
@@ -34,20 +34,20 @@ body {
     /* para a imagem ficar na parte de baixo*/
 }
 
-.left-login>h1 {
+.left-cadastro>h1 {
     /*titulo*/
     font-size: 3vw;
-    color: #77ffc0;
+    color: #93e0aa;
 }
 
-.left-login-image {
+.left-cadastro-image {
     width: 50vw;
     /*tamanho da fonte*/
 
 
 }
 
-.right-login {
+.right-cadastro {
     width: 50vh;
     height: 100vh;
     display: flex;
@@ -58,7 +58,7 @@ body {
 
 }
 
-.card-login {
+.card-cadastro {
     width: 60%;
     display: flex;
     justify-content: center;
@@ -77,8 +77,8 @@ body {
 
 }
 
-.card-login>h1 {
-    color: #00ff88;
+.card-cadastro>h1 {
+    color: #93e0aa;
     /* cor do titulo*/
     font-weight: 800;
     /*texto em negrito*/
@@ -126,7 +126,7 @@ body {
     color: #f0ffffde
 }
 
-.btn-login {
+.btn-cadastro {
     width: 100%;
     padding: 16px 0px;
     margin: 25px;
@@ -141,9 +141,33 @@ body {
     letter-spacing: 2px;
     /*espaço entre a letra do botão*/
     color: #2b134b;
-    background: #00ff88;
+    background: #93e0aa;
     cursor: pointer;
     /*indica que o botão é clicavel*/
     box-shadow: 0px 10px 40px -12pcd #00ff8052;
 
+}
+
+@media (max-width: 480px){
+    .main-cadastro{
+        flex-direction: column;
+     }
+     .left-cadastro{
+         height: 30vw;
+     }
+ 
+     .left-cadastro h1 {
+         /*titulo*/
+         font-size: 20px;
+         text-align: center;
+     }
+     .left-cadastro-image {
+         display: none;
+         /*tamanho da fonte*/
+     }
+     .card-cadastro{
+         height: 80%;
+         
+     }
+     
 }
