@@ -1,33 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mapa</title>
+    <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/styles-mapa.css">
 </head>
 
 <body>
     <header>
-        <div class="logo">
-            <img src="/img/pou.jpg" alt="Logo">
+        <div class="navbar"> <!--Contém a barra de navegação.-->
+            <div class="logo">
+                <h1>AcellAreas</h1> <!--logotipo e o título (o nome "WordStream").-->
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="pages/index.html">Home</a></li>
+                    <li><a href="pages/index.html">Sobre</a></li>
+                    <li><a href="pages/Mapa.HTML--">Mapa</a></li>
+                    <li><a href="pages/Depoimentos.html">Depoimentos</a></li>
+                    <li><a href="pages/Chat.html">Chat</a></li>
+                </ul>
+            </nav>
+
+            <!-- Adicionando o campo de pesquisa -->
+            <form class="search-bar" action="#" method="get">
+                <!--<form> define um formulário em HTML-->
+                <!--action="#" define para onde os dados do 
+                    formulário serão enviados quando o botão for clicado-->
+                <input type="text" placeholder="Search..." name="search">
+                <!--placeholder="Search..." define o texto que aparecerá 
+                no campo de pesquisa antes de o usuário digitar algo-->
+                <button type="submit">Login</button>
+            </form>
+
+            
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Mapas</a></li>
-                <li><a href="#">Depoimentos</a></li>
-                <li><a href="#">Chat</a></li>
-            </ul>
-        </nav>
-        <div class="auth-buttons">
-            <a href="#" class="login">Login</a>
-            <a href="#" class="signup">Sign Up for Free</a>
+
+        <div class="header-content">
+            <h2>CIBELLYNHO DUARDINHA TAINAZAO</h2>
+            <p>MINHAS AMIGAS PARA SEMPRE. AMO QUE AMO BFFS</p>
         </div>
     </header>
-    </main>
+
 
     <div class="espaco2-section">
         <div class="cta">
@@ -37,13 +54,13 @@
     <main>
         <section class="grid-container">
             <div class="card">
-                <img src="/img/portodegalinhas.jpg" alt="Imagem 1">
+                <img src="/img/porto.jpg"alt="Imagem 1">
                 <h2>Porto de Galinhas</h2>
                 <p>Descrição do card 1.</p>
             </div>
 
             <div class="card">
-                <img src="/img/riodejaneiro.jpg" alt="Imagem 2">
+                <img src="/img/janeiro.webp" alt="Imagem 2">
                 <h2>Rio de Janeiro</h2>
                 <p>Descrição do card 2.</p>
             </div>
@@ -76,8 +93,8 @@
             </div>
 
             <div class="card">
-                <img src="/img/instituto.PNG" alt="Imagem 3">
-                <h2>Instituto Natus</h2>
+                <img src="/img/linkedin.jpg" alt="Imagem 3">
+                <h2>Linkedin</h2>
                 <p>Descrição do card 3.</p>
             </div>
         </section>
@@ -85,25 +102,26 @@
 
     <div class="espaco2-section">
         <div class="cta">
-            <h1>Viagens Acessíveis</h1>
+            <h1>Esportes Acessíveis</h1>
     </div>
 
                 <main>
                     <section class="grid-container">
                         <div class="card">
-                            <img src="https://via.placeholder.com/150" alt="Imagem 1">
-                            <h2>Título 1</h2>
+                            <img src="/img/patricia2.jpg" alt="Imagem 1">
+                            <h2>Insti. Patrícia Medrado</h2>
                             <p>Descrição do card 1.</p>
                         </div>
-                        <div class="card">
-                            <img src="https://via.placeholder.com/150" alt="Imagem 2">
-                            <h2>Título 2</h2>
 
+                        <div class="card">
+                            <img src="/img/esporte2.jpg" alt="Imagem 2">
+                            <h2>Instituto Reação</h2>
                             <p>Descrição do card 2.</p>
                         </div>
+
                         <div class="card">
-                            <img src="https://via.placeholder.com/150" alt="Imagem 3">
-                            <h2>Título 3</h2>
+                            <img src="/img/olimpico.PNG" alt="Imagem 3">
+                            <h2>Projeto Victorem Paralímpico</h2>
                             <p>Descrição do card 3.</p>
                         </div>
                     </section>
@@ -113,5 +131,5 @@
                     <p>&copy; 2022 My Website. All rights reserved.</p>
                 </footer>
 </body>
-
+<script src="../js/nav.js"></script>
 </html>
