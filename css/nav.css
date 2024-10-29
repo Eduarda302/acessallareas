@@ -29,7 +29,7 @@ body {
 }
 
 .search-bar button {
-    background-color: #1a73e8;
+    background-color: #ff9800;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -42,7 +42,7 @@ body {
 }
 
 .search-bar button:hover {
-    background-color: #155cb5;
+    background-color: #fa9e34;
 
 }
 
