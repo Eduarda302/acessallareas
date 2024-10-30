@@ -158,11 +158,11 @@ nav ul li a {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 1850px;
+    max-width: 2300px;
     margin: 20px auto;
     margin-top: 1.5%;
     margin-bottom: 1.5%;
-    gap: 10px;
+    gap: 19px;
     /* Espaçamento entre os blocos */
 }
 
@@ -234,6 +234,8 @@ p {
     width: 100%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     align-items: center;
+    background: url(../img/) no-repeat bottom center scroll;
+    
 }
 
 .cta2 p {
@@ -376,32 +378,33 @@ p {
 /*Formulário para contato*/
 .contact-section {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 50px;
+    padding: 0px;
     background-color: #ffffff;
+    margin-left: 6%;
+    margin-top: 0.4%;
 }
 
 .contact-form {
     max-width: 30%;
-    margin-left: 15%;
-
+    margin: 7%;
 }
 
 .contact-form h2 {
     font-size: 28px;
     color: #111;
+    margin-bottom: 10px;
+
 }
 
 .contact-form p {
     font-size: 16px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .contact-form .form-row {
     display: flex;
     gap: 20px;
-    margin-bottom: 10px;
 }
 
 .contact-form input,
@@ -409,12 +412,14 @@ p {
     width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
+    margin: 4px;
     border-radius: 5px;
     font-size: 16px;
 }
 
 .contact-form textarea {
     height: 100px;
+    width: 600px;
 }
 
 .contact-form button {
@@ -432,24 +437,13 @@ p {
 }
 
 .contact-image img {
-    width: 49%;
-    max-width: 70%;
+    width: 50%;
+    max-width: 45%;
     height: auto;
-    margin-left: 35%;
+    margin-left: 30%;
+    margin-top: 30px;
 }
 
-
-input[type="submit"]:hover {
-    background-color: #6734c7;
-}
-
-input[type="file"] {
-    width: 100%;
-    padding: 20px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
 
 /*Imagem footer*/
 img {
