@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +15,7 @@
             <div class="logo">
                 <h1>AcellAreas</h1> <!--logotipo e o título (o nome "WordStream").-->
             </div>
-            
+
             <nav>
                 <ul>
                     <li><a href="pages/index.html">Home</a></li>
@@ -36,7 +37,7 @@
                 <button type="submit">Login</button>
             </form>
 
-            
+
         </div>
 
         <div class="header-content">
@@ -48,87 +49,199 @@
     <div class="espaco2-section">
         <div class="cta">
             <h1>Viagens com Acessíbilidade</h1>
-    </div>
+        </div>
 
-    <main>
-        <section class="grid-container">
-            <div class="card">
-                <img src="/img/porto.jpg"alt="Imagem 1">
-                <h2>Porto de Galinhas</h2>
-                <p>Descrição do card 1.</p>
-            </div>
-
-            <div class="card">
-                <img src="/img/janeiro.webp" alt="Imagem 2">
-                <h2>Rio de Janeiro</h2>
-                <p>Descrição do card 2.</p>
-            </div>
-
-            <div class="card">
-                <img src="/img/salvador.webp" alt="Imagem 3">
-                <h2>Salvador</h2>
-                <p>Descrição do card 3.</p>
-            </div>
-        </section>
-    </main>
-
-    <div class="espaco2-section">
-        <div class="cta">
-            <h1>Vagas de Emprego com Acessíbilidade</h1>
-    </div>
-
-    <main>
-        <section class="grid-container">
-            <div class="card">
-                <img src="/img/Diversidade.PNG" alt="Imagem 1">
-                <h2>Diversidade e Inclusão</h2>
-                <p>Descrição do card 1.</p>
-            </div>
-
-            <div class="card">
-                <img src="/img/vagos.PNG" alt="Imagem 2">
-                <h2>Vagos</h2>
-                <p>Descrição do card 2.</p>
-            </div>
-
-            <div class="card">
-                <img src="/img/linkedin.jpg" alt="Imagem 3">
-                <h2>Linkedin</h2>
-                <p>Descrição do card 3.</p>
-            </div>
-        </section>
-    </main>
-
-    <div class="espaco2-section">
-        <div class="cta">
-            <h1>Esportes Acessíveis</h1>
-    </div>
-
-                <main>
-                    <section class="grid-container">
-                        <div class="card">
-                            <img src="/img/patricia2.jpg" alt="Imagem 1">
-                            <h2>Insti. Patrícia Medrado</h2>
+        <!--Começo dos primeiros cards-->
+        <main>
+            <div class="container">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-image">
+                                <img src="/img/porto.jpg" alt="Porto de Galinhas">
+                            </div>
+                            <h3>Porto de Galinhas</h3>
                             <p>Descrição do card 1.</p>
+                            <button class="flip-button" onclick="flipCard(this)">Saiba Mais</button>
                         </div>
+                        <div class="card-back">
+                            <h3>Mais sobre Porto de Galinhas</h3>
+                            <p>Conhecida por suas piscinas naturais, Porto de Galinhas é um dos destinos mais populares
+                                de Pernambuco.</p>
+                            <button class="flip-button" onclick="flipCard(this)">Voltar</button>
+                        </div>
+                    </div>
+                </div>
 
-                        <div class="card">
-                            <img src="/img/reacao.jpg" alt="Imagem 2">
-                            <h2>Instituto Reação</h2>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-image">
+                                <img src="/img/janeiro.webp" alt="Rio de Janeiro">
+                            </div>
+                            <h3>Rio de <br>Janeiro</h3>
                             <p>Descrição do card 2.</p>
+                            <button class="flip-button" onclick="flipCard(this)">Saiba Mais</button>
                         </div>
+                        <div class="card-back">
+                            <h3>Mais sobre o Rio de Janeiro</h3>
+                            <p>O Rio de Janeiro é famoso por suas praias, montanhas e o Cristo Redentor.</p>
+                            <button class="flip-button" onclick="flipCard(this)">Voltar</button>
+                        </div>
+                    </div>
+                </div>
 
-                        <div class="card">
-                            <img src="/img/olimpico.PNG" alt="Imagem 3">
-                            <h2>Projeto Victorem Paralímpico</h2>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-image">
+                                <img src="/img/salvador.webp" alt="Salvador">
+                            </div>
+                            <h3>Salvador</h3>
                             <p>Descrição do card 3.</p>
+                            <button class="flip-button" onclick="flipCard(this)">Saiba Mais</button>
                         </div>
-                    </section>
+                        <div class="card-back">
+                            <h3>Mais sobre Salvador</h3>
+                            <p>Salvador é conhecida pelo seu centro histórico e pela cultura vibrante.</p>
+                            <button class="flip-button" onclick="flipCard(this)">Voltar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!--Final dos primeiros cards-->
+        <div class="espaco2-section">
+            <div class="cta">
+                <h1>Vagas de Emprego com Acessíbilidade</h1>
+            </div>
+
+            <main>
+                <div class="container">
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="card-image">
+                                    <img src="/img/linkedin.jpg" alt="Linkedin">
+                                </div>
+                                <h3>Linkedin</h3>
+                                <p>Descrição do card 1.</p>
+                                <button class="flip-button" onclick="flipCard(this)">Saiba Mais</button>
+                            </div>
+                            <div class="card-back">
+                                <h3>Mais sobre o Linkedin</h3>
+                                <p>Conhecida por suas piscinas naturais, Porto de Galinhas é um dos destinos mais
+                                    populares de Pernambuco.</p>
+                                <button class="flip-button" onclick="flipCard(this)">Voltar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="card-image">
+                                    <img src="/img/vagos.PNG" alt="Vagos">
+                                </div>
+                                <h3>Vagos</h3>
+                                <p>Descrição do card 2.</p>
+                                <button class="flip-button" onclick="flipCard(this)">Saiba Mais</button>
+                            </div>
+                            <div class="card-back">
+                                <h3>Mais sobre a Vagos</h3>
+                                <p>O Rio de Janeiro é famoso por suas praias, montanhas e o Cristo Redentor.</p>
+                                <button class="flip-button" onclick="flipCard(this)">Voltar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="card-image">
+                                    <img src="/img/Diversidade.PNG" alt="Diversidade">
+                                </div>
+                                <h3>Diversidade</h3>
+                                <p>Descrição do card 3.</p>
+                                <button class="flip-button" onclick="flipCard(this)">Saiba Mais</button>
+                            </div>
+                            <div class="card-back">
+                                <h3>Mais sobre Salvador</h3>
+                                <p>Salvador é conhecida pelo seu centro histórico e pela cultura vibrante.</p>
+                                <button class="flip-button" onclick="flipCard(this)">Voltar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <!--Final dos segundos cards-->
+            <div class="espaco2-section">
+                <div class="cta">
+                    <h1>Esportes Acessíveis</h1>
+                </div>
+                <main>
+                    <div class="container">
+                        <div class="card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <div class="card-image">
+                                        <img src="/img/Untitled Project (1).jpg" alt="Instituto Reação">
+                                    </div>
+                                    <h3>Instituto<br> Reação</h3>
+                                    <p>Descrição do card 1.</p>
+                                    <button class="flip-button" onclick="flipCard(this)">Saiba Mais</button>
+                                </div>
+                                <div class="card-back">
+                                    <h3>Mais sobre Porto de Galinhas</h3>
+                                    <p>Conhecida por suas piscinas naturais, Porto de Galinhas é um dos destinos mais
+                                        populares de Pernambuco.</p>
+                                    <button class="flip-button" onclick="flipCard(this)">Voltar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <div class="card-image">
+                                        <img src="/img/esporte.PNG" alt="esporte">
+                                    </div>
+                                    <h3>Instituto Patrícia Medrado</h3>
+                                    <p>Descrição do card 2.</p>
+                                    <button class="flip-button" onclick="flipCard(this)">Saiba Mais</button>
+                                </div>
+                                <div class="card-back">
+                                    <h3>Mais sobre o Rio de Janeiro</h3>
+                                    <p>O Rio de Janeiro é famoso por suas praias, montanhas e o Cristo Redentor.</p>
+                                    <button class="flip-button" onclick="flipCard(this)">Voltar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <div class="card-image">
+                                        <img src="/img/olimpico.PNG" alt="olimpico">
+                                    </div>
+                                    <h3>Projeto Victorem Paralímpico</h3>
+                                    <p>Descrição do card 3.</p>
+                                    <button class="flip-button" onclick="flipCard(this)">Saiba Mais</button>
+                                </div>
+                                <div class="card-back">
+                                    <h3>Mais sobre Salvador</h3>
+                                    <p>Salvador é conhecida pelo seu centro histórico e pela cultura vibrante.</p>
+                                    <button class="flip-button" onclick="flipCard(this)">Voltar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </main>
+                <!--Final dos terceiros cards-->
 
                 <footer>
                     <p>&copy; 2022 My Website. All rights reserved.</p>
                 </footer>
 </body>
+<script src="../js/mapa.js"></script>
 <script src="../js/nav.js"></script>
+
 </html>
