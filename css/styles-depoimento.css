@@ -34,13 +34,13 @@ body {
 
 .ong-info {
     display: flex;
-    background-image: url("../img/DALL·E\ 2024-10-29\ 15.38.03\ -\ A\ wallpaper\ featuring\ accessibility\ icons\ in\ lighter\ shades\ of\ green\,\ symbolizing\ inclusivity\ for\ people\ with\ disabilities\ \(PCDs\).\ The\ design\ includes.webp");
+    background-image: url("../img/pessoinhasjuntas.png");
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    padding: 20px;
-    background-color: #93e0aa;
-    margin: 20px;
+    padding: 200px;
+    background-color: #2d6931;
+    margin: 100px;
     border-radius: 5px;
     box-shadow: #5b8b63;
     width: 93%;
@@ -113,18 +113,18 @@ h2 {
     margin: 10px;
     padding: 10px;
     border-radius: 5px;
-    box-shadow: #317241;
-    background-color: #ffffff17;
+    box-shadow: #29703b;
+    background-color: #2d6931;
     text-align: center;
     width: 30%;
-    opacity: 0.2;
+    height: 500px;
 }
 
 .card:hover {
     transform: scale(1.05);
     transition: 0.3s;
     opacity: 1;
-    background-color: #317241 !important;
+    background-color: #0e8f2e !important;
 }
 
 .news-cards .card img {
