@@ -27,7 +27,7 @@ body {
 }
 
 .about h1 {
-    color: #317241;
+    color: #132A13;
     font-size: 40px;
     margin-bottom: 20px;
 }
@@ -39,7 +39,7 @@ body {
     align-items: center;
     flex-wrap: wrap;
     padding: 200px;
-    background-color: #2d6931;
+    background-color:#49803b;
     margin: 100px;
     border-radius: 5px;
     box-shadow: #5b8b63;
@@ -62,7 +62,7 @@ div.scroll-container {
 /* Estilos para os títulos */
 h2 {
     padding: 20px;
-    color:#317241;
+    color:#4f772D;
     text-align: center;
 }
 
@@ -76,10 +76,10 @@ h2 {
 }
 
 .image {
-    margin: 10px;
-    padding: 10px;
+    margin: 100px;
+    padding: 100px;
     border-radius: 5px;
-    box-shadow: 0 0 5px #317241;
+    box-shadow: 0 0 5px#1f0603;
     background-color: #fff;
 
     text-align: center;
@@ -90,7 +90,7 @@ h2 {
     width: 100%;
     height: 150px;
     object-fit: contain;
-    border-radius: 5px;
+    border-radius: 50px;
 }
 
 .image p {
@@ -113,8 +113,8 @@ h2 {
     margin: 10px;
     padding: 10px;
     border-radius: 5px;
-    box-shadow: #29703b;
-    background-color: #2d6931;
+    box-shadow:#90A955;
+    background-color:#4f772D;
     text-align: center;
     width: 30%;
     height: 500px;
@@ -124,7 +124,7 @@ h2 {
     transform: scale(1.05);
     transition: 0.3s;
     opacity: 1;
-    background-color: #0e8f2e !important;
+    background-color: #90A955 !important;
 }
 
 .news-cards .card img {
