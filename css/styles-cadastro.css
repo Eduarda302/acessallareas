@@ -1,6 +1,7 @@
 body {
     margin: 0;
     /*Remove a margem padrão do corpo da página*/
+    
 }
 
 .main-cadastro {
@@ -24,7 +25,6 @@ body {
     /*para ocupar so 50% da tela*/
     height: 100vh;
     /*altura*/
-    display: flex;
     display: flex;
     justify-content: center;
     /*centraliza os itens horizontamente*/
@@ -132,7 +132,7 @@ body {
     margin: 25px;
     border: none;
     /*Remove a borda*/
-    border-radius: 8px;
+    border-radius: 8p   x;
     outline: none;
     text-transform: uppercase;
     /*trasforma o texto do botão em maiusculo*/

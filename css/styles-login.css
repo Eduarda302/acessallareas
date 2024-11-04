@@ -2,7 +2,7 @@
 body {
     margin: 0;
     /*Remove a margem padrão do corpo da página*/
-   
+    
 }
 
 .main-login {
@@ -27,7 +27,6 @@ body {
     height: 100vh;
     /*altura*/
     display: flex;
-    display: flex;
     justify-content: center;
     /*centraliza os itens horizontamente*/
     align-items: center;
@@ -42,6 +41,8 @@ body {
     color:#93e0aa;
     width: 100%;
     margin-top: 0;
+}
+    
 
 .left-login-image {
     width: 50vw;
@@ -148,6 +149,25 @@ body {
     cursor: pointer;
     /*indica que o botão é clicavel*/
     box-shadow: 0px 10px 40px -12pcd #00ff8052;
+}
+
+.btn-voltar{
+    border: none;
+    /*Remove a borda*/
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    /*trasforma o texto do botão em maiusculo*/
+    font-weight: 800;
+    /*negrito do texto do botão*/
+    letter-spacing: 2px;
+    /*espaço entre a letra do botão*/
+    color: #2b134b;
+    background: #93e0aa;
+    cursor: pointer;
+    /*indica que o botão é clicavel*/
+    box-shadow: 0px 10px 40px -12pcd #00ff8052;
+   
 }
 
 /*adicionando resposividade*/
