@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
 }
 
 body {
@@ -57,7 +59,7 @@ body {
     /*distribuir o espaço entre o logo, o menu e o botão.*/
     align-items: center;
     padding: 20px;
-    background-color: #317241;
+    background-color: #13572C;
 }
 
 .logo h1 {
@@ -229,13 +231,13 @@ p {
 }
 
 .cta2 {
-    background-color: #5b8b63;
+    background-color: #13572C;
     padding: 70px 50px;
     width: 100%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     align-items: center;
-    background: url(../img/) no-repeat bottom center scroll;
-    
+
+
 }
 
 .cta2 p {
@@ -272,16 +274,23 @@ p {
     margin: 0px;
     padding: 40px;
 }
+.about p{
+    margin-top:3%;
+    font-size: larger;
+}
 
 .about h1 {
-    color: #28c1f0;
+    color: #ff0000;
     font-size: 40px;
     margin-bottom: 20px;
+    text-align: justify;
+    position: absolute;
+    left: 68%;
+    margin-bottom: 15%;
 }
 
 .ong-info {
     display: flex;
-
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
@@ -310,7 +319,7 @@ p {
     margin: 30px;
     align-items: center;
     justify-items: center;
-    margin-right: 6%;
+    margin-right: 8%;
     margin-bottom: 10%;
 }
 
