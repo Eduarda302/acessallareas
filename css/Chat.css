@@ -407,7 +407,8 @@ nav ul li a {
   margin-top: 10px;
   background-color: #26c0a6;
   color: #fff;
-  border: none;
+  border-radius: 5px 0 0 3px; 
+  border: 1px solid #ddd;
   cursor: pointer;
 }
 
