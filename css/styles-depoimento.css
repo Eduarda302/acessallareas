@@ -1,0 +1,185 @@
+/* Estilos para o corpo da página */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #ffffffab;
+}
+
+
+/* Estilos para a seção "Sobre" com texto e imagem */
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 5px auto;
+    padding: 20px;
+
+
+}
+
+.about h1 {
+    color: #317241;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.ong-info {
+    display: flex;
+    background-image: url("../img/pessoinhasjuntas.png");
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 200px;
+    background-color: #2d6931;
+    margin: 100px;
+    border-radius: 5px;
+    box-shadow: #5b8b63;
+    width: 93%;
+}
+
+div.scroll-container {
+    
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 12;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+
+/* Estilos para os títulos */
+h2 {
+    padding: 20px;
+    color:#317241;
+    text-align: center;
+}
+
+/* Estilos para a galeria de imagens */
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.image {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #317241;
+    background-color: #fff;
+
+    text-align: center;
+    width: 30%;
+}
+
+.image img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.image p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ffffff17;
+}
+
+/* Estilos para os cards de notícias */
+.news-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-bottom: 100px;
+}
+
+.news-cards .card {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: #29703b;
+    background-color: #2d6931;
+    text-align: center;
+    width: 30%;
+    height: 500px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+    opacity: 1;
+    background-color: #0e8f2e !important;
+}
+
+.news-cards .card img {
+    width: 80%;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.news-cards .card .card-content h3 {
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.news-cards .card .card-content p {
+    font-size: 16px;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+/* Estilos para o rodapé */
+/*Footer*/
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1f6e1f;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    margin: 0 10px;
+    color: #666666;
+    text-decoration: none;
+}
+
+footer p {
+    font-size: 0.9em;
+    color: #666666;
+    margin: 0;
+}

@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+}
+
+.main-cadastro {
+    width: 100vw;
+    height: 100vh;
+    background: #2e3c41;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-cadastro {
+    width: 50vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-cadastro h1 {
+    font-size: 3vw;
+    color: #93e0aa;
+    text-align: center;
+}
+
+.left-cadastro-image {
+    width: 50vw;
+}
+
+.right-cadastro {
+    width: 50vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-cadastro {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-cadastro h1 {
+    color: #93e0aa;
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.textfield input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield label {
+    color: #f0ffffde;
+    margin-bottom: 10px;
+}
+
+.textfield input::placeholder {
+    color: #f0ffffde;
+}
+
+.btn-cadastro {
+    width: 100%;
+    padding: 16px 0;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #2b134b;
+    background: #93e0aa;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12pcd #00ff8052;
+}
+
+/* Responsividade para dispositivos menores */
+
+@media (max-width: 768px) {
+    .main-cadastro {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .left-cadastro {
+        width: 80%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .left-cadastro h1 {
+        font-size: 24px;
+    }
+
+    .left-cadastro-image {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .right-cadastro {
+        width: 80%;
+        height: auto;
+    }
+
+    .card-cadastro {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .left-cadastro {
+        height: auto;
+    }
+
+    .left-cadastro h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .left-cadastro-image {
+        display: none;
+    }
+
+    .card-cadastro {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .btn-cadastro {
+        font-size: 14px;
+        padding: 12px 0;
+    }
+}
