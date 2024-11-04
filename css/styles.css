@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -403,24 +402,8 @@ p {
 .contact-form h2 {
     font-size: 28px;
     color: #111;
-  }
-  
-  .contact-form p {
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
-  
-  .contact-form .form-row {
-    display: flex;
-    gap: 20px;
-    max-width: 500px;
-    margin: 0px;
-    padding: 40px;
-    background-color: #ffffff;
-    border-radius: 40px;
-    margin-left: 290px;
-    margin-top: 100px;
     margin-bottom: 10px;
+
 }
 
 .contact-form p {
@@ -456,19 +439,8 @@ p {
     border-radius: 20px;
     cursor: pointer;
     font-size: 16px;
-  }
-  
-  .contact-form button:hover {
-    background-color: #e68a00;
-  }
-  
-  .contact-image img {
-    width: 49%;
-    max-width: 70%;
-    height: auto;
-    margin-left: 35%;
-  }
 }
+
 .contact-form button:hover {
     background-color: #e68a00;
 }
@@ -524,46 +496,4 @@ footer p {
     font-size: 0.9em;
     color: #666666;
     margin: 0;
-
-*{
-    padding: 0;
-    box-sizing: border-box;
-}
-.main{
-    display: flex;;
-    align-items: center;
-    justify-content: center;
-}
-
-.container {
-    width: 20%;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #661010;
-    border-radius: 5px;
-    background-color: #fff;
-    box-shadow: 0 0 10px #fff ;
-}
-
-h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-p{
-    font-size: 16px;
-}
-input [type="text"]{
-    width: 80%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-button:hover{
-    background-color: rgb(130, 130, 247);
-}
-#address-info{
-    margin-top: 20px;
-    text-align: left;
 }
