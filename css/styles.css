@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: large;
+    font-size: medium;
 }
 
 body {
@@ -162,20 +162,21 @@ nav ul li a {
     flex-wrap: wrap;
     max-width: 2300px;
     margin: 20px auto;
-    margin-top: 1.5%;
-    margin-bottom: 1.5%;
-    gap: 19px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    gap: 1px;
     /* Espaçamento entre os blocos */
 }
 
 .service-box {
     background-color: white;
     flex: 1;
-    min-width: 250px;
+    min-width: 200px;
     padding: 20px;
     text-align: center;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    margin: 30px;
 }
 
 .service-box:hover {
@@ -235,6 +236,8 @@ p {
     padding: 70px 50px;
     width: 100%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
     align-items: center;
 
 
@@ -243,9 +246,11 @@ p {
 .cta2 p {
     color: #ffff;
     font-size: 18px;
-    margin-bottom: 5%;
+    font-weight: bold;
     margin-bottom: 50px;
-    margin-left: 35%;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .cta-button2 {
@@ -256,12 +261,14 @@ p {
     border-radius: 5px;
     font-weight: bold;
     transition: background-color 0.3s ease;
-    margin-left: 45%;
+    display: inline-block;
+    
 }
 
 .cta-button2:hover {
     background-color: #2e3c41;
 }
+
 
 
 /* Estilos para a seção "Sobre" com texto e imagem */
@@ -270,23 +277,25 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    margin: 0px;
+    margin: 15px;
+    width: 90%;
     padding: 40px;
+    margin-right: 60%;
+    margin-left: 4%;
 }
+
 .about p{
     margin-top:3%;
-    font-size: larger;
+    font-size: large;
 }
 
 .about h1 {
-    color: #ff0000;
-    font-size: 40px;
-    margin-bottom: 20px;
+    color: #000000;
+    font-size: 30px;
+    margin-bottom: 13%;
     text-align: justify;
     position: absolute;
-    left: 68%;
-    margin-bottom: 15%;
+    left: 62%;
 }
 
 .ong-info {
@@ -303,7 +312,7 @@ p {
 }
 
 .ong-info img {
-    width: 30%;
+    width: 25%;
     height: auto;
     border-radius: 5px;
     margin: 0px;
@@ -313,21 +322,21 @@ p {
 
 /* Título da Seção */
 .service-section h1 {
-    color: #1c1c6c;
-    font-size: 1.8em;
+    color: #000000;
+    font-size: 32px;
     text-align: center;
-    margin: 2%;
+    margin: 40px;
 }
 
 /* Contêiner Principal dos Cartões */
 .service-cards {
-    display: flex;
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     width: 100%;
-    max-width: 1200px;
-    margin-left: 2%;
-    margin-bottom: 20px;
+    max-width: 1500px;
+    margin-bottom: 50px;
+    margin-left: 195px;
 }
 
 /* Estilo do Cartão */
@@ -335,14 +344,12 @@ p {
     background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0.1, 0.1, 0.1, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-right: 15%;
-    margin-left: 3%;
 }
 
 /* Estilo do Ícone */
@@ -369,6 +376,79 @@ p {
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Sessão sobre o porque criamos esse site*/
+
+.history-section {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    background-color: #eaf5ea;
+}
+
+.history-content {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Estilo da área de texto da história */
+.history-text {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.history-text h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+.history-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+
+/* Estilo da linha do tempo */
+.timeline {
+    flex: 1;
+    border-left: 2px solid #ccc;
+    padding-left: 40px;
+    position: relative;
+}
+
+.timeline-item {
+    margin-bottom: 40px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.timeline-date {
+    font-size: 14px;
+    background-color: #fff;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    left: -30px;
+}
+
+.timeline-item h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+.timeline-item p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
 }
 
 
