@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: large;
+  font-size: medium;
 }
 
 /* estilização do site */
@@ -49,19 +49,8 @@ nav ul li a {
 nav ul li a:hover {
   color: #023807;
 }
+ 
 
-
-
-/*Footer*/
-footer {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: rgb(174, 240, 188);
-  padding: 20px 0;
-  text-align: center;
-
-}
 
 main {
   flex: 1;
@@ -77,10 +66,12 @@ main {
   margin: 0px;
 }
 
+
 .card {
   width: 300px;
   height: 350px;
   perspective: 1000px;
+
   
 }
 
@@ -90,6 +81,7 @@ main {
   transition: transform 0.8s;
   transform-style: preserve-3d;
   position: relative;
+  
 }
 
 .card.flipped .card-inner {
@@ -161,4 +153,15 @@ main {
 .espaco2-section h1{
   color: rgb(0, 0, 0);
   font-size: larger;
+}
+
+/*Footer*/
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(174, 240, 188);
+  padding: 20px 0;
+  text-align: center;
+
 }
