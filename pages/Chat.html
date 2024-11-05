@@ -1,144 +1,97 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" type="image/x-icon" href="../img/logo (2).png" />
-  <script src="../js/script.js"></script>
-  <link rel="stylesheet" href="../css/Chat.css">
-  <link rel="stylesheet" href="../css/responsivo.css">
-  <link rel="stylesheet" href="../css/button.css">
-  <link rel="stylesheet" href="../css/menu.css">
-  <title>Acesse All Areas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/logo (2).png" />
+    <link rel="stylesheet" href="../css/Chat.css">
+    <link rel="stylesheet" href="../css/responsivo.css">
+    <link rel="stylesheet" href="../css/button.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <script src="../js/script.js"></script>
+    <title>Acesse todas as áreas</title>
 </head>
-
 <body id="bodyon">
-  <!--Menu-->
-  <header>
-    <div class="navbar"> <!--Contém a barra de navegação.-->
-      <div class="logo">
-
-        <h1>AcesseAllAreas</h1> <!--logotipo e o título (o nome "WordStream").-->
-      </div>
-     <!-- Nav compartilhada -->
-     <nav>
-      <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../index.html">Sobre</a></li>
-          <li><a href="Mapa.html">Mapa</a></li>
-          <li><a href="Depoimentos.html">Depoimentos</a></li>
-          <li><a href="Chat.html">Chat</a></li>
-          <li><a href="Login.html">Login</a></li>
-      </ul>
-  </nav>
-
-      <!-- Adicionando o campo de pesquisa -->
-      <form class="search-bar" action="#" method="get">
-        <!--<form> define um formulário em HTML-->
-        <!--action="#" define para onde os dados do 
-                formulário serão enviados quando o botão for clicado-->
-        <input type="text" placeholder="Search..." name="search">
-        <!--placeholder="Search..." define o texto que aparecerá 
-            no campo de pesquisa antes de o usuário digitar algo-->
-        <button type="submit">Login</button>
-      </form>
-
-      
-
-
-  </header>
-
-
-  <!--fim do menu -->
-
-  <!--"menu lateral"-->
-  <div class="container">
-    <div class="side-bar">
-      <div class="side-bar-brand">
-        <div class="button">
+    <!-- Menu -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h1>AcessarTodasAsÁreas</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="../index.html">Sobre</a></li>
+                    <li><a href="Mapa.html">Mapa</a></li>
+                    <li><a href="Depoimentos.html">Depoimentos</a></li>
+                    <li><a href="Chat.html">Bate-papo</a></li>
+                    <li><a href="Login.html">Login</a></li>
+                </ul>
+            </nav>
+            <form class="search-bar" action="#" method="get">
+                <input type="text" placeholder="Pesquisar..." name="search">
+                <button type="submit">Login</button>
+            </form>
         </div>
-      </div>
-      <div class="list-item">
-        <ul>
-          <li><a href=""><img src="../img/informações.png">
-              <p class="text">informações de Profissionais:</p>
-            </a></li>
-          <li><a href="">
-              <p class="text">Profissionais de psicologia para o exercício da profissão, com cadastro específico para o
-                atendimento por conversas online.
-                Todos os seus atendimentos passam por um processo seguro de verificação e credenciamento, além de
-                aderirem a rigorosos códigos de ética e sigilo.
-                Aqui você tem acesso a profissionais qualificados, independente da distância. <br>Aproveite o seu
-                horário, pois agora é hora de cuidar de você!<br>
-              </p>
-            </a></li>
+    </header>
 
-        </ul>
-      </div>
-
-      <div class="footer-lateral">
-        <p>Acesse All Areas</p>
-        <a href="../img/email.png">Contato</a> | <a href="/termos">Termos de Serviço</a>
-      </div>
-    </div>
-
-
-
-
-    <!--chat-->
-    <div class="chat-container">
-      <div class="chat">
-        <div class="message">
-          <div class="user">Profissional</div>
-          <div class="text">Olá, como posso ajudar?</div>
-          <div class="time"></div>
+    <!-- Menu Lateral -->
+    <div class="container">
+        <div class="side-bar">
+            <div class="side-bar-brand">
+                <div class="button"></div>
+            </div>
+            <div class="list-item">
+                <ul>
+                    <li><a href="#"><img src="../img/informacoes.png"> <p class="text">Informações de Profissionais:</p></a></li>
+                    <li><a href="#"><p class="text">Profissionais de psicologia para o exercício da profissão...</p></a></li>
+                </ul>
+            </div>
+            <div class="footer-lateral">
+                <p>Acessar todas as áreas</p>
+                <a href="../img/email.png">Contato</a> | <a href="/termos">Termos de Serviço</a>
+            </div>
         </div>
-        <!-- Mais mensagens viriam aqui -->
-      </div>
-      <div class="send">
-        <input type="text" id="messageInput" placeholder="Digite sua mensagem">
-        <button id="sendMessage">Enviar</button>
-      </div>
+
+        <!-- Chat -->
+        <div class="chat-container">
+            <div class="chat">
+                <div class="message">
+                    <div class="user">Profissional</div>
+                    <div class="text">Olá, como posso ajudar?</div>
+                    <div class="time"></div>
+                </div>
+                <!-- Botões de respostas rápidas abaixo da mensagem -->
+                <div class="quick-replies">
+                    <button onclick="addQuickReply('Gostaria de agendar uma consulta')">Gostaria de agendar uma consulta</button>
+                    <button onclick="addQuickReply('Estou com dúvidas sobre...')">Estou com dúvidas sobre...</button>
+                    <button onclick="addQuickReply('Preciso de ajuda com...')">Preciso de ajuda com...</button>
+                </div>
+            </div>
+
+            <!-- Caixa de envio de mensagem -->
+            <div class="send">
+                <input type="text" id="messageInput" placeholder="Digite sua mensagem">
+                <button id="sendMessage">Enviar</button>
+            </div>
+
+            <!-- Libras -->
+            <div vw class="enabled">
+                <div vw-access-button class="active"></div>
+                <div vw-plugin-wrapper>
+                    <div class="vw-plugin-top-wrapper"></div>
+                </div>
+            </div>
+        </div>
     </div>
 
-
-
-    <!--Botão do auto contraste-->
-
-
-    <button onclick="autocontrastehome()" id="btnTop" title="Auto-Contraste"><span class="material-symbols-outlined">
-      </span><img src="../img/lampada.png" width="40px" height="90px">
-      <p>Auto Contraste</p>
-    </button>
-
-    <div vw class="enabled">
-      <div vw-access-button class="active"></div>
-      <div vw-plugin-wrapper>
-        <div class="vw-plugin-top-wrapper"></div>
-      </div>
-    </div>
-
-    <!--libras-->
-    <div class="libras-container">
-
-      <div class="side-bar-libras">
-
-
-
-      </div>
-    </div>
-  </div>
-
-  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-  <script>
-    new window.VLibras.Widget('https://vlibras.gov.br/app');
-  </script>
-
-
+    <!-- Scripts -->
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <script src="../js/auto-contraste.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/chat.js"></script>
 </body>
-<script src="../js/auto-contraste.js"></script>
-<script src="../js/main.js"></script>
-<script src="../js/chat.js"></script>
-
 </html>
