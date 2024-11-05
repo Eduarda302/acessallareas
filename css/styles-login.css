@@ -35,6 +35,20 @@ body {
     /* para a imagem ficar na parte de baixo*/
 }
 
+.back-button {
+    position: absolute;
+    top: 20px; /* Ajuste conforme necessário */
+    left: 20px; /* Ajuste conforme necessário */
+    font-size: 24px;
+    color: #93e0aa;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    color: #7abf8a; /* Cor ao passar o mouse */
+}
+
 .left-login h1 {
     /*titulo*/
     font-size: 3vw;
@@ -150,25 +164,25 @@ body {
     /*indica que o botão é clicavel*/
     box-shadow: 0px 10px 40px -12pcd #00ff8052;
 }
-
-.btn-voltar{
-    border: none;
-    /*Remove a borda*/
-    border-radius: 8px;
-    outline: none;
-    text-transform: uppercase;
-    /*trasforma o texto do botão em maiusculo*/
-    font-weight: 800;
-    /*negrito do texto do botão*/
-    letter-spacing: 2px;
-    /*espaço entre a letra do botão*/
-    color: #2b134b;
-    background: #93e0aa;
-    cursor: pointer;
-    /*indica que o botão é clicavel*/
-    box-shadow: 0px 10px 40px -12pcd #00ff8052;
-   
+ /* Estiliza o parágrafo que contém a mensagem de registro */
+.signup-link {
+    text-align: center; /* Centraliza o texto */
+    margin-top: 10px; /* Adiciona um espaçamento de 10px acima do elemento */
+    color: #f0ffffde; /* Define a cor do texto como vermelho */
 }
+
+/* Estiliza o link "Clique aqui" dentro do parágrafo */
+.signup-link a {
+    color: #93e0aa; /* Define a cor do link como vermelho */
+    text-decoration: none; /* Remove a sublinha padrão do link */
+}
+
+/* Adiciona um efeito ao passar o mouse sobre o link */
+.signup-link a:hover {
+    text-decoration: underline; /* Adiciona um sublinhado ao passar o cursor sobre o link */
+}
+
+
 
 /*adicionando resposividade*/
 @media (max-width: 480px) {

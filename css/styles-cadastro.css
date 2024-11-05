@@ -132,7 +132,7 @@ body {
     margin: 25px;
     border: none;
     /*Remove a borda*/
-    border-radius: 8p   x;
+    border-radius: 8px;
     outline: none;
     text-transform: uppercase;
     /*trasforma o texto do botão em maiusculo*/
@@ -145,7 +145,14 @@ body {
     cursor: pointer;
     /*indica que o botão é clicavel*/
     box-shadow: 0px 10px 40px -12pcd #00ff8052;
-
+}
+.back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    color: #93e0aa;
+    text-decoration: none;
 }
 
 @media (max-width: 480px){
