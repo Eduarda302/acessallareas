@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Acesse All Areas</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/nav.css">
 </head>
@@ -18,11 +17,12 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="pages/index.html">Home</a></li>
-                    <li><a href="pages/index.html">Sobre</a></li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./index.html">Sobre</a></li>
                     <li><a href="pages/Mapa.html">Mapa</a></li>
                     <li><a href="pages/Depoimentos.html">Depoimentos</a></li>
                     <li><a href="pages/Chat.html">Chat</a></li>
+                    <li><a href="pages/Login.html">Login</a></li>
                 </ul>
             </nav>
 
@@ -36,6 +36,7 @@
                 no campo de pesquisa antes de o usuário digitar algo-->
                 <button type="submit">Login</button>
             </form>
+
         </div>
 
         <div class="header-content">
@@ -223,7 +224,22 @@
             </div>
             <p>&copy; 2024 Cotia</p>
         </footer>
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div calss="main">
+        <div clas="container" >
+            <h1>consulta de CEP</h1>
+            <p>Digite um CEP válido:</p>
+            <input type="text" id=" cep-input" placeholder="EX: 12345-678">
+            <button id="search-button">buscar</button>
+            <div id="address-info"></div>
+        </div>
+    </div>
+    <script src= "js/script.js"></script>
 </body>
-
 </html>

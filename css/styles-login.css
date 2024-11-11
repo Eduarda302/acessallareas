@@ -1,6 +1,8 @@
+
 body {
     margin: 0;
     /*Remove a margem padrão do corpo da página*/
+   
 }
 
 .main-login {
@@ -8,7 +10,7 @@ body {
     /* vw é a porcentagem da largura da tela*/
     height: 100vh;
     /*vh altura do viewport (tela)*/
-    background: #201b2c;
+    background: #2e3c41;
     /*cor da div (do fundo)*/
     display: flex;
     /* para que as coisa fique lado a lado*/
@@ -34,12 +36,13 @@ body {
     /* para a imagem ficar na parte de baixo*/
 }
 
-.left-login>h1 {
+.left-login h1 {
     /*titulo*/
     font-size: 3vw;
-    color: #77ffc0;
+    color:#93e0aa;
+    width: 100%;
+    margin-top: 0;
 }
-
 .left-login-image {
     width: 50vw;
     /*tamanho da fonte*/
@@ -78,7 +81,7 @@ body {
 }
 
 .card-login>h1 {
-    color: #00ff88;
+    color: #93e0aa;
     /* cor do titulo*/
     font-weight: 800;
     /*texto em negrito*/
@@ -141,9 +144,35 @@ body {
     letter-spacing: 2px;
     /*espaço entre a letra do botão*/
     color: #2b134b;
-    background: #00ff88;
+    background: #93e0aa;
     cursor: pointer;
     /*indica que o botão é clicavel*/
     box-shadow: 0px 10px 40px -12pcd #00ff8052;
+}
 
+/*adicionando resposividade*/
+@media (max-width: 480px) {
+
+    .main-login{
+       flex-direction: column;
+    }
+    .left-login{
+        height: 30vw;
+    }
+
+    .left-login h1 {
+        /*titulo*/
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .left-login-image {
+        display: none;
+        /*tamanho da fonte*/
+    }
+    .card-login{
+        height: 70%;
+        
+    }
+    
 }

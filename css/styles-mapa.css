@@ -3,22 +3,19 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    
 }
 
 /* estilização do site */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: rgb(174, 240, 188);
-    background: radial-gradient(circle, rgba(177, 238, 174, 1) 41%, rgb(173, 233, 151) 100%);
+body {
+    background-color: #eeead9;
 }
+
 
 .cta{
     text-align: center;
-    margin: 5%;
-   
+    margin: 2%;
+
 }
 
 .logo img {
@@ -41,41 +38,16 @@ nav ul li {
 /* cor e tamanho da fonte da nav */
 nav ul li a {
     text-decoration: none;
-    color: #1a4d29;
+    color: #ffffff;
     font-weight: bold;
     text-align: center;
+    
+
 }
 
 /* cor da fonte quando aperta em cima */
 nav ul li a:hover {
-    color: #000000;
-}
-
-.auth-buttons {
-    display: flex;
-}
-
-.auth-buttons a {
-    text-decoration: none;
-    margin-left: 15px;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.login {
-    color: #000000;
-    font-size: large;
-}
-
-.demo {
-    background-color: #f3f4f6;
-    color: #333;
-}
-
-.signup {
-    background-color: #1a4d29;
-    color: white;
+    color: #023807;
 }
 
 /*Footer*/
@@ -107,7 +79,7 @@ main {
 }
 
 .card {
-    background-color: #fff;
+    background-color: #317241;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -116,6 +88,7 @@ main {
     align-items: center;
     padding: 20px;
     text-align: center;
+    margin: 0%;
     
 }
 
@@ -130,9 +103,20 @@ main {
 .card h2 {
     font-size: 1.5em;
     margin-bottom: 10px;
+    color: #ffffff;
+    
 }
 
 .card p {
     font-size: 1em;
-    color: #666;
+    color: #aefcbb;
 }
+
+.espaco2-section {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
