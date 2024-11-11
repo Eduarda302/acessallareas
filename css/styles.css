@@ -98,7 +98,6 @@ nav ul li a {
 }
 
 
-
 /* Estilo da seção principal */
 .header-content {
     background: linear-gradient(to right, #145825, #5ad884);
@@ -206,6 +205,7 @@ h3 {
 
 p {
     font-size: 1rem;
+    text-align: start;
 }
 
 /* Responsividade para tablets */
@@ -248,9 +248,10 @@ p {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 50px;
-    text-align: center;
+    text-align: start;
     margin-left: 15%;
     margin-right: 15%;
+    width: 100%;
 }
 
 .cta-button2 {
@@ -266,10 +267,8 @@ p {
 }
 
 .cta-button2:hover {
-    background-color: #2e3c41;
+    background-color: #212a2e;
 }
-
-
 
 /* Estilos para a seção "Sobre" com texto e imagem */
 .about {
@@ -318,7 +317,7 @@ p {
     margin: 0px;
 }
 
-/*Sessão sobre nós*/
+/*Sessão 'sobre nós'*/
 
 /* Título da Seção */
 .service-section h1 {
@@ -567,3 +566,4 @@ footer p {
     color: #666666;
     margin: 0;
 }
+
