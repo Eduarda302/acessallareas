@@ -95,7 +95,8 @@ nav ul li a {
 
 /* Estilo da seção principal */
 .header-content {
-    background: linear-gradient(to right, #145825, #5ad884);
+    background: rgb(238,234,217);
+    background: linear-gradient(0deg, rgba(238,234,217,1) 0%, rgba(19,87,44,1) 100%);
     color: white;
     padding: 100px 20px;
     text-align: center;
