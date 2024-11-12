@@ -1,8 +1,13 @@
-body {
+
+body, html {
     margin: 0;
-    /*Remove a margem padrão do corpo da página*/
-    
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden; /* Remove a barra de rolagem */
+    box-sizing: border-box;
 }
+
 
 .main-cadastro {
     width: 100vw;
@@ -34,14 +39,18 @@ body {
     /* para a imagem ficar na parte de baixo*/
 }
 
-.left-cadastro>h1 {
-    /*titulo*/
+.left-cadastro h1 {
     font-size: 3vw;
+    width: 100%;
+    margin-top: 100px; /* Adiciona mais espaçamento para descer */
+    text-align: center; /* Centraliza o texto */
     color: #93e0aa;
 }
 
 .left-cadastro-image {
-    width: 50vw;
+   
+    width: 60vh; /* Define a largura da imagem */
+    height: auto;
     /*tamanho da fonte*/
 
 
@@ -51,7 +60,7 @@ body {
     width: 50vh;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     /*Centraliza os itens horizontalmente*/
     align-items: center;
     /*Centraliza os itens verticalmente*/
@@ -148,11 +157,13 @@ body {
 }
 .back-button {
     position: absolute;
-    top: 10px;
-    left: 10px;
+    left: 52%; /* Ajuste para posicionar ao lado da área de login */
+    transform: translateX(-150%); /* Mova para a esquerda */
+    top: 25%; /* Alinhe verticalmente um pouco mais para cima */
     font-size: 24px;
     color: #93e0aa;
     text-decoration: none;
+    cursor: pointer;
 }
 
 @media (max-width: 480px){
