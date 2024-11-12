@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular';
     font-size: medium;
 }
 
@@ -116,40 +116,68 @@ nav ul li a {
     max-width: 600px;
     /*largura do texto a 600px, para que não se espalhe muito pela tela.*/
     /*Centraliza o conteúdo dentro do seu container.*/
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
 }
 
 /* Inicio da página Home*/
 
-.hero {
+.banner-container {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    padding: 10px;
-    background-color: #ffffff;
-    margin-top: 10px;
+    justify-content: space-between;
+    padding: 80px;
+    background-color: #ffffff; /* Fundo branco */
+    max-width: 1900px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.hero-content {
-    max-width: 600px;
+
+
+.text-content {
+    max-width: 700px;
 }
 
-.hero-content h1 {
-    font-size: 48px;
-    color: #333;
+.text-content h1 {
+    font-size: 2.5em;
+    margin: 0 0 20px;
+    color: #333; /* Cor do texto principal */
+    margin-left: 30px;
 }
 
-.hero-content p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #535353;
+.text-content .highlight {
+    color: #009688; /* Cor verde para destacar "Juntos por um mundo melhor" */
+    font-size: 20px;
+    margin-left: 30px;
 }
 
-.hero-image img {
-    max-width: 600px;
-    border-radius: 0px;
-    background-color: #ffffff;
+.text-content p {
+    margin: 0 0 20px;
+    font-size: 1.1em;
+    color: #555; /* Cor mais clara para o texto */
+    margin-left: 30px;
+}
+
+.text-content button {
+    background-color: #009688;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-left: 30px;
+}
+
+.text-content button:hover {
+    background-color: #00796b;
+}
+
+.image-content img {
+    max-width: 350px;
+    height: auto;
+    border-radius: 8px;
+    margin-left: 20px; /* Espaçamento entre texto e imagem */
+    margin-right: 90px;
 }
 
 
@@ -579,7 +607,7 @@ p {
     margin-top: 100px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 480px) {}
 
 /*Imagem footer*/
 img {
