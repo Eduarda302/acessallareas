@@ -18,33 +18,32 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    text-align: left;
     width: 100%;
-    margin: 5px auto;
-    padding: 20px;
-
-
-}
-
-.about h1 {
-    color: #132A13;
-    font-size: 40px;
-    margin-bottom: 20px;
 }
 
 .ong-info {
     display: flex;
-    background-image: url("../img/pessoinhasjuntas.png");
     justify-content: space-around;
-    align-items: center;
+    text-align: left;
     flex-wrap: wrap;
-    padding: 200px;
+    padding: 270px;
     background-color:#49803b;
-    margin: 100px;
-    border-radius: 5px;
+    border-radius: 1px;
     box-shadow: #5b8b63;
-    width: 93%;
+    width: 100%;
+    
+
 }
+
+.about h4 {
+    color: #2e702e;
+    padding: 4px;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+
 
 div.scroll-container {
     
@@ -61,9 +60,11 @@ div.scroll-container {
 
 /* Estilos para os títulos */
 h2 {
-    padding: 20px;
+    padding: 4px;
     color:#4f772D;
     text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
 }
 
 /* Estilos para a galeria de imagens */
@@ -105,26 +106,31 @@ h2 {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 20px;
-    margin-bottom: 100px;
+   
 }
 
 .news-cards .card {
     margin: 10px;
     padding: 10px;
     border-radius: 5px;
-    box-shadow:#90A955;
-    background-color:#4f772D;
     text-align: center;
+    background-color: #999999;
     width: 30%;
     height: 500px;
+}
+
+.bom{
+    background-color:#2e702e !important;
+}
+
+.ruim{
+    background-color: #90A955 !important;
 }
 
 .card:hover {
     transform: scale(1.05);
     transition: 0.3s;
     opacity: 1;
-    background-color: #90A955 !important;
 }
 
 .news-cards .card img {
