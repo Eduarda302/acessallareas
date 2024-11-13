@@ -44,7 +44,7 @@ body, html {
     width: 100%;
     margin-top: 100px; /* Adiciona mais espaçamento para descer */
     text-align: center; /* Centraliza o texto */
-    color: #93e0aa;
+    color: #ffffff;
 }
 
 .left-cadastro-image {
@@ -77,17 +77,19 @@ body, html {
     flex-direction: column;
     /*alinha os itens em uma coluna*/
     padding: 30px 35px;
-    background: #2f2841;
+    background: #009688;
     /*cor do fundo*/
     border-radius: 20px;
     /*borda redonda*/
     box-shadow: 0px 10px 40px #00000056;
     /*sombra*/
+    margin-left: auto; /* Empurra o card para a direita */
+    
 
 }
 
-.card-cadastro>h1 {
-    color: #93e0aa;
+.card-cadastro h1 {
+    color: #ffffff;
     /* cor do titulo*/
     font-weight: 800;
     /*texto em negrito*/
@@ -108,14 +110,14 @@ body, html {
     /*define a marge de cima e abaixo do campo de texto*/
 }
 
-.textfield>input {
+.textfield input {
     width: 100%;
     border: none;
     /*remove a borda padrão do input*/
     border-radius: 10px;
     /*rendondar as bordas*/
     padding: 15px;
-    background: #514869;
+    background:  #329d92;
     /*cor do fundo*/
     color: #f0ffffde;
     font-size: 12pt;
@@ -149,19 +151,19 @@ body, html {
     /*negrito do texto do botão*/
     letter-spacing: 2px;
     /*espaço entre a letra do botão*/
-    color: #2b134b;
-    background: #93e0aa;
+    color: #ffffff;
+    background:  #0d574f;
     cursor: pointer;
     /*indica que o botão é clicavel*/
     box-shadow: 0px 10px 40px -12pcd #00ff8052;
 }
 .back-button {
     position: absolute;
-    left: 52%; /* Ajuste para posicionar ao lado da área de login */
+    left: 62%; /* Ajuste para posicionar ao lado da área de login */
     transform: translateX(-150%); /* Mova para a esquerda */
-    top: 25%; /* Alinhe verticalmente um pouco mais para cima */
+    top: 18%; /* Alinhe verticalmente um pouco mais para cima */
     font-size: 24px;
-    color: #93e0aa;
+    color: #ffffff;
     text-decoration: none;
     cursor: pointer;
 }

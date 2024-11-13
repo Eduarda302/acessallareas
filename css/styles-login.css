@@ -30,7 +30,7 @@ body, html {
     top: 20px; /* Posiciona o botão a 20px do topo */
     left: -40px; /* Move o botão levemente para fora do container */
     font-size: 24px;
-    color: #93e0aa; /* Define a cor do botão */
+    color: #ffffff; /* Define a cor do botão */
     text-decoration: none; /* Remove a sublinha */
     cursor: pointer; /* Define o cursor como pointer para indicar que é clicável */
 }
@@ -42,7 +42,7 @@ body, html {
 .left-login h1 {
     /* Estilos do título */
     font-size: 3vw;
-    color: #93e0aa; /* Define a cor do texto */
+    color: #ffffff; /* Define a cor do texto */
     width: 100%;
     margin-top: 50px; /* Adiciona espaço acima do título */
     text-align: center; /* Centraliza o título */
@@ -50,7 +50,10 @@ body, html {
 
 .left-login-image {
     width: 60vh; /* Define a largura da imagem */
-    margin-top: 10px
+    margin-top: 10px;
+    height: auto;
+    
+ 
 }
 
 .right-login {
@@ -67,14 +70,15 @@ body, html {
     align-items: center;
     flex-direction: column; /* Organiza o conteúdo em coluna */
     padding: 30px 35px;
-    background: #2f2841; /* Cor de fundo */
+    background: #009688; /* Cor de fundo */
     border-radius: 20px; /* Arredonda as bordas */
     box-shadow: 0px 10px 40px #00000056; /* Adiciona uma sombra */
     position: relative; /* Define posição relativa para o botão de voltar */
+    margin-left: auto; /* Empurra o card para a direita */
 }
 
 .card-login>h1 {
-    color: #93e0aa; /* Cor do título */
+    color: #ffffff; /* Cor do título */
     font-weight: 800; /* Negrito */
     margin: 0; /* Remove margem padrão */
 }
@@ -93,7 +97,7 @@ body, html {
     border: none; /* Remove a borda */
     border-radius: 10px; /* Arredonda as bordas */
     padding: 15px;
-    background: #514869; /* Cor de fundo do campo de texto */
+    background:  #329d92; /* Cor de fundo do campo de texto */
     color: #f0ffffde; /* Cor do texto */
     font-size: 12pt;
     box-shadow: 0px 10px 40px #00000056; /* Adiciona sombra */
@@ -121,7 +125,7 @@ body, html {
     font-weight: 800; /* Negrito */
     letter-spacing: 2px; /* Espaçamento entre letras */
     color: #2b134b; /* Cor do texto */
-    background: #93e0aa; /* Cor de fundo */
+    background: #ffffff; /* Cor de fundo */
     cursor: pointer; /* Cursor de ponteiro para indicar que é clicável */
     box-shadow: 0px 10px 40px -12pcd #00ff8052; /* Sombra do botão */
 }
@@ -135,7 +139,7 @@ body, html {
 
 /* Estiliza o link "Clique aqui" dentro do parágrafo */
 .signup-link a {
-    color: #93e0aa; /* Cor do link */
+    color: #ffffff; /* Cor do link */
     text-decoration: none; /* Remove a sublinha do link */
 }
 
