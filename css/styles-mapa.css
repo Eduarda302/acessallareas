@@ -7,7 +7,7 @@
 
 /* estilização do site */
 body {
-  background-color: #eeead9;
+  background-color: #ffffff93;
 }
 
 
@@ -100,7 +100,7 @@ main {
 }
 
 .card-front {
-  background-color: #13572C;
+  background-color: #00655b;
 }
 
 .card-image {
@@ -164,4 +164,10 @@ footer {
 
 }
 
-
+/* deixando o card responsivo para celular */
+@media (max-width: 480px) {
+  .container{
+    flex-direction: column;
+  }
+  
+}
