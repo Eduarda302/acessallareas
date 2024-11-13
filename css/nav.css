@@ -29,7 +29,7 @@ body {
 }
 
 .search-bar button {
-    background-color: #1a73e8;
+    background-color: #009688 ;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -42,7 +42,7 @@ body {
 }
 
 .search-bar button:hover {
-    background-color: #155cb5;
+    background-color: #fa9e34;
 
 }
 
@@ -54,7 +54,7 @@ body {
     /*distribuir o espaço entre o logo, o menu e o botão.*/
     align-items: center;
     padding: 20px;
-    background-color: #317241;
+    background-color: #00655b;
 }
 
 .logo h1 {
@@ -77,7 +77,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     /*Remove o sublinhado dos links.*/
-    color: #333;
+    color: #ffffff;
     font-weight: bold;
     margin: 0 20px;
     padding: 10px 20px;
@@ -95,10 +95,11 @@ nav ul li a {
 
 /* Estilo da seção principal */
 .header-content {
-    background: linear-gradient(to right, #145825, #5ad884);
-    color: white;
-    padding: 100px 20px;
+    background-color: #eaf5ea;
+    color: rgb(0, 0, 0);
+    padding: 150px 20px;
     text-align: center;
+    
 }
 
 .header-content h2 {
@@ -115,5 +116,62 @@ nav ul li a {
     margin-right: auto;
 }
 
+
+.hamburguer{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburguer span{
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 4px;
+    transition: all 0.3s;
+}
+
 /*final da nav*/
+
+/* deixando a nav responsiva para celular */
+@media (max-width: 760px) {
+
+    .hamburguer{
+        display: flex;
+    }
+
+    .navbar{
+        width: 100%;
+
+    }
+    nav{
+        display: none;
+    }
+    .search-bar{
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        position: absolute;
+        right: 0;
+        width: 45%;
+        height: 30vh;
+        background-color: #00655b;
+        top: 70px;
+
+    }
+    
+    nav ul li {
+        margin-right: 10px;
+        margin-top: 20px !important;
+    }
+
+    nav ul li a {
+        padding: 0;
+    }
+
+  }
 
