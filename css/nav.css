@@ -95,15 +95,16 @@ nav ul li a {
 
 /* Estilo da seção principal */
 .header-content {
-    background-color: #eaf5ea;
+    background-color: #d8f0d8;
     color: rgb(0, 0, 0);
     padding: 150px 20px;
-    text-align: center;
-    
+    text-align: left;
+
 }
 
 .header-content h2 {
     font-size: 36px;
+    margin-left: 50px;
 }
 
 .header-content p {
@@ -114,6 +115,9 @@ nav ul li a {
     /*Centraliza o conteúdo dentro do seu container.*/
     margin-left: auto;
     margin-right: auto;
+    text-align: left;
+    margin-left: 50px;
+
 }
 
 
