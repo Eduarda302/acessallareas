@@ -34,7 +34,7 @@ body {
 }
 
 .search-bar button {
-    background-color: #ff9800;
+    background-color: #0c3733;
     color: rgb(255, 255, 255);
     border: none;
     padding: 10px 20px;
@@ -46,10 +46,6 @@ body {
     /*cursor do mouse para uma "mãozinha"*/
 }
 
-.search-bar button:hover {
-    background-color: #ec8e00;
-
-}
 
 /* Estilos da barra de navegação */
 .navbar {
@@ -59,7 +55,7 @@ body {
     /*distribuir o espaço entre o logo, o menu e o botão.*/
     align-items: center;
     padding: 20px;
-    background-color: #13572C;
+    background-color: #00655b;
 }
 
 .logo h1 {
@@ -88,14 +84,6 @@ nav ul li a {
     padding: 10 20px;
 }
 
-.cta-button button {
-    background-color: #ff9800;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
 
 
 /* Estilo da seção principal */
@@ -126,12 +114,10 @@ nav ul li a {
     align-items: center;
     justify-content: space-between;
     padding: 80px;
-    background-color: #ffffff; /* Fundo branco */
+    background-color: #eaf5ea; /* Fundo branco */
     max-width: 1900px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-
 
 .text-content {
     max-width: 700px;
@@ -142,6 +128,7 @@ nav ul li a {
     margin: 0 0 20px;
     color: #333; /* Cor do texto principal */
     margin-left: 30px;
+    display: inline-block;
 }
 
 .text-content .highlight {
@@ -260,7 +247,7 @@ p {
 }
 
 .cta2 {
-    background-color: #13572C;
+    background-color: #00655b;
     padding: 70px 50px;
     width: 100%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -283,7 +270,7 @@ p {
 }
 
 .cta-button2 {
-    background-color: #2e3c41;
+    background-color: #0c3733;
     color: #fff;
     padding: 20px 35px;
     text-decoration: none;
@@ -295,7 +282,7 @@ p {
 }
 
 .cta-button2:hover {
-    background-color: #212a2e;
+    background-color: #003f38;
 }
 
 
@@ -309,7 +296,7 @@ p {
     align-items: center;
     margin: 15px;
     width: 90%;
-    padding: 40px;
+    padding: 70px;
     margin-right: 60%;
     margin-left: 4%;
 }
@@ -344,8 +331,7 @@ p {
     width: 360px;
     height: 360px;
     overflow: hidden;
-    border: 2px solid #ccc;
-    border-radius: 10px;
+    border: 2px solid #e0e0e0;
     position: relative;
 }
 
@@ -368,11 +354,11 @@ p {
 }
 
 @keyframes slideAnimation {
-    0% { transform: translateX(0%); }
+    10% { transform: translateX(0%); }
     25% { transform: translateX(-100%); }
-    0% { transform: translateX(-200%); }
-    0% { transform: translateX(-300%); }
-    1% { transform: translateX(0%); }
+    50% { transform: translateX(-200%); }
+    25% { transform: translateX(-100%); }
+    60% { transform: translateX(-200%); }
 }
 
 
@@ -586,7 +572,7 @@ p {
 }
 
 .contact-form button {
-    background-color: #ff9800;
+    background-color: #0d574f;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -596,7 +582,7 @@ p {
 }
 
 .contact-form button:hover {
-    background-color: #e68a00;
+    background-color: #025c51;
 }
 
 .contact-image img {
