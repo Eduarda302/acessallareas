@@ -45,6 +45,10 @@ body {
     background-color: #fa9e34;
 
 }
+.search-bar button a{
+    text-decoration: none;
+    color: white;
+}
 
 /* Estilos da barra de navegação */
 .navbar {
@@ -57,10 +61,12 @@ body {
     background-color: #00655b;
 }
 
-.logo h1 {
+.logo{
     font-size: 24px;
     color: #ffffff;
 }
+
+
 
 nav ul {
     list-style-type: none;
@@ -90,7 +96,10 @@ nav ul li a {
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+
 }
+
+
 
 
 /* Estilo da seção principal */
