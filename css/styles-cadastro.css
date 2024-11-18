@@ -1,6 +1,13 @@
-body {
+
+body, html {
     margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden; /* Remove a barra de rolagem */
+    box-sizing: border-box;
 }
+
 
 .main-cadastro {
     width: 100vw;
@@ -14,6 +21,7 @@ body {
 .left-cadastro {
     width: 50vh;
     height: 100vh;
+    /*altura*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,19 +30,27 @@ body {
 
 .left-cadastro h1 {
     font-size: 3vw;
-    color: #93e0aa;
-    text-align: center;
+    width: 100%;
+    margin-top: 100px; /* Adiciona mais espaçamento para descer */
+    text-align: center; /* Centraliza o texto */
+    color: #ffffff;
 }
 
 .left-cadastro-image {
-    width: 50vw;
+   
+    width: 60vh; /* Define a largura da imagem */
+    height: auto;
+    /*tamanho da fonte*/
+
+
 }
 
 .right-cadastro {
     width: 50vh;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    /*Centraliza os itens horizontalmente*/
     align-items: center;
 }
 
@@ -45,13 +61,19 @@ body {
     align-items: center;
     flex-direction: column;
     padding: 30px 35px;
-    background: #2f2841;
+    background: #009688;
+    /*cor do fundo*/
     border-radius: 20px;
     box-shadow: 0px 10px 40px #00000056;
+    /*sombra*/
+    margin-left: auto; /* Empurra o card para a direita */
+    
+
 }
 
 .card-cadastro h1 {
-    color: #93e0aa;
+    color: #ffffff;
+    /* cor do titulo*/
     font-weight: 800;
     margin: 0;
 }
@@ -70,7 +92,8 @@ body {
     border: none;
     border-radius: 10px;
     padding: 15px;
-    background: #514869;
+    background:  #329d92;
+    /*cor do fundo*/
     color: #f0ffffde;
     font-size: 12pt;
     box-shadow: 0px 10px 40px #00000056;
@@ -97,10 +120,21 @@ body {
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 2px;
-    color: #2b134b;
-    background: #93e0aa;
+    /*espaço entre a letra do botão*/
+    color: #ffffff;
+    background:  #0d574f;
     cursor: pointer;
     box-shadow: 0px 10px 40px -12pcd #00ff8052;
+}
+.back-button {
+    position: absolute;
+    left: 62%; /* Ajuste para posicionar ao lado da área de login */
+    transform: translateX(-150%); /* Mova para a esquerda */
+    top: 18%; /* Alinhe verticalmente um pouco mais para cima */
+    font-size: 24px;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 /* Responsividade para dispositivos menores */

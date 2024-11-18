@@ -1,8 +1,14 @@
+/* Certifique-se de que html e body ocupam a altura total da tela */
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden; /* Remove a rolagem */
+  font-family: 'Poppins', sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: 'poppins', sans-serif;
 }
 
 /* Estilos para a barra de pesquisa */
@@ -27,7 +33,7 @@
 }
 
 .search-bar button {
-  background-color: #1a73e8;
+  background-color: #5db076;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -40,7 +46,7 @@
 }
 
 .search-bar button:hover {
-  background-color: #155cb5;
+  background-color: #5db076;
 
 }
 
@@ -48,12 +54,11 @@
 .navbar {
   display: flex;
   /*alinhar os itens em linha*/
-  justify-content: space-between;
-  /*distribuir o espaço entre o logo, o menu e o botão.*/
   align-items: center;
-  padding: 20px;
+  padding: 30px;
   background-color: #D9E2CE;
-
+  justify-content: center; /* Centraliza o conteúdo na header */
+  gap: 20px; /* Ajuste o espaçamento entre os itens */
 }
 
 .logo h1 {
@@ -83,6 +88,7 @@ nav ul li a {
   /*Remove o sublinhado dos links.*/
   color: #333;
   font-weight: bold;
+  padding: 10px 15px;
 
 }
 
@@ -103,14 +109,11 @@ nav ul li a {
 /* Estilos para o contêiner principal */
 .container {
   background: #e1e5f7;
-  /* Cor de fundo do contêiner principal */
-  position: relative;
-  /* Altura igual à altura da janela do navegador */
   width: 100%;
-  /* Largura igual à largura da janela do navegador */
   display: flex;
   justify-content: space-between;
-  height: 95vh;
+  align-items: center; /* Opcional: centraliza verticalmente os elementos */
+  height: 100vh; /* Ocupa toda a altura da tela */
 }
 
 /* Estilos para modificar a posição do elemento com a classe "position" */
@@ -121,24 +124,13 @@ nav ul li a {
 
 /* Estilos para a barra lateral */
 .container .side-bar {
-  height: auto;
-  width: 500px;
-  /* Largura da barra lateral */
-  background: #f0f0f1;
-  /* Cor de fundo da barra lateral */
-  padding: 0px;
+  height: 100%; /* Barra lateral ocupa a altura total do contêiner */
   width: 550px;
-  /* Largura da barra lateral */
-  background: #5a7150;
-  /* Cor de fundo da barra lateral */
+  background: #4A7856;
   padding: 20px;
-  /* Espaçamento interno da barra lateral */
-  position: inherit;
-  /* Posicionamento absoluto em relação ao contêiner principal */
+  position: relative; /* Troca para relative para alinhar melhor */
   -webkit-transition: all 0.5s ease;
-  /* Transição suave de propriedades durante 0.5 segundos (para animações) */
   transition: all 0.5s ease;
-
 }
 
 /* Estilos para a marca na barra lateral */
@@ -260,8 +252,8 @@ nav ul li a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 170px;
-  height: 150px;
+  width: 180px;
+  height: 190px;
 }
 
 
@@ -359,7 +351,7 @@ nav ul li a {
   justify-content: right;
   align-items: end;
   margin: 10px 0;
-  background-color: #26c0a6;
+  background-color: #a6c7c7;
   margin-left: 65%;
   padding: 10px;
   border-radius: 10px;
@@ -384,16 +376,10 @@ nav ul li a {
 
 }
 
-.send {
-  display: flex;
-  width: 80%;
-  position: absolute;
-  bottom: 10px;
 
-}
 
 #messageInput {
-  width: 100%;
+  width: 50%;
   padding: 10px;
   margin-top: 10px;
   border: 1px solid #ddd;
@@ -403,11 +389,11 @@ nav ul li a {
 #sendMessage {
   display: block;
   width: 20%;
-  padding: 10px;
+  padding: 10px 20px;
   margin-top: 10px;
   background-color: #26c0a6;
   color: #fff;
-  border-radius: 5px 0 0 3px; 
+  border-radius: 5px; /* Aplique um valor para bordas arredondadas em todos os lados */
   border: 1px solid #ddd;
   cursor: pointer;
 }
@@ -421,21 +407,80 @@ nav ul li a {
   animation: slidebg 2s linear infinite;
 }
 
+.quick-replies {
+    display: flex;
+    flex-direction: column; /* Alinha os botões verticalmente */
+    gap: 10px; /* Espaçamento entre os botões */
+  
+}
+
+.quick-replies button {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  display: block;
+  width: 100%; /* Ocupa toda a largura do container */
+  max-width: 300px; /* Largura máxima dos botões */
+  text-align: center;
+}
+
+.quick-replies button:hover {
+  background-color: #155cb5;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh; /* Ocupa toda a altura da tela */
+  overflow: hidden; /* Impede rolagem no contêiner de chat */
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+/* Enviar mensagem */
+.send {
+  display: flex;
+  width: 80%;
+  position: absolute;
+  bottom: 10px;
+
+}
+
+/* Botões de respostas rápidas */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  padding: 20px 0; /* Espaçamento extra para separar do campo de envio */
+  align-items: center; /* Centraliza os botões */
+}
+
+.button-container button {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: auto; /* Largura automática para o botão */
+  max-width: 300px; /* Largura máxima para limitar o tamanho dos botões */
+  text-align: center;
+}
+
+.button-container button:hover {
+  background-color: #155cb5;
+}
+
+
 @keyframes slidebg {
   to {
     background-position: 10vw;
   }
 }
 
-/*libras*/
-
-
-.libras-container {
-  background: #ffffff;
-  /* Cor de fundo do contêiner principal */
-  position: relative;
-  height: 85vh;
-  /* Altura igual à altura da janela do navegador */
-  display: flex;
-  justify-content: space-between;
-}
