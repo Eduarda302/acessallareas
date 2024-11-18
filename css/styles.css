@@ -1,157 +1,73 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular';
+    font-size: medium;
 }
 
 body {
     background-color: #ffffff93;
 }
 
-/* Header */
-.search-bar {
-    /*Define o container para a barra de pesquisa como um 
-    "flexbox", alinhando o campo de texto e o botão no centro */
-
-    display: flex;
-    /*alinha os elementos dentro 
-    (campo de entrada e botão) em uma linha horizontal.*/
-
-    align-items: center;
-}
-
-.search-bar input {
-    padding: 10px;
-    /*Adiciona espaçamento interno ao redor 
-    do texto dentro do campo de entrada*/
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    margin-right: 10px;
-    /* Espaço entre o campo de pesquisa e o botão */
-}
-
-.search-bar button {
-    background-color: #ff9800;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    /*espaçamento interno ao botão. Isso faz com que ele fique mais "alto" 
-    (10px no topo e embaixo) e mais "largo" (20px nas laterais).*/
-    border-radius: 5px;
-    /*cantos do botão arredondados.*/
-    cursor: pointer;
-    /*cursor do mouse para uma "mãozinha"*/
-}
-
-.search-bar button:hover {
-    background-color: #ec8e00;
-
-}
-
-/* Estilos da barra de navegação */
-.navbar {
-    display: flex;
-    /*alinhar os itens em linha*/
-    justify-content: space-between;
-    /*distribuir o espaço entre o logo, o menu e o botão.*/
-    align-items: center;
-    padding: 20px;
-    background-color: #13572C;
-}
-
-.logo h1 {
-    font-size: 24px;
-    color: #ffffff;
-}
-
-nav ul {
-    list-style-type: none;
-    /*Remove os marcadores da lista*/
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-nav ul li {
-    margin-right: 20px;
-}
-
-/* cor e tamanho da fonte da nav */
-nav ul li a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: bold;
-    margin: 0 20px;
-    padding: 10 20px;
-}
-
-.cta-button button {
-    background-color: #ff9800;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-
-
-/* Estilo da seção principal */
-.header-content {
-    background: linear-gradient(to right, #145825, #5ad884);
-    color: white;
-    padding: 100px 20px;
-    text-align: center;
-}
-
-.header-content h2 {
-    font-size: 36px;
-}
-
-.header-content p {
-    font-size: 18px;
-    margin-top: 10px;
-    max-width: 600px;
-    /*largura do texto a 600px, para que não se espalhe muito pela tela.*/
-    /*Centraliza o conteúdo dentro do seu container.*/
-    margin-left: auto;
-    margin-right: auto;
-}
-
 /* Inicio da página Home*/
 
-.hero {
+.banner-container {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    padding: 10px;
-    background-color: #ffffff;
-    margin-top: 10px;
+    justify-content: space-between;
+    padding: 80px;
+    background-color: #eaf5ea; /* Fundo branco */
+    max-width: 1900px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.hero-content {
-    max-width: 600px;
+.text-content {
+    max-width: 700px;
 }
 
-.hero-content h1 {
-    font-size: 48px;
-    color: #333;
+.text-content h1 {
+    font-size: 2.5em;
+    margin: 0 0 20px;
+    color: #333; /* Cor do texto principal */
+    margin-left: 30px;
+    display: inline-block;
 }
 
-.hero-content p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #535353;
+.text-content .highlight {
+    color: #009688; /* Cor verde para destacar "Juntos por um mundo melhor" */
+    font-size: 20px;
+    margin-left: 30px;
 }
 
-.hero-image img {
-    max-width: 600px;
-    border-radius: 0px;
-    background-color: #ffffff;
+.text-content p {
+    margin: 0 0 20px;
+    font-size: 1.1em;
+    color: #555; /* Cor mais clara para o texto */
+    margin-left: 30px;
+}
+
+.text-content button {
+    background-color: #009688;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-left: 30px;
+}
+
+.text-content button:hover {
+    background-color: #00796b;
+}
+
+.image-content img {
+    max-width: 350px;
+    height: auto;
+    border-radius: 8px;
+    margin-left: 20px; /* Espaçamento entre texto e imagem */
+    margin-right: 90px;
 }
 
 
@@ -163,20 +79,21 @@ nav ul li a {
     flex-wrap: wrap;
     max-width: 2300px;
     margin: 20px auto;
-    margin-top: 1.5%;
-    margin-bottom: 1.5%;
-    gap: 19px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    gap: 1px;
     /* Espaçamento entre os blocos */
 }
 
 .service-box {
     background-color: white;
     flex: 1;
-    min-width: 250px;
+    min-width: 200px;
     padding: 20px;
     text-align: center;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    margin: 30px;
 }
 
 .service-box:hover {
@@ -206,6 +123,7 @@ h3 {
 
 p {
     font-size: 1rem;
+    text-align: start;
 }
 
 /* Responsividade para tablets */
@@ -232,10 +150,12 @@ p {
 }
 
 .cta2 {
-    background-color: #13572C;
+    background-color: #00655b;
     padding: 70px 50px;
     width: 100%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
     align-items: center;
 
 
@@ -244,25 +164,31 @@ p {
 .cta2 p {
     color: #ffff;
     font-size: 18px;
-    margin-bottom: 5%;
+    font-weight: bold;
     margin-bottom: 50px;
-    margin-left: 35%;
+    text-align: start;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 100%;
 }
 
 .cta-button2 {
-    background-color: #2e3c41;
+    background-color: #0c3733;
     color: #fff;
     padding: 20px 35px;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
     transition: background-color 0.3s ease;
-    margin-left: 45%;
+    display: inline-block;
+
 }
 
 .cta-button2:hover {
-    background-color: #2e3c41;
+    background-color: #003f38;
 }
+
+
 
 
 /* Estilos para a seção "Sobre" com texto e imagem */
@@ -271,23 +197,23 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    margin: 0px;
-    padding: 40px;
+    margin: 15px;
+    width: 90%;
+    padding: 70px;
+    margin-right: 60%;
+    margin-left: 4%;
 }
-.about p{
-    margin-top:3%;
-    font-size: larger;
+
+.about p {
+    margin-top: 3%;
+    font-size: large;
 }
 
 .about h1 {
-    color: #ff0000;
-    font-size: 40px;
-    margin-bottom: 20px;
-    text-align: justify;
-    position: absolute;
-    left: 68%;
-    margin-bottom: 15%;
+    color: #000000;
+    font-size: 30px;
+    margin-bottom: 5%;
+    text-align: center;
 }
 
 .ong-info {
@@ -303,85 +229,200 @@ p {
     width: 93%;
 }
 
-.ong-info img {
-    width: 30%;
-    height: auto;
-    border-radius: 5px;
-    margin: 0px;
+/*carrossel*/
+.carousel-container {
+    width: 360px;
+    height: 360px;
+    overflow: hidden;
+    border: 2px solid #e0e0e0;
+    position: relative;
 }
 
-/*Sessão sobre nós*/
-.card {
-    width: 200px;
-    height: 200px;
-    perspective: 1000px;
-    padding: 5%;
-    display: inline-block;
-    margin: 30px;
-    align-items: center;
-    justify-items: center;
-    margin-right: 8%;
-    margin-bottom: 10%;
-}
-
-.card-front,
-.card-back {
+.carousel-slides {
+    display: flex;
     width: 100%;
     height: 100%;
-    position: absolute;
-    backface-visibility: hidden;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.6s;
+    animation: slideAnimation 12s infinite;
 }
 
-.card-front {
-    background-color: #fff;
+.slide {
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
 }
 
-.card-back {
-    background-color: #4CAF50;
-    color: white;
-    transform: rotateY(180deg);
-    padding: 10px;
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes slideAnimation {
+    10% { transform: translateX(0%); }
+    25% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    25% { transform: translateX(-100%); }
+    60% { transform: translateX(-200%); }
+}
+
+
+/* Responsividade para smartphones */
+@media (max-width: 480px) {
+    .about h1 {
+        position: 0;
+    }
+}
+
+/*Sessão 'sobre nós'*/
+
+/* Título da Seção */
+.service-section h1 {
+    color: #000000;
+    font-size: 32px;
     text-align: center;
+    margin: 40px;
+}
+
+/* Contêiner Principal dos Cartões */
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1500px;
+    margin-bottom: 50px;
+    margin-left: 195px;
+}
+
+/* Responsividade para smartphones */
+@media (max-width: 480px) {
+    .service-cards {
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
+    .card {
+        margin: 10px;
+    }
+}
+
+/* Estilo do Cartão */
+.card {
+    background-color: #ffffff;
+    padding: 20px;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0.1, 0.1, 0.1, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-.card-back h2 {
-    margin: 0;
-    font-size: 18px;
+/* Estilo do Ícone */
+.icon img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
 }
 
-.card-back p {
-    font-size: 14px;
+/* Título do Cartão */
+.card h3 {
+    font-size: 1.2em;
+    color: #1c1c6c;
     margin: 10px 0;
 }
 
-.card-back button {
-    background-color: white;
-    color: #4CAF50;
-    border: none;
-    border-radius: 5px;
+/* Descrição do Cartão */
+.card p {
+    font-size: 0.9em;
+    color: #555555;
+}
+
+/* Efeito de Hover */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Sessão sobre o porque criamos esse site*/
+
+.history-section {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    background-color: #eaf5ea;
+}
+
+.history-content {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Estilo da área de texto da história */
+.history-text {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.history-text h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+.history-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 480px) {
+    .history-content {
+        display: table-column-group;
+        max-width: 1200px;
+        width: 100%;
+    }
+}
+
+
+/* Estilo da linha do tempo */
+.timeline {
+    flex: 1;
+    border-left: 2px solid #ccc;
+    padding-left: 40px;
+    position: relative;
+}
+
+.timeline-item {
+    margin-bottom: 40px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.timeline-date {
+    font-size: 14px;
+    background-color: #fff;
+    color: #333;
     padding: 5px 10px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    border-radius: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    left: -30px;
 }
 
-.card-back button:hover {
-    background-color: #f0f0f0;
+.timeline-item h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #111;
 }
 
-.card.flipped .card-front {
-    transform: rotateY(180deg);
-}
-
-.card.flipped .card-back {
-    transform: rotateY(0);
+.timeline-item p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
 }
 
 
@@ -397,30 +438,14 @@ p {
 
 .contact-form {
     max-width: 30%;
-    margin: 7%;
+    margin: 5%;
 }
 
 .contact-form h2 {
     font-size: 28px;
     color: #111;
-  }
-  
-  .contact-form p {
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
-  
-  .contact-form .form-row {
-    display: flex;
-    gap: 20px;
-    max-width: 500px;
-    margin: 0px;
-    padding: 40px;
-    background-color: #ffffff;
-    border-radius: 40px;
-    margin-left: 290px;
-    margin-top: 100px;
     margin-bottom: 10px;
+
 }
 
 .contact-form p {
@@ -436,51 +461,42 @@ p {
 .contact-form input,
 .contact-form textarea {
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     border: 1px solid #ddd;
-    margin: 4px;
+    margin: 10px;
     border-radius: 5px;
     font-size: 16px;
+    margin-left: 10px;
 }
 
 .contact-form textarea {
     height: 100px;
-    width: 600px;
+    width: 516px;
 }
 
 .contact-form button {
-    background-color: #ff9800;
+    background-color: #0d574f;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 20px;
     cursor: pointer;
     font-size: 16px;
-  }
-  
-  .contact-form button:hover {
-    background-color: #e68a00;
-  }
-  
-  .contact-image img {
-    width: 49%;
-    max-width: 70%;
-    height: auto;
-    margin-left: 35%;
-  }
 }
+
 .contact-form button:hover {
-    background-color: #e68a00;
+    background-color: #025c51;
 }
 
 .contact-image img {
-    width: 50%;
+    width: 1100px;
     max-width: 45%;
     height: auto;
-    margin-left: 30%;
-    margin-top: 30px;
+    margin-left: 20%;
+    margin-top: 100px;
 }
 
+@media (max-width: 480px) {}
 
 /*Imagem footer*/
 img {
@@ -524,46 +540,4 @@ footer p {
     font-size: 0.9em;
     color: #666666;
     margin: 0;
-
-*{
-    padding: 0;
-    box-sizing: border-box;
-}
-.main{
-    display: flex;;
-    align-items: center;
-    justify-content: center;
-}
-
-.container {
-    width: 20%;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #661010;
-    border-radius: 5px;
-    background-color: #fff;
-    box-shadow: 0 0 10px #fff ;
-}
-
-h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-p{
-    font-size: 16px;
-}
-input [type="text"]{
-    width: 80%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-button:hover{
-    background-color: rgb(130, 130, 247);
-}
-#address-info{
-    margin-top: 20px;
-    text-align: left;
 }
