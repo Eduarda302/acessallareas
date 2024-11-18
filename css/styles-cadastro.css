@@ -55,6 +55,7 @@ body, html {
 }
 
 .card-cadastro {
+    position: relative;
     width: 60%;
     display: flex;
     justify-content: center;
@@ -128,13 +129,17 @@ body, html {
 }
 .back-button {
     position: absolute;
-    left: 62%; /* Ajuste para posicionar ao lado da área de login */
+    left: 0; /* Ajuste para posicionar ao lado da área de login */
     transform: translateX(-150%); /* Mova para a esquerda */
-    top: 18%; /* Alinhe verticalmente um pouco mais para cima */
+    top: 0; /* Alinhe verticalmente um pouco mais para cima */
     font-size: 24px;
     color: #ffffff;
     text-decoration: none;
     cursor: pointer;
+}
+
+.back-button:hover {
+    color:#009688 ; /* Altera a cor do botão ao passar o mouse */
 }
 
 /* Responsividade para dispositivos menores */
@@ -142,7 +147,7 @@ body, html {
 @media (max-width: 768px) {
     .main-cadastro {
         flex-direction: column;
-        padding: 20px;
+        padding: 5px;
     }
 
     .left-cadastro {

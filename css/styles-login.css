@@ -36,7 +36,7 @@ body, html {
 }
 
 .back-button:hover {
-    color: #7abf8a; /* Altera a cor do botão ao passar o mouse */
+    color: #009688; /* Altera a cor do botão ao passar o mouse */
 }
 
 .left-login h1 {
@@ -105,7 +105,7 @@ body, html {
     box-sizing: border-box; /* Inclui padding e borda na largura */
 }
 
-.textfield>label {
+.textfield label {
     color: #f0ffffde;
     margin-bottom: 10px; /* Espaçamento abaixo do label */
 }
@@ -152,6 +152,7 @@ body, html {
 @media (max-width: 480px) {
     .main-login {
         flex-direction: column; /* Alinha os elementos em coluna */
+        padding: 5px;
     }
 
     .left-login {
@@ -170,5 +171,12 @@ body, html {
 
     .card-login {
         height: 70%; /* Ajusta a altura do card */
+        margin-left: 0;
+
+
+    }
+
+    .right-login{
+        width: 40vh;
     }
 }
