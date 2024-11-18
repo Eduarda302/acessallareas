@@ -16,7 +16,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 80px;
+    padding: 70px;
     background-color: #eaf5ea; /* Fundo branco */
     max-width: 1900px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -30,21 +30,21 @@ body {
     font-size: 2.5em;
     margin: 0 0 20px;
     color: #333; /* Cor do texto principal */
-    margin-left: 30px;
+    margin-left: 90px;
     display: inline-block;
 }
 
 .text-content .highlight {
     color: #009688; /* Cor verde para destacar "Juntos por um mundo melhor" */
     font-size: 20px;
-    margin-left: 30px;
+    margin-left: 90px;
 }
 
 .text-content p {
     margin: 0 0 20px;
     font-size: 1.1em;
     color: #555; /* Cor mais clara para o texto */
-    margin-left: 30px;
+    margin-left: 90px;
 }
 
 .text-content button {
@@ -55,7 +55,7 @@ body {
     cursor: pointer;
     border-radius: 5px;
     font-size: 1em;
-    margin-left: 30px;
+    margin-left: 90px;
 }
 
 .text-content button:hover {
@@ -63,11 +63,11 @@ body {
 }
 
 .image-content img {
-    max-width: 350px;
+    max-width: 550px;
     height: auto;
     border-radius: 8px;
     margin-left: 20px; /* Espaçamento entre texto e imagem */
-    margin-right: 90px;
+    margin-right: 150px;
 }
 
 
@@ -94,6 +94,7 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     margin: 30px;
+    border-radius: 10px;
 }
 
 .service-box:hover {
@@ -101,12 +102,7 @@ body {
     /* Animação ao passar o mouse */
 }
 
-.service-box.blue {
-    background-color: #2e3c41;
-    color: white;
-}
-
-.service-box.orange {
+.service-box{
     background-color: #2e3c41;
     color: white;
 }
@@ -195,10 +191,10 @@ p {
 .about {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin: 15px;
-    width: 90%;
+    width: 100%;
     padding: 70px;
     margin-right: 60%;
     margin-left: 4%;
@@ -214,6 +210,9 @@ p {
     font-size: 30px;
     margin-bottom: 5%;
     text-align: center;
+    margin: auto;
+    margin-top: 15px;
+    
 }
 
 .ong-info {
@@ -236,6 +235,7 @@ p {
     overflow: hidden;
     border: 2px solid #e0e0e0;
     position: relative;
+    margin-top: 10px;
 }
 
 .carousel-slides {
@@ -496,8 +496,17 @@ p {
     margin-top: 100px;
 }
 
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+    .contact-section{
+        
+    }
+}
 
+@media (max-width: 480px) {
+    .contact-form h2{
+        flex-direction: column-reverse;
+    }
+}
 /*Imagem footer*/
 img {
     width: 120%;
