@@ -118,7 +118,7 @@ main {
 }
 
 .card-back {
-  background-color: #4caf50;
+  background-color: #009688;
   transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
@@ -158,7 +158,7 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: rgb(174, 240, 188);
+  background-color: #eaf5ea;
   padding: 20px 0;
   text-align: center;
 
