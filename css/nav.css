@@ -95,29 +95,31 @@ nav ul li a {
 
 /* Estilo da seção principal */
 .header-content {
-    background-color: #d8f0d8;
+    background-color: #eaf5ea;
     color: rgb(0, 0, 0);
-    padding: 150px 20px;
-    text-align: left;
+    padding: 100px 90px;
+    text-align: center;
 
 }
 
-.header-content h2 {
-    font-size: 36px;
-    margin-left: 50px;
+.text-content {
+    max-width: 700px;
+
 }
 
-.header-content p {
-    font-size: 18px;
-    margin-top: 10px;
-    max-width: 600px;
-    /*largura do texto a 600px, para que não se espalhe muito pela tela.*/
-    /*Centraliza o conteúdo dentro do seu container.*/
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-    margin-left: 50px;
+.text-content h1 {
+    font-size: 2.5em;
+    margin: 0 0 20px;
+    color: #333; /* Cor do texto principal */
+    display: inline-block;
+  
+}
 
+.text-content .highlight {
+    color: #009688; /* Cor verde para destacar "Juntos por um mundo melhor" */
+    font-size: 20px;
+    margin-left: 30px;
+    
 }
 
 
