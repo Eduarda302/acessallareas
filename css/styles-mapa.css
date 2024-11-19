@@ -17,39 +17,6 @@ body {
 
 }
 
-.logo img {
-  width: 70px;
-  border-radius: 60%;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  margin: 0 15px;
-  font-size: large;
-}
-
-/* cor e tamanho da fonte da nav */
-nav ul li a {
-  text-decoration: none;
-  color: #ffffff;
-  font-weight: bold;
-  text-align: center;
-
-
-}
-
-/* cor da fonte quando aperta em cima */
-nav ul li a:hover {
-  color: #023807;
-}
- 
-
 
 main {
   flex: 1;

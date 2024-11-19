@@ -30,30 +30,24 @@
 
             <!-- Adicionando o campo de pesquisa -->
             <form class="search-bar" action="#" method="get">
-                <!--<form> define um formulário em HTML-->
-                <!--action="#" define para onde os dados do 
-                    formulário serão enviados quando o botão for clicado-->
-                <input type="text" placeholder="Search..." name="search">
+                
                 <!--placeholder="Search..." define o texto que aparecerá 
                 no campo de pesquisa antes de o usuário digitar algo-->
                 <button type="submit"><a href="Login.html">Login</a> </button>
             </form>
 
             <!-- Botão menu responsivo -->
-             <div class="hamburguer" onclick="mostrarmenu()">
+            <div class="hamburguer" onclick="mostrarmenu()">
                 <span></span>
                 <span></span>
                 <span></span>
 
-             </div>
-        </div>
-
-        <div class="header-content">
-            <div class="text-content">
-                <h1>Seu guia acessível<br>de Mapas Online<span class="highlight">
-                    <br>Juntos por um Mundo Melhor</span></h1>
             </div>
         </div>
+        <div class="banner-container">
+            <div class="text-content">
+                <h1>Localize Serviços, Viagens..<br> Próximos a Você!</h1>
+            </div>
     </header>
 
     <div class="espaco2-section">
@@ -230,7 +224,8 @@
                                     <img src="../img/Diversidade.PNG" alt="Diversidade">
                                 </div>
                                 <h3>Diversidade e Inclusão</h3>
-                                <p>O Nurap busca extrair o melhor de cada pessoa através do desenvolvimento humano, o foco é proporcionar a pessoa com deficiência ter independência.</p>
+                                <p>O Nurap busca extrair o melhor de cada pessoa através do desenvolvimento humano, o
+                                    foco é proporcionar a pessoa com deficiência ter independência.</p>
 
                                 <button class="flip-button" onclick="flipCard(this)">Saiba Mais</button>
                             </div>
@@ -241,7 +236,7 @@
                                     • Café Sensorial<br>
                                     • Mapeamento de cargos e funções<br>
                                     • Programa Effective<br></p>
-                                    <br>
+                                <br>
 
                                 <p>Saiba mais sobre o site<br>
                                     <a href="https://institutoreacao.org.br/sobre-o-instituto/">Saíba mais</a>
@@ -341,8 +336,7 @@
 
 
                                     <p>Saiba mais sobre o site<br>
-                                        <a
-                                            href="https://institutovictorem.org.br/">Saiba Mais</a>
+                                        <a href="https://institutovictorem.org.br/">Saiba Mais</a>
                                     </p>
 
                                     <button class="flip-button" onclick="flipCard(this)">Voltar</button>
@@ -357,6 +351,21 @@
                     <p>&copy; 2022 My Website. All rights reserved.</p>
                 </footer>
 </body>
+
+ <!-- Scripts de Acessibilidade -->
+ <script>
+    (function (d) {
+        var s = d.createElement("script");
+        s.setAttribute("data-account", "YOUR-WIDGET-CODE-HERE");
+        s.setAttribute("src", "https://cdn.userway.org/widget.js");
+        (d.body || d.head).appendChild(s);
+    })(document)
+</script>
+
+<!-- Script adicional de acessibilidade -->
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+
+
 <script src="../js/mapa.js"></script>
 <script src="../js/nav.js"></script>
 
