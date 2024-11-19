@@ -54,12 +54,11 @@ html, body {
 .navbar {
   display: flex;
   /*alinhar os itens em linha*/
-  justify-content: space-between;
-  /*distribuir o espaço entre o logo, o menu e o botão.*/
   align-items: center;
   padding: 30px;
   background-color: #D9E2CE;
-
+  justify-content: center; /* Centraliza o conteúdo na header */
+  gap: 20px; /* Ajuste o espaçamento entre os itens */
 }
 
 .logo h1 {
@@ -89,6 +88,7 @@ nav ul li a {
   /*Remove o sublinhado dos links.*/
   color: #333;
   font-weight: bold;
+  padding: 10px 15px;
 
 }
 
@@ -389,11 +389,11 @@ nav ul li a {
 #sendMessage {
   display: block;
   width: 20%;
-  padding: 10px;
+  padding: 10px 20px;
   margin-top: 10px;
   background-color: #26c0a6;
   color: #fff;
-  border-radius: 5px 0 0 3px; 
+  border-radius: 5px; /* Aplique um valor para bordas arredondadas em todos os lados */
   border: 1px solid #ddd;
   cursor: pointer;
 }
@@ -484,12 +484,3 @@ nav ul li a {
   }
 }
 
-/*libras*/
-
-.libras-container {
-  background: #ffffff;
-  position: relative;
-  height: 100vh; /* Ocupa toda a altura da tela */
-  display: flex;
-  justify-content: space-between;
-}
