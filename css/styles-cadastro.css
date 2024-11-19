@@ -141,6 +141,21 @@ body, html {
 .back-button:hover {
     color:#009688 ; /* Altera a cor do botão ao passar o mouse */
 }
+.back-button {
+    position: absolute; /* Posiciona o botão */
+    top: 20px; /* Ajusta a distância do topo */
+    left: 20px; /* Ajusta a distância da lateral */
+    font-size: 24px; /* Tamanho da seta */
+    color: white; /* Cor da seta */
+    text-decoration: none; /* Remove o sublinhado */
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo transparente */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 50%; /* Torna o botão redondo */
+    display: flex; /* Centraliza o conteúdo */
+    align-items: center; 
+    justify-content: center;
+    transition: all 0.3s ease; /* Efeito suave de hover */
+  }
 
 /* Responsividade para dispositivos menores */
 

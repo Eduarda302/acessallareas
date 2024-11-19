@@ -124,11 +124,26 @@ body, html {
     text-transform: uppercase; /* Transforma o texto em maiúsculas */
     font-weight: 800; /* Negrito */
     letter-spacing: 2px; /* Espaçamento entre letras */
-    color: #2b134b; /* Cor do texto */
-    background: #ffffff; /* Cor de fundo */
+    color: #ffffff; /* Cor do texto */
+    background: #0d574f; /* Cor de fundo */
     cursor: pointer; /* Cursor de ponteiro para indicar que é clicável */
     box-shadow: 0px 10px 40px -12pcd #00ff8052; /* Sombra do botão */
 }
+.back-button {
+    position: absolute; /* Posiciona o botão */
+    top: 20px; /* Ajusta a distância do topo */
+    left:20px; /* Ajusta a distância da lateral */
+    font-size: 24px; /* Tamanho da seta */
+    color: white; /* Cor da seta */
+    text-decoration: none; /* Remove o sublinhado */
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo transparente */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 50%; /* Torna o botão redondo */
+    display: flex; /* Centraliza o conteúdo */
+    align-items: center; 
+    justify-content: center;
+    transition: all 0.3s ease; /* Efeito suave de hover */
+  }
 
 /* Estiliza o parágrafo com a mensagem de registro */
 .signup-link {
