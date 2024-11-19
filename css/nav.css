@@ -105,7 +105,7 @@ nav ul {
 
 /* Estilo da seção principal */
 .banner-container {
-    display: ;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 80px;
