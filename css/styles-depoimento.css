@@ -8,7 +8,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color:#eaf5ea;
+    background-color: #eaf5ea;
     color: #00655b;
 }
 
@@ -17,12 +17,16 @@ body {
 .about {
     display: flex;
     justify-content: center;
+    align-items: center;
     text-align: left;
-    width: 100%;
+    width: 99%;
 }
-.about img{
-    width: 40%;
+
+.about img {
+    width: 35%;
+    height: 99%;
 }
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -30,30 +34,22 @@ body {
     padding: 20px;
     background-color: #009688;
 }
+
 .ong-info {
     display: flex;
-    justify-content: space-around;
-    text-align: left;
-    flex-wrap: wrap;
     padding: 270px;
-    background-color:#eaf5ea;;
+    background-color: #eaf5ea;
+    ;
     border-radius: 1px;
     box-shadow: #5b8b63;
-    width: 100%;
-
+    width: 100%
 }
 
-.about h4 {
-    color: #2e3c41;
-    padding: 4px;
-    font-size: 30px;
-    margin-bottom: 10px;
-}
 
 
 
 div.scroll-container {
-    
+
     overflow: hidden;
     white-space: nowrap;
     padding: 10px;
@@ -68,7 +64,7 @@ div.scroll-container {
 /* Estilos para os títulos */
 h2 {
     padding: 4px;
-    color:#4f772D;
+    color: #4f772D;
     text-align: center;
     font-size: 30px;
     margin-bottom: 20px;
@@ -113,7 +109,7 @@ h2 {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-   
+
 }
 
 .news-cards .card {
@@ -126,12 +122,12 @@ h2 {
     height: 500px;
 }
 
-.bom{
-    background-color: #638796 !important;
+.bom {
+    background-color: #00655b !important;
 }
 
-.ruim{
-    background-color:  #2e3c41 !important;
+.ruim {
+    background-color: #2e3c41 !important;
 }
 
 .card:hover {
@@ -167,7 +163,8 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color:#00655b;;
+    background-color: #00655b;
+    ;
     padding: 20px 0;
     text-align: center;
 }
@@ -195,4 +192,31 @@ footer p {
     font-size: 0.9em;
     color: #666666;
     margin: 0;
+}
+
+@media (max-width: 480px) {
+
+    .about {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .ong-info {
+        padding: 20px;
+    }
+
+    .ong-info h1 {
+        font-size: 20px;
+    }
+
+    .about img {
+        width: 80%;
+    }
+ .news-cards{
+    flex-direction: column;
+    
+ }
+ .news-cards .card{
+    width: 100%;
+ }
 }
