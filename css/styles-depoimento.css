@@ -8,36 +8,43 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #ffffff;
-    color: #ffffffab;
+    background-color:#eaf5ea;
+    color: #00655b;
 }
 
 
 /* Estilos para a seção "Sobre" com texto e imagem */
 .about {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     text-align: left;
     width: 100%;
 }
-
+.about img{
+    width: 40%;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #009688;
+}
 .ong-info {
     display: flex;
     justify-content: space-around;
     text-align: left;
     flex-wrap: wrap;
     padding: 270px;
-    background-color:#49803b;
+    background-color:#eaf5ea;;
     border-radius: 1px;
     box-shadow: #5b8b63;
     width: 100%;
-    
 
 }
 
 .about h4 {
-    color: #2e702e;
+    color: #2e3c41;
     padding: 4px;
     font-size: 30px;
     margin-bottom: 10px;
@@ -120,11 +127,11 @@ h2 {
 }
 
 .bom{
-    background-color:#2e702e !important;
+    background-color: #638796 !important;
 }
 
 .ruim{
-    background-color: #90A955 !important;
+    background-color:  #2e3c41 !important;
 }
 
 .card:hover {
@@ -160,7 +167,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #1f6e1f;
+    background-color:#00655b;;
     padding: 20px 0;
     text-align: center;
 }
