@@ -81,8 +81,7 @@ body {
     margin: 20px auto;
     margin-top: 1%;
     margin-bottom: 1%;
-    gap: 1px;
-    /* Espaçamento entre os blocos */
+    gap: 1px; /* Espaçamento entre os blocos */
 }
 
 .service-box {
@@ -105,11 +104,13 @@ body {
 .service-box{
     background-color: #2e3c41;
     color: white;
+    width: 10px;
 }
 
 .icon img {
-    width: 50px;
-    margin-bottom: 20px;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
 }
 
 h3 {
@@ -184,25 +185,24 @@ p {
     background-color: #003f38;
 }
 
-
-
-
 /* Estilos para a seção "Sobre" com texto e imagem */
 .about {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin: 15px;
+    margin: 0px;
     width: 100%;
-    padding: 70px;
-    margin-right: 60%;
-    margin-left: 4%;
+    padding: 100px;
+   
+    
 }
 
 .about p {
     margin-top: 3%;
     font-size: large;
+    text-align: left;
+    margin: auto;
 }
 
 .about h1 {
@@ -211,15 +211,14 @@ p {
     margin-bottom: 5%;
     text-align: center;
     margin: auto;
-    margin-top: 15px;
-    
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .ong-info {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
     padding: 10px;
     background-color: #fff;
     margin: 0px;
@@ -230,12 +229,14 @@ p {
 
 /*carrossel*/
 .carousel-container {
-    width: 360px;
+    width: 300%;
     height: 360px;
     overflow: hidden;
     border: 2px solid #e0e0e0;
     position: relative;
     margin-top: 10px;
+    margin-right: 30px;
+    margin-left: 10px;
 }
 
 .carousel-slides {
@@ -244,6 +245,8 @@ p {
     height: 100%;
     animation: slideAnimation 12s infinite;
 }
+
+
 
 .slide {
     min-width: 100%;
@@ -320,15 +323,16 @@ p {
 
 /* Estilo do Ícone */
 .icon img {
-    width: 60px;
-    height: 60px;
+    width: 130px;
+    height: 130px;
     margin-bottom: 15px;
+    border-radius: 5px;
 }
 
 /* Título do Cartão */
 .card h3 {
     font-size: 1.2em;
-    color: #1c1c6c;
+    color: #007468;
     margin: 10px 0;
 }
 
