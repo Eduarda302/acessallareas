@@ -104,7 +104,7 @@ main {
   cursor: pointer;
   font-weight: bold;
   height: 10%;
-  width: 40%;
+  width: 40;
   font-size: small;
 }
 
@@ -121,15 +121,7 @@ main {
 }
 
 /*Footer*/
-footer {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #eaf5ea;
-  padding: 20px 0;
-  text-align: center;
 
-}
 
 /* deixando o card responsivo para celular */
 @media (max-width: 480px) {
