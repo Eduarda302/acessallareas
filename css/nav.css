@@ -5,6 +5,11 @@ body {
     padding: 0;
 }
 
+.logo img {
+    position: absolute;
+    width: 120px;
+    top: 0;
+  }
 /* Estilos para a barra de pesquisa */
 .search-bar {
     /*Define o container para a barra de pesquisa como um 
@@ -16,7 +21,6 @@ body {
 
     align-items: center;
 }
-
 .search-bar input {
     padding: 10px;
     /*Adiciona espaçamento interno ao redor 
@@ -45,6 +49,10 @@ body {
     background-color: #fa9e34;
 
 }
+.search-bar button a{
+    text-decoration: none;
+    color: white;
+}
 
 /* Estilos da barra de navegação */
 .navbar {
@@ -57,31 +65,32 @@ body {
     background-color: #00655b;
 }
 
-.logo h1 {
-    font-size: 24px;
-    color: #ffffff;
-}
+
 
 nav ul {
-    list-style-type: none;
-    /*Remove os marcadores da lista*/
+    display: flex;
+    list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
-}
+  }
 
-nav ul li {
-    margin-right: 20px;
-}
+  nav ul li {
+    margin: 0 45px;
+    font-size: large;
+  }
 
-nav ul li a {
+  nav ul li a {
     text-decoration: none;
-    /*Remove o sublinhado dos links.*/
     color: #ffffff;
     font-weight: bold;
-    margin: 0 20px;
-    padding: 10px 20px;
-}
+    text-align: center;
+  
+  
+  }
+
+  nav ul li a:hover {
+    color: #023807;
+  }
 
 .cta-button button {
     background-color: #1a73e8;
@@ -90,36 +99,25 @@ nav ul li a {
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+
 }
 
 
 /* Estilo da seção principal */
-.header-content {
-    background-color: #eaf5ea;
-    color: rgb(0, 0, 0);
-    padding: 100px 90px;
+.banner-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px;
+    background-color: #eaf5ea; /* Fundo branco */
+    max-width: 1900px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-
 }
-
+    
 .text-content {
     max-width: 700px;
-
-}
-
-.text-content h1 {
-    font-size: 2.5em;
-    margin: 0 0 20px;
-    color: #333; /* Cor do texto principal */
-    display: inline-block;
-  
-}
-
-.text-content .highlight {
-    color: #009688; /* Cor verde para destacar "Juntos por um mundo melhor" */
-    font-size: 20px;
-    margin-left: 30px;
-    
+    text-align: center;
 }
 
 
