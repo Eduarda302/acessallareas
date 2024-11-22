@@ -32,10 +32,11 @@ body {
     /* Espaço entre o campo de pesquisa e o botão */
 }
 
-.search-bar button {
+.search-bar a {
     background-color: #009688 ;
     color: white;
     border: none;
+    text-decoration: none;
     padding: 10px 20px;
     /*espaçamento interno ao botão. Isso faz com que ele fique mais "alto" 
     (10px no topo e embaixo) e mais "largo" (20px nas laterais).*/
@@ -45,14 +46,11 @@ body {
     /*cursor do mouse para uma "mãozinha"*/
 }
 
-.search-bar button:hover {
-    background-color: #fa9e34;
+.search-bar a:hover {
+    background-color: #34fa86;
 
 }
-.search-bar button a{
-    text-decoration: none;
-    color: white;
-}
+
 
 /* Estilos da barra de navegação */
 .navbar {
@@ -115,10 +113,7 @@ nav ul {
     text-align: center;
 }
     
-.text-content {
-    max-width: 700px;
-    text-align: center;
-}
+
 
 
 .hamburguer{
@@ -133,6 +128,10 @@ nav ul {
     background-color: #ffffff;
     margin: 4px;
     transition: all 0.3s;
+}
+
+.userway_buttons_wrapper {
+margin-top: 100px;
 }
 
 /*final da nav*/
