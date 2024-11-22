@@ -157,6 +157,10 @@ body, html {
     transition: all 0.3s ease; /* Efeito suave de hover */
   }
 
+  .userway_buttons_wrapper {
+    margin-top: 100px;
+    }
+
 /* Responsividade para dispositivos menores */
 
 @media (max-width: 768px) {

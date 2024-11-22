@@ -163,6 +163,9 @@ body, html {
 .signup-link a:hover {
     text-decoration: underline; /* Adiciona um sublinhado ao passar o cursor */
 }
+.userway_buttons_wrapper {
+    margin-top: 100px;
+    }
 
 /* Adiciona responsividade para telas pequenas */
 @media (max-width: 480px) {
