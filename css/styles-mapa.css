@@ -17,6 +17,15 @@ body {
 
 }
 
+.text-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-container{
+  justify-content: center !important;
+}
 
 main {
   flex: 1;
