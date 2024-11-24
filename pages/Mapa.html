@@ -4,52 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acesse All Areas</title>
+    <title>Access All Areas</title>
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/styles-mapa.css">
+    <link rel="icon" type="image/x-icon" href="../img/icon.png">
 </head>
 
 <body>
     <header>
         <div class="navbar"> <!--Contém a barra de navegação.-->
             <div class="logo">
-                <h1>AcellAreas</h1> <!--logotipo e o título (o nome "WordStream").-->
+                <img src="../img/logo-removebg-preview (1).png"> <!--logotipo-->
             </div>
 
             <nav>
                 <ul>
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="../index.html">Sobre</a></li>
-                    <li><a href="pages/Mapa.html">Mapa</a></li>
-                    <li><a href="pages/Depoimentos.html">Depoimentos</a></li>
-                    <li><a href="pages/Chat.html">Chat</a></li>
+                    <li><a href="../pages/Mapa.html">Mapa</a></li>
+                    <li><a href="../pages/Depoimentos.html">Depoimentos</a></li>
+                    <li><a href="../pages/Chat.html">Chat</a></li>
                 </ul>
             </nav>
 
 
             <!-- Adicionando o campo de pesquisa -->
             <form class="search-bar" action="#" method="get">
-                <!--<form> define um formulário em HTML-->
-                <!--action="#" define para onde os dados do 
-                    formulário serão enviados quando o botão for clicado-->
-                <input type="text" placeholder="Search..." name="search">
+                
                 <!--placeholder="Search..." define o texto que aparecerá 
                 no campo de pesquisa antes de o usuário digitar algo-->
-                <button type="submit">Login</button>
+                <a href="Login.html">Login</a>
             </form>
+
             <!-- Botão menu responsivo -->
-             <div class="hamburguer" onclick="mostrarmenu()">
+            <div class="hamburguer" onclick="mostrarmenu()">
                 <span></span>
                 <span></span>
                 <span></span>
 
-             </div>
+            </div>
         </div>
-
-        <div class="header-content">
-            <h2>CIBELLYNHO DUARDINHA TAINAZAO</h2>
-            <p>MINHAS AMIGAS PARA SEMPRE. AMO QUE AMO BFFS</p>
-        </div>
+        <div class="banner-container">
+            <div class="text-content">
+                <h1>Localize Serviços, Viagens..<br> Próximos a Você!</h1>
+            </div>
     </header>
 
     <div class="espaco2-section">
@@ -64,11 +62,12 @@
                     <div class="card-inner">
                         <div class="card-front">
                             <div class="card-image">
-                                <img src="/img/porto.jpg" alt="Porto de Galinhas">
+                                <img src="../img/porto.jpg" alt="Porto de Galinhas">
                             </div>
                             <h3>Porto de Galinhas</h3>
                             <p>Porto de Galinhas é um destino paradisíaco no Brasil, famoso por praias, piscinas
                                 naturais e jangadas. </p>
+                                <br>
                             <button class="flip-button" onclick="flipCard(this)">Saiba Mais</button>
                         </div>
                         <div class="card-back">
@@ -76,7 +75,7 @@
                             <p>• Acessibilidade nas praias<br>
                                 • Piscinas Naturais e Passeios de Jangada<br>
                                 • Hotéis e Pousadas<br>
-                                • restaurantes e Lojas<br>
+                                • Restaurantes e Lojas<br>
                                 • Transportes e Estacionamentos<br>
                             </p>
                             <br>
@@ -96,11 +95,12 @@
                     <div class="card-inner">
                         <div class="card-front">
                             <div class="card-image">
-                                <img src="/img/janeiro.webp" alt="Rio de Janeiro">
+                                <img src="../img/janeiro.webp" alt="Rio de Janeiro">
                             </div>
                             <h3>Rio de Janeiro</h3>
                             <p>Rio de Janeiro é uma cidade brasileira icônica, famosa por suas praias, carnaval, Cristo
                                 Redentor e paisagens espetaculares.</p>
+                                
                             <button class="flip-button" onclick="flipCard(this)">Saiba Mais</button>
                         </div>
                         <div class="card-back">
@@ -108,7 +108,7 @@
                             <p>• Pontos Turísticos Acessíveis<br>
                             <p>• Eventos e Cultura<br>
                             <p>• Praias Adaptadas<br>
-                            <p>• Transportes Público<br>
+                            <p>• Transportes Públicos<br>
                             </p>
                             <br>
 
@@ -127,11 +127,12 @@
                     <div class="card-inner">
                         <div class="card-front">
                             <div class="card-image">
-                                <img src="/img/salvador.webp" alt="Salvador">
+                                <img src="../img/salvador.webp" alt="Salvador">
                             </div>
                             <h3>Salvador</h3>
                             <p>Salvador é a capital da Bahia, rica em cultura afro-brasileira, com praias, carnaval<br>
                                 e história vibrante.</p>
+                                <br>
                             <button class="flip-button" onclick="flipCard(this)">Saiba Mais</button>
                         </div>
                         <div class="card-back">
@@ -139,7 +140,7 @@
                             <p> • Políticas Públicas<br>
                                 • Saúde e Acessíbilidade<br>
                                 • Eventos e Cultura<br>
-                                • Transporte Público<br>
+                                • Transportes Públicos<br>
                             </p>
                             <br>
 
@@ -167,7 +168,7 @@
                         <div class="card-inner">
                             <div class="card-front">
                                 <div class="card-image">
-                                    <img src="/img/linkedin.jpg" alt="Linkedin">
+                                    <img src="../img/linkedin.jpg" alt="Linkedin">
                                 </div>
                                 <h3>Linkedin</h3>
                                 <p>LinkedIn é uma rede social profissional para networking, recrutamento e
@@ -196,11 +197,12 @@
                         <div class="card-inner">
                             <div class="card-front">
                                 <div class="card-image">
-                                    <img src="/img/vagos3.PNG" alt="Vagos">
+                                    <img src="../img/vagos3.PNG" alt="Vagos">
                                 </div>
                                 <h3>Vagas</h3>
-                                <p>Vagas é uma empresa de tecnologia e de muitas outras variedades de empregos que dão
-                                    oportunidades a empregos acessíveis. </p>
+                                <p>Vagas é uma empresa de tecnologia e de empregabilidade que dão oportunidades a empregos acessíveis.
+                                    <br>
+                                    <br> </p>
                                 <button class="flip-button" onclick="flipCard(this)">Saiba Mais</button>
                             </div>
                             <div class="card-back">
@@ -223,15 +225,22 @@
                         <div class="card-inner">
                             <div class="card-front">
                                 <div class="card-image">
-                                    <img src="/img/Diversidade.PNG" alt="Diversidade">
+                                    <img src="../img/Diversidade.PNG" alt="Diversidade">
                                 </div>
-                                <h3>Diversidade</h3>
-                                <p>Descrição do card 3.</p>
+                                <h3>Diversidade e Inclusão</h3>
+                                <p>O Nurap busca extrair o melhor de cada pessoa através do desenvolvimento humano, o
+                                    foco é proporcionar a pessoa com deficiência ter independência.</p>
+
                                 <button class="flip-button" onclick="flipCard(this)">Saiba Mais</button>
                             </div>
+
                             <div class="card-back">
-                                <h3>Mais sobre o site Diversidade</h3>
-                                <p></p>
+                                <h3>Mais sobre o site Nurap</h3>
+                                <p> • Palestra de Sensibilização<br>
+                                    • Café Sensorial<br>
+                                    • Mapeamento de cargos e funções<br>
+                                    • Programa Effective<br></p>
+                                <br>
 
                                 <p>Saiba mais sobre o site<br>
                                     <a href="https://institutoreacao.org.br/sobre-o-instituto/">Saíba mais</a>
@@ -255,7 +264,7 @@
                             <div class="card-inner">
                                 <div class="card-front">
                                     <div class="card-image">
-                                        <img src="/img/Untitled Project (1).jpg" alt="Instituto Reação">
+                                        <img src="../img/Untitled Project (1).jpg" alt="Instituto Reação">
                                     </div>
                                     <h3>Instituto Reação</h3>
                                     <p>O objetivo é acompanhar crianças a partir dos quatro anos até o seu primeiro
@@ -283,7 +292,7 @@
                             <div class="card-inner">
                                 <div class="card-front">
                                     <div class="card-image">
-                                        <img src="/img/patricia2.jpg" alt="esporte">
+                                        <img src="../img/patricia2.jpg" alt="esporte">
                                     </div>
                                     <h3>Instituto Patrícia Medrado</h3>
                                     <p>O Instituto Patrícia Medrado nasceu em 1998 com o sonho de levar o tênis a
@@ -313,11 +322,11 @@
                             <div class="card-inner">
                                 <div class="card-front">
                                     <div class="card-image">
-                                        <img src="/img/olimpico.PNG" alt="olimpico">
+                                        <img src="../img/olimpico.PNG" alt="olimpico">
                                     </div>
                                     <h3>Victorem Paralímpico</h3>
                                     <p>O objetivo central do projeto é criar as condições mais adequadas para que o
-                                        atleta, possa desenvolver suas potencialidades no campo técnico paradesportivo.
+                                        atleta possa desenvolver suas potencialidades, no campo técnico paradesportivo.
                                     </p>
                                     <button class="flip-button" onclick="flipCard(this)">Saiba Mais</button>
                                 </div>
@@ -331,9 +340,7 @@
 
 
                                     <p>Saiba mais sobre o site<br>
-                                        <a
-                                            href="https://www.decolar.com/trip/accommodations/results/SCac397b2028414e2abe230a28bc35023328847165?searchParams=RkgvQ0lUXzY1NzQvQ0lUXzcwMTgvMjAyNS0wMS0yMC8yMDI1LTAxLTI1L0NJVF83MDE4LzIwMjUtMDEtMjAvMjAyNS0wMS0yNS8yfEgxOkgsRjA6RixYUzpYUw%3D%3D&flow=FH&tripItem=H1&stepNum=0&from=recommendation&from=recommendation&rs=SUCCESS&priceDate=1730829694186&typeCodePackage=SSA&searchId=db65b715-e1db-42f6-9844-359016f0c8bb&hotjar=new-layout&abcv=YWJjdi1mb3JjZWRHRFM9dHJ1ZSZhYmN2LWZvcmNlZEZpbmFsPWZhbHNl&package_id=b6d90213b81d563a1d2e7518b03412dd29ac9b20e866b359dbf25b6d1059cbc2&clickedPrice=BRL_1657&hotelid=285601&tp=eyJJbnMiOjE3MzA4Mjk5ODQ2MzAsIklyIjoxNDEyNH0%3D">Saiba
-                                            mais</a>
+                                        <a href="https://institutovictorem.org.br/">Saiba Mais</a>
                                     </p>
 
                                     <button class="flip-button" onclick="flipCard(this)">Voltar</button>
@@ -344,10 +351,41 @@
                 </main>
                 <!--Final dos terceiros cards-->
 
-                <footer>
-                    <p>&copy; 2022 My Website. All rights reserved.</p>
+                <footer style="background-color: #004d40; color: #ffffff; padding: 20px 0; text-align: center;">
+                    <div style="max-width: 1200px; margin: auto; padding: 5px;">
+                        <p style="font-size: 16px; font-weight: bold; margin: 10px 0;">AcessAllAreas</p>
+                        
+                        <div style="margin: 10px 0;">
+                            <a href="https://www.linkedin.com/company/afesu/posts/?feedView=all" target="_blank" style="color: #ffffff; text-decoration: none; margin: 0 10px;">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" style="width: 24px; vertical-align: middle; margin-right: 5px;">
+                                LinkedIn
+                            </a>
+                        </div>
+                
+                        <p style="font-size: 13px; margin: 10px 0;">
+                            © 2024 AcessAllAreas. Todos os direitos reservados.
+                        </p>
+                    
+                    </div>
                 </footer>
+
+                
 </body>
+
+ <!-- Scripts de Acessibilidade -->
+ <script>
+    (function (d) {
+        var s = d.createElement("script");
+        s.setAttribute("data-account", "YOUR-WIDGET-CODE-HERE");
+        s.setAttribute("src", "https://cdn.userway.org/widget.js");
+        (d.body || d.head).appendChild(s);
+    })(document)
+</script>
+
+<!-- Script adicional de acessibilidade -->
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+
+
 <script src="../js/mapa.js"></script>
 <script src="../js/nav.js"></script>
 

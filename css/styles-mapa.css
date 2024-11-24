@@ -17,39 +17,15 @@ body {
 
 }
 
-.logo img {
-  width: 70px;
-  border-radius: 60%;
-}
-
-nav ul {
+.text-content {
   display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  justify-content: center;
+  align-items: center;
 }
 
-nav ul li {
-  margin: 0 15px;
-  font-size: large;
+.banner-container{
+  justify-content: center !important;
 }
-
-/* cor e tamanho da fonte da nav */
-nav ul li a {
-  text-decoration: none;
-  color: #ffffff;
-  font-weight: bold;
-  text-align: center;
-
-
-}
-
-/* cor da fonte quando aperta em cima */
-nav ul li a:hover {
-  color: #023807;
-}
- 
-
 
 main {
   flex: 1;
@@ -118,7 +94,7 @@ main {
 }
 
 .card-back {
-  background-color: #4caf50;
+  background-color: #009688;
   transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
@@ -137,7 +113,7 @@ main {
   cursor: pointer;
   font-weight: bold;
   height: 10%;
-  width: 40%;
+  width: 40;
   font-size: small;
 }
 
@@ -154,15 +130,7 @@ main {
 }
 
 /*Footer*/
-footer {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: rgb(174, 240, 188);
-  padding: 20px 0;
-  text-align: center;
 
-}
 
 /* deixando o card responsivo para celular */
 @media (max-width: 480px) {
