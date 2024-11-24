@@ -27,16 +27,17 @@ body, html {
 
 .back-button {
     position: absolute;
-    top: 20px; /* Posiciona o botão a 20px do topo */
-    left: -40px; /* Move o botão levemente para fora do container */
+    left: 0; /* Ajuste para posicionar ao lado da área de login */
+    transform: translateX(-150%); /* Mova para a esquerda */
+    top: 0; /* Alinhe verticalmente um pouco mais para cima */
     font-size: 24px;
-    color: #ffffff; /* Define a cor do botão */
-    text-decoration: none; /* Remove a sublinha */
-    cursor: pointer; /* Define o cursor como pointer para indicar que é clicável */
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .back-button:hover {
-    color: #7abf8a; /* Altera a cor do botão ao passar o mouse */
+    color: #009688; /* Altera a cor do botão ao passar o mouse */
 }
 
 .left-login h1 {
@@ -77,7 +78,7 @@ body, html {
     margin-left: auto; /* Empurra o card para a direita */
 }
 
-.card-login>h1 {
+.card-login h1 {
     color: #ffffff; /* Cor do título */
     font-weight: 800; /* Negrito */
     margin: 0; /* Remove margem padrão */
@@ -105,7 +106,7 @@ body, html {
     box-sizing: border-box; /* Inclui padding e borda na largura */
 }
 
-.textfield>label {
+.textfield label {
     color: #f0ffffde;
     margin-bottom: 10px; /* Espaçamento abaixo do label */
 }
@@ -124,11 +125,26 @@ body, html {
     text-transform: uppercase; /* Transforma o texto em maiúsculas */
     font-weight: 800; /* Negrito */
     letter-spacing: 2px; /* Espaçamento entre letras */
-    color: #2b134b; /* Cor do texto */
-    background: #ffffff; /* Cor de fundo */
+    color: #ffffff; /* Cor do texto */
+    background: #0d574f; /* Cor de fundo */
     cursor: pointer; /* Cursor de ponteiro para indicar que é clicável */
     box-shadow: 0px 10px 40px -12pcd #00ff8052; /* Sombra do botão */
 }
+.back-button {
+    position: absolute; /* Posiciona o botão */
+    top: 20px; /* Ajusta a distância do topo */
+    left:20px; /* Ajusta a distância da lateral */
+    font-size: 24px; /* Tamanho da seta */
+    color: white; /* Cor da seta */
+    text-decoration: none; /* Remove o sublinhado */
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo transparente */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 50%; /* Torna o botão redondo */
+    display: flex; /* Centraliza o conteúdo */
+    align-items: center; 
+    justify-content: center;
+    transition: all 0.3s ease; /* Efeito suave de hover */
+  }
 
 /* Estiliza o parágrafo com a mensagem de registro */
 .signup-link {
@@ -147,11 +163,15 @@ body, html {
 .signup-link a:hover {
     text-decoration: underline; /* Adiciona um sublinhado ao passar o cursor */
 }
+.userway_buttons_wrapper {
+    margin-top: 100px;
+    }
 
 /* Adiciona responsividade para telas pequenas */
 @media (max-width: 480px) {
     .main-login {
         flex-direction: column; /* Alinha os elementos em coluna */
+        padding: 5px;
     }
 
     .left-login {
@@ -170,5 +190,12 @@ body, html {
 
     .card-login {
         height: 70%; /* Ajusta a altura do card */
+        margin-left: 0;
+
+
+    }
+
+    .right-login{
+        width: 40vh;
     }
 }
