@@ -7,57 +7,53 @@
     <title>Acesse All Areas</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/nav.css">
+    <link rel="icon" type="image/x-icon" href="../img/icon.png">
 </head>
 
 <body>
     <header>
         <div class="navbar"> <!--Contém a barra de navegação.-->
             <div class="logo">
-
-                <h1>AcessAllAreas</h1> <!--logotipo e o título (o nome "WordStream").-->
+                <img src="img/logo.png">
             </div>
             <nav>
                 <ul>
                     <li><a href="./index.html">Home</a></li>
-                    <li><a href="./index.html">Sobre</a></li>
-                    <li><a href="pages/Mapa.html">Mapa</a></li>
-                    <li><a href="pages/Depoimentos.html">Depoimentos</a></li>
-                    <li><a href="pages/Chat.html">Chat</a></li>
-                    <li><a href="pages/Login.html">Login</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="./pages/Mapa.html">Mapa</a></li>
+                    <li><a href="./pages/Depoimentos.html">Depoimentos</a></li>
+                    <li><a href="./pages/Chat.html">Chat</a></li>
                 </ul>
             </nav>
 
+
             <!-- Adicionando o campo de pesquisa -->
             <form class="search-bar" action="#" method="get">
-                <!--<form> define um formulário em HTML-->
-                <!--action="#" define para onde os dados do 
-                    formulário serão enviados quando o botão for clicado-->
-                <input type="text" placeholder="Search..." name="search">
+
                 <!--placeholder="Search..." define o texto que aparecerá 
                 no campo de pesquisa antes de o usuário digitar algo-->
-                <button type="submit">Login</button>
+                <a href="./pages/Login.html">Login</a>
             </form>
 
-             <!-- Botão menu responsivo -->
-             <div class="hamburguer" onclick="mostrarmenu()">
+            <!-- Botão menu responsivo -->
+            <div class="hamburguer" onclick="mostrarmenu()">
                 <span></span>
                 <span></span>
                 <span></span>
-             </div>
-        </div>
 
+            </div>
         </div>
 
         <div class="banner-container">
             <div class="text-content">
                 <h1>Inclusão Começa com Informação <span class="highlight">
-                    <br>Juntos por um Mundo Melhor</span></h1>
-                <p>Access All Areas pode ajudar pessoas com algum tipo de defici </p>
-                <button onclick="window.location.href='#'">Cadastre-se aqui</button>
+                        <br>Juntos por um Mundo Melhor</span></h1>
+                <p>Access All Areas: Conectando pessoas com deficiência a um mundo de possibilidades e inclusão.</p>
+                <button onclick="window.location.href='pages/Cadastro.html'">Cadastre-se aqui</button>
             </div>
             <div class="image-content">
                 <!-- Aqui você pode substituir pela imagem real -->
-                <img src="img/paralympic winners podium-rafiki (1).png" alt="Grupo de pessoas diversas interagindo" />
+                <img src="img/topo-removebg-preview.png" alt="Grupo de pessoas com deficiência em diversos esportes" />
             </div>
         </div>
 
@@ -65,10 +61,10 @@
 
     <!--Sessão de Cards-->
     <section class="services-section">
-        <div class="service-box blue">
+        <div class="service-box">
             <div class="icon">
-                <!-- Exemplo de ícone (substitua pela imagem ou ícone real) -->
-                <img src="img/search-location.png" alt="Sites Profissionais">
+                <!-- Exemplo de ícone -->
+                <img src="img/search-location.png" alt="Serviços oferecidos no site ">
             </div>
             <h3>MAPAS</h3>
             <p>Nosso site oferece Mapas de Viagens que destacam rotas e locais acessíveis, facilitando o planejamento de
@@ -77,7 +73,7 @@
                 recursos garantem que você tenha acesso a informações e oportunidades que atendam às suas necessidades.
             </p>
         </div>
-        <div class="service-box orange">
+        <div class="service-box">
             <div class="icon">
                 <img src="img/introduction (1).png" alt="E-Commerce Completo">
             </div>
@@ -88,7 +84,7 @@
                 você poderá se sentir motivado e empoderado, sabendo que é possível superar desafios e alcançar seus
                 objetivos.</p>
         </div>
-        <div class="service-box blue">
+        <div class="service-box">
             <div class="icon">
                 <img src="img/messages-question.png" alt="Marketing Digital">
             </div>
@@ -119,22 +115,37 @@
         <div class="ong-info">
             <div class="carousel-container">
                 <div class="carousel-slides">
-                    <div class="slide"><img src="img/World Down Syndrome day-bro.png" alt="Crianças com Sindrome de Down"></div>
+                    <div class="slide"><img src="img/World Down Syndrome day-bro.png"
+                            alt="Crianças com Sindrome de Down"></div>
                     <div class="slide"><img src="img/disabled athletes-bro.png" alt="Atletas com deficiência"></div>
                     <div class="slide"><img src="img/Autism-bro.png" alt="Criança com Autismo"></div>
                 </div>
             </div>
             <div>
-                <h1>Tanana</h1>
-                <p>Pessoas com Deficiência (PCD) são aquelas que possuem limitações <br>físicas, sensoriais,
-                    intelectuais ou
-                    múltiplas. A inclusão dessas<br> pessoas é garantida pela Lei Brasileira de Inclusão (LBI), que
-                    assegura<br> acessibilidade em espaços públicos, no trabalho, educação,<br> saúde e transporte. A
-                    ideia
-                    é que a deficiência não seja <br>vista como uma incapacidade, mas como uma característica que exige
-                    <br>respeito e adaptação. Para promover igualdade, <br>é necessário eliminar barreiras físicas e
-                    sociais, garantindo que<br> todas as pessoas tenham acesso a oportunidades e possam participar<br>
-                    ativamente da vida em sociedade.<br>
+                <h1>Pessoas com Deficiência: Quebrando <br>Barreiras e Promovendo Inclusão</h1>
+                <p>Ser uma Pessoa com Deficiência (PCD) significa conviver com uma condição física, sensorial,
+                    intelectual
+                    ou mental que pode limitar, de alguma forma, a realização de atividades do dia a dia ou a interação
+                    com o
+                    ambiente. Essa condição não define a identidade ou o valor da pessoa, mas é apenas um aspecto de sua
+                    vivência. A experiência de ser PCD é diversa, abrangendo desde limitações leves até deficiências
+                    complexas,
+                    e pode ser temporária, congênita ou adquirida. A deficiência, por si só, não é o principal
+                    obstáculo; as barreiras
+                    sociais, arquitetônicas, comunicacionais e atitudinais excluem essas pessoas. A falta de rampas,
+                    elevadores
+                    adaptados, tecnologias assistivas ou sistemas de comunicação acessíveis dificulta o acesso a espaços
+                    públicos, educação, trabalho e lazer. Além disso, preconceito, desinformação e falta de empatia
+                    reforçam
+                    estigmas e limitam oportunidades. Apesar das dificuldades, PCDs têm habilidades e potencial para
+                    contribuir
+                    em todas as áreas da sociedade. Com políticas públicas inclusivas, tecnologias assistivas e ambiente
+                    acessível, essas barreiras podem ser superadas, permitindo que PCDs alcancem autonomia. A inclusão
+                    vai além da acessibilidade física, abrangendo uma cultura de respeito, igualdade e oportunidades.
+                    Isso
+                    garante que PCDs tenham voz, participação ativa e sejam reconhecidas por suas capacidades, não por
+                    suas limitações. Promover os direitos das PCDs é essencial para construir uma sociedade mais
+                    justa e acolhedora para todos.
                 </p>
             </div>
         </div>
@@ -149,52 +160,47 @@
     </div>
 
     <!--Sessão Sobre nós-->
-    <section class="service-section">
+    <section class="service-section" id="sobre">
         <h1>Quem somos?</h1>
         <div class="service-cards">
             <div class="card">
                 <div class="icon">
-                    <img src="img/pou.jpg" alt="Foto da Cibelly">
+                    <img src="img/cibelly2.jpg" alt="Foto da Cibelly">
                 </div>
                 <h3>Cibelly</h3>
-                <p>Desenvolvimento de websites requer habilidades em design, programação, otimização e usabilidade para
-                    alcançar sucesso online.</p>
+                <p>C</p>
             </div>
 
             <div class="card">
                 <div class="icon">
-                    <img src="img/pou.jpg" alt="Foto da Eduarda">
+                    <img src="img/eduarda.jfif" alt="Foto da Eduarda">
                 </div>
                 <h3>Eduarda</h3>
-                <p>Websites para médicos oferecem informações precisas, agendamento online, atualizações médicas e
-                    serviços especializados.</p>
+                <p>E</p>
             </div>
 
             <div class="card">
                 <div class="icon">
-                    <img src="img/pou.jpg" alt="Foto da Melany">
+                    <img src="img/melany2.jpg" alt="Foto da Melany">
                 </div>
                 <h3>Melany</h3>
-                <p>Websites para dentistas: promovem serviços odontológicos, agendamento online, informações sobre
-                    tratamentos e equipe especializada.</p>
+                <p>M</p>
             </div>
 
             <div class="card">
                 <div class="icon">
-                    <img src="img/pou.jpg" alt="Foto da Poliane">
+                    <img src="img/poliane2.jpg" alt="Foto da Poliane">
                 </div>
                 <h3>Poliane</h3>
-                <p>Desenvolvemos sites profissionais para advogados, destacando expertise, credibilidade e serviços
-                    jurídicos especializados.</p>
+                <p>P</p>
             </div>
 
             <div class="card">
                 <div class="icon">
-                    <img src="img/pou.jpg" alt="Foto da Taina">
+                    <img src="img/taina2.jpg" alt="Foto da Taina">
                 </div>
                 <h3>Taina</h3>
-                <p>Desenvolvemos sites profissionais para advogados, destacando expertise, credibilidade e serviços
-                    jurídicos especializados.</p>
+                <p>T</p>
             </div>
         </div>
     </section>
@@ -236,10 +242,7 @@
     <!--Sessão de conversa3-->
     <div class="conversa2-section">
         <div class="cta2">
-            <p>TANANANANANANNANNAANANANNNANANANANANANANANANAAN
-                TANANANANANANNANNAANANANNNANANANANANANANANANAAN
-                TANANANANANANNANNAANANANNNANANANANANANANANANAAN</p>
-            <a href="#" class="cta-button2">Botão de conversa</a>
+
         </div>
     </div>
 
@@ -267,21 +270,25 @@
         </div>
     </section>
     <!--Footer-->
-    <footer>
-        <!--Links das redes sociais-->
-        <div class="social-icons">
-            <a href="#"><img src="img/whatsapp.png" alt="Whatsapp"></a>
-            <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="img/linkedin.png" alt="LinkedIn"></a>
+    <footer style="background-color: #004d40 !important; color: #ffffff !important; padding: 20px 0 !important; text-align: center !important;">
+        <div style="max-width: 1200px !important; margin: auto !important; padding: 5px !important;">
+            <p style="font-size: 16px; font-weight: bold; margin: 10px 0; text-align: center;">AcessAllAreas</p>
+            
+            <div style="margin: 10px 0 !important;">
+                <a href="https://www.linkedin.com/company/afesu/posts/?feedView=all" target="_blank" style="color: #ffffff; text-decoration: none; margin: 0 10px;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" style="width: 24px; vertical-align: middle; margin-right: 5px;">
+                    LinkedIn
+                </a>
+            </div>
+    
+            <p style="font-size: 13px !important; margin: 10px 0 !important; text-align: center;">
+                © 2024 AcessAllAreas. Todos os direitos reservados.
+            </p>
+        
         </div>
-        <div class="footer-links">
-            <a href="#">Tanananananana</a>
-            <a href="#">Tanananananana</a>
-            <a href="#">Tanananananana</a>
-        </div>
-        <p>&copy; 2024 Cotia</p>
     </footer>
 </body>
 <script src="../js/index.js"></script>
 <script src="/js/nav.js"></script>
+
 </html>
