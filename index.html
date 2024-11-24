@@ -7,44 +7,47 @@
     <title>Acesse All Areas</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/nav.css">
+    <link rel="icon" type="image/x-icon" href="../img/icon.png">
 </head>
 
 <body>
     <header>
         <div class="navbar"> <!--Contém a barra de navegação.-->
             <div class="logo">
-
-                <h1>AcessAllAreas</h1> <!--logotipo e o título (o nome "WordStream").-->
+                <img src="img/logo.png">
             </div>
             <nav>
                 <ul>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="pages/Mapa.html">Mapa</a></li>
-                    <li><a href="pages/Depoimentos.html">Depoimentos</a></li>
-                    <li><a href="pages/Chat.html">Chat</a></li>
+                    <li><a href="./pages/Mapa.html">Mapa</a></li>
+                    <li><a href="./pages/Depoimentos.html">Depoimentos</a></li>
+                    <li><a href="./pages/Chat.html">Chat</a></li>
                 </ul>
             </nav>
 
-            
+
+            <!-- Adicionando o campo de pesquisa -->
             <form class="search-bar" action="#" method="get">
-                <button type="submit" a href="../Login.html">Login</button>
+
+                <!--placeholder="Search..." define o texto que aparecerá 
+                no campo de pesquisa antes de o usuário digitar algo-->
+                <a href="./pages/Login.html">Login</a>
             </form>
 
-             <!-- Botão menu responsivo -->
-             <div class="hamburguer" onclick="mostrarmenu()">
+            <!-- Botão menu responsivo -->
+            <div class="hamburguer" onclick="mostrarmenu()">
                 <span></span>
                 <span></span>
                 <span></span>
-             </div>
-        </div>
 
+            </div>
         </div>
 
         <div class="banner-container">
             <div class="text-content">
                 <h1>Inclusão Começa com Informação <span class="highlight">
-                    <br>Juntos por um Mundo Melhor</span></h1>
+                        <br>Juntos por um Mundo Melhor</span></h1>
                 <p>Access All Areas: Conectando pessoas com deficiência a um mundo de possibilidades e inclusão.</p>
                 <button onclick="window.location.href='pages/Cadastro.html'">Cadastre-se aqui</button>
             </div>
@@ -108,29 +111,38 @@
 
 
     <!--Sessão de texto e foto-->
-    <section class="about" >
+    <section class="about">
         <div class="ong-info">
             <div class="carousel-container">
                 <div class="carousel-slides">
-                    <div class="slide"><img src="img/World Down Syndrome day-bro.png" alt="Crianças com Sindrome de Down"></div>
+                    <div class="slide"><img src="img/World Down Syndrome day-bro.png"
+                            alt="Crianças com Sindrome de Down"></div>
                     <div class="slide"><img src="img/disabled athletes-bro.png" alt="Atletas com deficiência"></div>
                     <div class="slide"><img src="img/Autism-bro.png" alt="Criança com Autismo"></div>
                 </div>
             </div>
             <div>
                 <h1>Pessoas com Deficiência: Quebrando <br>Barreiras e Promovendo Inclusão</h1>
-                <p>Ser uma Pessoa com Deficiência (PCD) significa conviver com uma condição física, sensorial, intelectual
-                    ou mental que pode limitar, de alguma forma, a realização de atividades do dia a dia ou a interação com o
+                <p>Ser uma Pessoa com Deficiência (PCD) significa conviver com uma condição física, sensorial,
+                    intelectual
+                    ou mental que pode limitar, de alguma forma, a realização de atividades do dia a dia ou a interação
+                    com o
                     ambiente. Essa condição não define a identidade ou o valor da pessoa, mas é apenas um aspecto de sua
-                    vivência. A experiência de ser PCD é diversa, abrangendo desde limitações leves até deficiências complexas,
-                    e pode ser temporária, congênita ou adquirida. A deficiência, por si só, não é o principal obstáculo; as barreiras
-                    sociais, arquitetônicas, comunicacionais e atitudinais excluem essas pessoas. A falta de rampas, elevadores
+                    vivência. A experiência de ser PCD é diversa, abrangendo desde limitações leves até deficiências
+                    complexas,
+                    e pode ser temporária, congênita ou adquirida. A deficiência, por si só, não é o principal
+                    obstáculo; as barreiras
+                    sociais, arquitetônicas, comunicacionais e atitudinais excluem essas pessoas. A falta de rampas,
+                    elevadores
                     adaptados, tecnologias assistivas ou sistemas de comunicação acessíveis dificulta o acesso a espaços
-                    públicos, educação, trabalho e lazer. Além disso, preconceito, desinformação e falta de empatia reforçam
-                    estigmas e limitam oportunidades. Apesar das dificuldades, PCDs têm habilidades e potencial para contribuir
+                    públicos, educação, trabalho e lazer. Além disso, preconceito, desinformação e falta de empatia
+                    reforçam
+                    estigmas e limitam oportunidades. Apesar das dificuldades, PCDs têm habilidades e potencial para
+                    contribuir
                     em todas as áreas da sociedade. Com políticas públicas inclusivas, tecnologias assistivas e ambiente
                     acessível, essas barreiras podem ser superadas, permitindo que PCDs alcancem autonomia. A inclusão
-                    vai além da acessibilidade física, abrangendo uma cultura de respeito, igualdade e oportunidades. Isso
+                    vai além da acessibilidade física, abrangendo uma cultura de respeito, igualdade e oportunidades.
+                    Isso
                     garante que PCDs tenham voz, participação ativa e sejam reconhecidas por suas capacidades, não por
                     suas limitações. Promover os direitos das PCDs é essencial para construir uma sociedade mais
                     justa e acolhedora para todos.
@@ -230,7 +242,7 @@
     <!--Sessão de conversa3-->
     <div class="conversa2-section">
         <div class="cta2">
-            
+
         </div>
     </div>
 
@@ -258,21 +270,25 @@
         </div>
     </section>
     <!--Footer-->
-    <footer>
-        <!--Links das redes sociais-->
-        <div class="social-icons">
-            <a href="#"><img src="img/whatsapp.png" alt="Whatsapp"></a>
-            <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="img/linkedin.png" alt="LinkedIn"></a>
+    <footer style="background-color: #004d40 !important; color: #ffffff !important; padding: 20px 0 !important; text-align: center !important;">
+        <div style="max-width: 1200px !important; margin: auto !important; padding: 5px !important;">
+            <p style="font-size: 16px; font-weight: bold; margin: 10px 0; text-align: center;">AcessAllAreas</p>
+            
+            <div style="margin: 10px 0 !important;">
+                <a href="https://www.linkedin.com/company/afesu/posts/?feedView=all" target="_blank" style="color: #ffffff; text-decoration: none; margin: 0 10px;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" style="width: 24px; vertical-align: middle; margin-right: 5px;">
+                    LinkedIn
+                </a>
+            </div>
+    
+            <p style="font-size: 13px !important; margin: 10px 0 !important; text-align: center;">
+                © 2024 AcessAllAreas. Todos os direitos reservados.
+            </p>
+        
         </div>
-        <div class="footer-links">
-            <a href="#">Tanananananana</a>
-            <a href="#">Tanananananana</a>
-            <a href="#">Tanananananana</a>
-        </div>
-        <p>&copy; 2024 Cotia</p>
     </footer>
 </body>
 <script src="../js/index.js"></script>
 <script src="/js/nav.js"></script>
+
 </html>
