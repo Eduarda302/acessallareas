@@ -5,41 +5,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="..//css/styles-cadastro.css">
-    <title>Tela de Cadastro</title>
+    <title>Acesse All Areas</title>
 </head>
 
 <body>
     <div class="main-cadastro">
         <div class="left-cadastro">
-            <h1>Faça Cadastro<br> E faça parte do nosso time</h1>
-            <img src="..//img/pcds.png" class="left-cadastro-image" alt="pcds">
+            <h1> Cadastre-se<br> E faça parte do nosso time</h1>
+            <img src="..//img/pcdss.png" class="left-cadastro-image" alt="pcds">
+           
         </div>
         <div class="right-cadastro">
-            <div| class="card-cadastro">
+            <div class="card-cadastro">
+                 <a href="Login.html" class="back-button">&larr;</a> <!-- Botão de voltar -->
                 <h1>Cadastro</h1>
                 <div class="textfield">
-                    <label for="usuário">Usuário</label>
+                    <label for="usuario">Usuário</label>
                     <input type="text" name="usuario" placeholder="Usuário">
                 </div>
                 <div class="textfield">
                     <label for="email">Email</label>
-                    <input type="text" name="email" placeholder="Email">
+                    <input type="email" name="email" placeholder="Email">
                 </div>
-
                 <div class="textfield">
                     <label for="senha">Crie senha</label>
                     <input type="password" name="senha" placeholder="Senha">
                 </div>
                 <div class="textfield">
-                    <label for="senha">Confirme senha</label>
-                    <input type="password" name="senha" placeholder="Senha">
+                    <label for="senha_confirmacao">Confirme senha</label>
+                    <input type="password" name="senha_confirmacao" placeholder="Senha">
                 </div>
-                <button class="btn-cadastro">cadastrar</button>
-            
+                <button class="btn-cadastro"></a> Cadastrar</button>
+            </div>
         </div>
     </div>
-    </div>
+      <!-- Scripts de Acessibilidade -->
+      <script>
+        (function (d) {
+            var s = d.createElement("script");
+            s.setAttribute("data-account", "YOUR-WIDGET-CODE-HERE");
+            s.setAttribute("src", "https://cdn.userway.org/widget.js");
+            (d.body || d.head).appendChild(s);
+        })(document)
+    </script>
 
+    <!-- Script adicional de acessibilidade -->
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    
+    
 </body>
 
 </html>
