@@ -18,33 +18,40 @@
 </head>
 
 <body>
-    <div class="navbar"> <!--Contém a barra de navegação.-->
-        <div class="logo">
+    <header>
+        <div class="navbar"> <!--Contém a barra de navegação.-->
+            <div class="logo">
+                <img src="../img/logo-removebg-preview (1).png"> <!--logotipo-->
+            </div>
 
-            <h1>AcessAllAreas</h1> <!--logotipo e o título (o nome "WordStream").-->
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html">Sobre</a></li>
+                    <li><a href="../pages/Mapa.html">Mapa</a></li>
+                    <li><a href="../pages/Depoimentos.html">Depoimentos</a></li>
+                    <li><a href="../pages/Chat.html">Chat</a></li>
+                </ul>
+            </nav>
+
+
+            <!-- Adicionando o campo de pesquisa -->
+            <form class="search-bar" action="#" method="get">
+                
+                <!--placeholder="Search..." define o texto que aparecerá 
+                no campo de pesquisa antes de o usuário digitar algo-->
+                <a href="Login.html">Login</a>
+            </form>
+
+            <!-- Botão menu responsivo -->
+            <div class="hamburguer" onclick="mostrarmenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../index.html">Sobre</a></li>
-                <li><a href="Mapa.html">Mapa</a></li>
-                <li><a href="Depoimentos.html">Depoimentos</a></li>
-                <li><a href="Chat.html">Chat</a></li>
-                <li><a href="Login.html">Login</a></li>
-            </ul>
-        </nav>
-
-        <!-- Adicionando o campo de pesquisa -->
-        <form class="search-bar" action="#" method="get">
-            <!--<form> define um formulário em HTML-->
-            <!--action="#" define para onde os dados do 
-                formulário serão enviados quando o botão for clicado-->
-            <input type="text" placeholder="Search..." name="search">
-            <!--placeholder="Search..." define o texto que aparecerá 
-            no campo de pesquisa antes de o usuário digitar algo-->
-            <button type="submit">Login</button>
-        </form>
-    </div>
+    </header>
 
 
 
@@ -223,19 +230,22 @@
         </div>
     </div>
     <!--Footer-->
-    <footer>
-        <!--Links das redes sociais-->
-        <div class="social-icons">
-            <a href="#"><img src="../img/.png" alt="Whatsapp"></a>
-            <a href="#"><img src="../img/instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="../img/linkedin.png" alt="LinkedIn"></a>
+    <footer style="background-color: #004d40; color: #ffffff; padding: 20px 0; text-align: center;">
+        <div style="max-width: 1200px; margin: auto; padding: 5px;">
+            <p style="font-size: 16px; font-weight: bold; margin: 10px 0;">AcessAllAreas</p>
+            
+            <div style="margin: 10px 0;">
+                <a href="https://www.linkedin.com/company/afesu/posts/?feedView=all" target="_blank" style="color: #ffffff; text-decoration: none; margin: 0 10px;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" style="width: 24px; vertical-align: middle; margin-right: 5px;">
+                    LinkedIn
+                </a>
+            </div>
+    
+            <p style="font-size: 13px; margin: 10px 0;">
+                © 2024 AcessAllAreas. Todos os direitos reservados.
+            </p>
+        
         </div>
-        <div class="footer-links">
-            <a href="#">Tanananananana</a>
-            <a href="#">Tanananananana</a>
-            <a href="#">Tanananananana</a>
-        </div>
-        <p>&copy; 2024 Cotia</p>
     </footer>
     <script>
         (function (d) {

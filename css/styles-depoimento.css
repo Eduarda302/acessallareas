@@ -27,19 +27,11 @@ body {
     height: 99%;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #009688;
-}
 
 .ong-info {
     display: flex;
-    padding: 270px;
-    background-color: #eaf5ea;
-    ;
+    margin: 10%;
+    background-color: #eaf5ea;;
     border-radius: 1px;
     box-shadow: #5b8b63;
     width: 100%
@@ -154,44 +146,6 @@ h2 {
     font-size: 16px;
     color: #ffffff;
     margin-top: 10px;
-}
-
-/* Estilos para o rodapé */
-/*Footer*/
-
-footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #00655b;
-    ;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.social-icons {
-    margin-bottom: 10px;
-}
-
-.social-icons a {
-    margin: 0 10px;
-    display: inline-block;
-}
-
-.footer-links {
-    margin-bottom: 10px;
-}
-
-.footer-links a {
-    margin: 0 10px;
-    color: #666666;
-    text-decoration: none;
-}
-
-footer p {
-    font-size: 0.9em;
-    color: #666666;
-    margin: 0;
 }
 
 @media (max-width: 480px) {
