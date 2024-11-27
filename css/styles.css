@@ -17,7 +17,8 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 70px;
-    background-color: #eaf5ea; /* Fundo branco */
+    background-color: #eaf5ea;
+    /* Fundo branco */
     max-width: 1900px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -29,13 +30,15 @@ body {
 .text-content h1 {
     font-size: 2.5em;
     margin: 0 0 20px;
-    color: #333; /* Cor do texto principal */
+    color: #333;
+    /* Cor do texto principal */
     margin-left: 90px;
     display: inline-block;
 }
 
 .text-content .highlight {
-    color: #009688; /* Cor verde para destacar "Juntos por um mundo melhor" */
+    color: #009688;
+    /* Cor verde para destacar "Juntos por um mundo melhor" */
     font-size: 20px;
     margin-left: 90px;
 }
@@ -43,7 +46,8 @@ body {
 .text-content p {
     margin: 0 0 20px;
     font-size: 1.1em;
-    color: #555; /* Cor mais clara para o texto */
+    color: #555;
+    /* Cor mais clara para o texto */
     margin-left: 90px;
 }
 
@@ -66,10 +70,47 @@ body {
     max-width: 550px;
     height: auto;
     border-radius: 8px;
-    margin-left: 20px; /* Espaçamento entre texto e imagem */
+    margin-left: 20px;
+    /* Espaçamento entre texto e imagem */
     margin-right: 150px;
 }
 
+
+/* Responsividade para smartphones */
+@media (max-width: 480px) {
+    .image-content img {
+       margin-top: 10px;
+       margin-left: 3px;
+       display: block;
+       margin-left: 0px;
+       margin-right: 0px;
+    }
+}
+
+
+/* Responsividade para smartphones */
+@media (max-width: 480px) {
+    .text-content p {
+       margin-left: 0px;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-content button {
+      margin-left: 0px;
+}
+
+@media (max-width: 480px) {
+    .text-content .highlight {
+       margin-left: 0px;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-content h1 {
+       margin-left: 0px;
+    }
+}
 
 /* Sessão Cards */
 
@@ -77,11 +118,12 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 2300px;
+    max-width: 2000px;
     margin: 20px auto;
     margin-top: 1%;
     margin-bottom: 1%;
-    gap: 1px; /* Espaçamento entre os blocos */
+    gap: 1px;
+    /* Espaçamento entre os blocos */
 }
 
 .service-box {
@@ -101,16 +143,17 @@ body {
     /* Animação ao passar o mouse */
 }
 
-.service-box{
+.service-box {
     background-color: #2e3c41;
     color: white;
     width: 10px;
 }
 
 .icon img {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 0px;
     margin-bottom: 15px;
+    border-radius: 5px;
 }
 
 h3 {
@@ -194,8 +237,8 @@ p {
     margin: 0px;
     width: 100%;
     padding: 100px;
-   
-    
+
+
 }
 
 .about p {
@@ -234,9 +277,10 @@ p {
     overflow: hidden;
     border: 2px solid #e0e0e0;
     position: relative;
-    margin-top: 10px;
+    margin-top: 40px;
     margin-right: 30px;
     margin-left: 10px;
+    margin-bottom: 40px;
 }
 
 .carousel-slides {
@@ -260,24 +304,43 @@ p {
 }
 
 @keyframes slideAnimation {
-    10% { transform: translateX(0%); }
-    25% { transform: translateX(-100%); }
-    50% { transform: translateX(-200%); }
-    25% { transform: translateX(-100%); }
-    60% { transform: translateX(-200%); }
+    10% {
+        transform: translateX(0%);
+    }
+
+    25% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(-200%);
+    }
+
+    25% {
+        transform: translateX(-100%);
+    }
+
+    60% {
+        transform: translateX(-200%);
+    }
 }
 
 
 /* Responsividade para smartphones */
 @media (max-width: 480px) {
-    .about h1 {
-        position: 0;
+    .carousel-container {
+        width: 95%;
+        height: 340px;
     }
 }
 
-/*Sessão 'sobre nós'*/
+@media (max-width: 480px) {
+    .ong-info {
+       width: 360px;
+       display: 0;
+}
 
-/* Título da Seção */
+/*Sessão 'sobre nós'*/
 .service-section h1 {
     color: #000000;
     font-size: 32px;
@@ -322,7 +385,7 @@ p {
 }
 
 /* Estilo do Ícone */
-.icon img {
+.Photo img {
     width: 130px;
     height: 130px;
     margin-bottom: 15px;
@@ -501,56 +564,65 @@ p {
 }
 
 @media (max-width: 480px) {
-    .contact-section{
-        
+    .contact-form .form-row {
+        display: flex;
+        gap: 0px;
+        flex-direction: column;
     }
 }
 
 @media (max-width: 480px) {
-    .contact-form h2{
-        flex-direction: column-reverse;
+    .contact-form h2 {
+        font-size: 20px;
     }
 }
-/*Imagem footer*/
-img {
-    width: 120%;
-    left: 150%;
-    right: 50%;
-    top: 50%;
+
+@media (max-width: 480px) {
+    .contact-form input {
+        width: 330px;
+        padding: 30px;
+        border: 1px solid #ddd;
+        margin: 10px;
+        border-radius: 5px;
+        font-size: 16px;
+        margin-left: 10px;
+    }
 }
 
-/*Footer*/
-
-footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #F8F8F8;
-    padding: 20px 0;
-    text-align: center;
+@media (max-width: 480px) {
+    .contact-form textarea {
+        height: 100px;
+        width: 330px;
+    }
 }
 
-.social-icons {
-    margin-bottom: 10px;
+
+@media (max-width: 480px) {
+    .contact-form button {
+        padding: 12px 130px;
+    }
 }
 
-.social-icons a {
-    margin: 0 10px;
-    display: inline-block;
-}
+@media (max-width: 480px) {
+    .contact-form {
+        max-width: 60%;
+        margin: 5%;
+    }
 
-.footer-links {
-    margin-bottom: 10px;
-}
+    @media (max-width: 480px) {
+        .contact-image img {
+            width: 100%;
+            max-width: 99%;
+            margin-top: 50px;
+            margin-left: 0px;
+        }
+    }
 
-.footer-links a {
-    margin: 0 10px;
-    color: #666666;
-    text-decoration: none;
-}
 
-footer p {
-    font-size: 0.9em;
-    color: #666666;
-    margin: 0;
-}
+    /*Imagem footer*/
+    img {
+        width: 120%;
+        left: 150%;
+        right: 50%;
+        top: 50%;
+    }
