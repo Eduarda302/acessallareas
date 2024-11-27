@@ -22,7 +22,11 @@
             <div class="logo">
                 <img src="../img/logo-removebg-preview (1).png"> <!--logotipo-->
             </div>
-
+            <div class="hamburguer" onclick="mostrarmenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
             <nav>
                 <ul>
                     <li><a href="../index.html">Home</a></li>
@@ -39,7 +43,7 @@
 
                 <!--placeholder="Search..." define o texto que aparecerá 
                 no campo de pesquisa antes de o usuário digitar algo-->
-                <a href="Login.html">Login</a>
+                <a href="../pages/Login.html">Login</a>
             </form>
 
             <!-- Botão menu responsivo -->
@@ -56,7 +60,7 @@
     <div class="container">
 
         <!-- Menu Lateral-->
-        <div class="side-bar" style="background-color: #00655b; color: #ffffff;">
+        <div class="side-bar" style="background-color: #2e4e58    ; color: #ffffff;">
             <div class="side-bar-brand" style="text-align: center;">
                 <!-- Imagem representativa -->
                 <img src="../img/chat (2).png" alt="Informações de Profissionais"
@@ -77,7 +81,9 @@
                     Sinta-se à vontade para conversar e encontrar apoio com quem entende o valor da empatia.
                 </p>
             </div>
+            
         </div>
+        
 
         <!-- Área do Chat -->
         <div class="chat-container">
@@ -86,7 +92,7 @@
 
                 <div class="message"
                     style="background-color: #c3d9d9; border-radius: 10px; padding: 10px; margin: 10px 0;">
-                    <div class="user" style="font-weight: bold; color: #31e7e7;">Profissional</div>
+                    <div class="user" style="font-weight: bold; color: #266464;">Profissional</div>
                     <div class="text">Olá, como posso ajudar?</div>
                     <div class="time" style="font-size: 0.8em; color: #555;">16:18</div>
                 </div>
@@ -114,6 +120,17 @@
 
             </div>
         </div>
+
+       
+<button onclick="autocontrastehome()" id="btnTop" title="Auto-Contraste" style= "background-color: #2e4e58;"><span class="material-symbols-outlined">
+</span><img src="../img/logo3-removebg-preview.png" width="70px" height="100px"><p>Auto Contraste</p></button>
+
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
 
         <!-- Scripts de Acessibilidade -->
         <script>

@@ -5,11 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function addMessage(text, userClass = 'message2', userName = 'Você') {
         const date = new Date();
-<<<<<<< HEAD
         let time = date.toLocaleTimeString("pt-BR", { timeStyle: "short", hour12: false });
-=======
-        let time = date.toLocaleTimeString("pt-BR", {timeStyle: "short", hour12: false});
->>>>>>> origin/develop
         const messageDiv = document.createElement('div');
         messageDiv.classList.add(userClass);
         messageDiv.innerHTML = `<div class="user">${userName}</div><div class="text">${text}</div><div class="time">${time}</div>`;
@@ -30,7 +26,6 @@ document.addEventListener('DOMContentLoaded', function () {
             sendMessage.click();
         }
     });
-
 
     // Função para respostas automáticas do "Profissional"
     function addProfessionalMessage(text) {
@@ -64,3 +59,4 @@ document.addEventListener('DOMContentLoaded', function () {
         addMessage(text, 'message2', 'Você');
     };
 });
+
