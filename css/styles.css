@@ -88,8 +88,6 @@ body {
     }
 }
 
-/* Responsividade para smartphones */
-
 @media (max-width: 480px) {
     .banner-container {
         display: block;
@@ -175,14 +173,6 @@ h3 {
 p {
     font-size: 1rem;
     text-align: start;
-}
-
-/* Responsividade para tablets */
-@media (max-width: 768px) {
-    .service-box {
-        flex-basis: calc(50% - 20px);
-        /* Metade da largura para tablets */
-    }
 }
 
 /* Responsividade para smartphones */
@@ -305,8 +295,8 @@ p {
 
 /*carrossel*/
 .carousel-container {
-    width: 100%;
-    height: 350px;
+    width: 90%;
+    height: 360px;
     overflow: hidden;
     border: 2px solid #e0e0e0;
     position: relative;
@@ -399,26 +389,19 @@ p {
         display: grid;
         width: 90px;
         margin-left: 90px;
-        margin-right:  900px;
+        margin-right: 900px;
     }
-}
-
-.card {
-    margin: 10px;
-}
-
+} 
 
 /* Estilo do Cartão */
 .card {
     background-color: #ffffff;
-    padding: 20px;
+    padding: 50px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0.1, 0.1, 0.1, 0.1);
+    box-shadow: 1px 4px 10px rgba(0.1, 0.1, 0.1, 0.4);
     transition: transform 0.3s, box-shadow 0.3s;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
+    margin-right: 70px;
 }
 
 /* Estilo do Ícone */
@@ -482,6 +465,7 @@ p {
     margin-bottom: 20px;
 }
 
+/* Responsividade para smartphones */
 @media (max-width: 480px) {
     .history-content {
         display: table-column-group;
@@ -570,7 +554,7 @@ p {
     margin: 10px;
     border-radius: 5px;
     font-size: 16px;
-    margin-left: 10px;
+    margin-left: 0px;
 }
 
 .contact-form textarea {
@@ -600,6 +584,7 @@ p {
     margin-top: 100px;
 }
 
+/* Responsividade para smartphones */
 @media (max-width: 480px) {
     .contact-form .form-row {
         display: flex;
@@ -622,7 +607,6 @@ p {
         margin: 10px;
         border-radius: 5px;
         font-size: 16px;
-        margin-left: 10px;
     }
 }
 
@@ -630,6 +614,7 @@ p {
     .contact-form textarea {
         height: 100px;
         width: 330px;
+        margin-left: 10px;
     }
 }
 
@@ -662,13 +647,4 @@ p {
         margin-top: 10px;
         margin-left: initial;
     }
-}
-
-
-/*Imagem footer*/
-img {
-    width: 120%;
-    left: 150%;
-    right: 50%;
-    top: 50%;
 }
