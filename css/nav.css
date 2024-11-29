@@ -5,6 +5,11 @@ body {
     padding: 0;
 }
 
+.logo img {
+    position: absolute;
+    width: 120px;
+    top: 0;
+  }
 /* Estilos para a barra de pesquisa */
 .search-bar {
     /*Define o container para a barra de pesquisa como um 
@@ -16,7 +21,6 @@ body {
 
     align-items: center;
 }
-
 .search-bar input {
     padding: 10px;
     /*Adiciona espaçamento interno ao redor 
@@ -28,10 +32,11 @@ body {
     /* Espaço entre o campo de pesquisa e o botão */
 }
 
-.search-bar button {
+.search-bar a {
     background-color: #009688 ;
     color: white;
     border: none;
+    text-decoration: none;
     padding: 10px 20px;
     /*espaçamento interno ao botão. Isso faz com que ele fique mais "alto" 
     (10px no topo e embaixo) e mais "largo" (20px nas laterais).*/
@@ -41,10 +46,11 @@ body {
     /*cursor do mouse para uma "mãozinha"*/
 }
 
-.search-bar button:hover {
+.search-bar a:hover {
     background-color: #028578;
 
 }
+
 
 /* Estilos da barra de navegação */
 .navbar {
@@ -57,31 +63,32 @@ body {
     background-color: #00655b;
 }
 
-.logo h1 {
-    font-size: 24px;
-    color: #ffffff;
-}
+
 
 nav ul {
-    list-style-type: none;
-    /*Remove os marcadores da lista*/
+    display: flex;
+    list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
-}
+  }
 
-nav ul li {
-    margin-right: 20px;
-}
+  nav ul li {
+    margin: 0 45px;
+    font-size: large;
+  }
 
-nav ul li a {
+  nav ul li a {
     text-decoration: none;
-    /*Remove o sublinhado dos links.*/
     color: #ffffff;
     font-weight: bold;
-    margin: 0 20px;
-    padding: 10px 20px;
-}
+    text-align: center;
+  
+  
+  }
+
+  nav ul li a:hover {
+    color: #023807;
+  }
 
 .cta-button button {
     background-color: #1a73e8;
@@ -90,31 +97,23 @@ nav ul li a {
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+
 }
 
 
 /* Estilo da seção principal */
-.header-content {
-    background-color: #eaf5ea;
-    color: rgb(0, 0, 0);
-    padding: 150px 20px;
+.banner-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px;
+    background-color: #eaf5ea; /* Fundo branco */
+    max-width: 1900px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+}
     
-}
 
-.header-content h2 {
-    font-size: 36px;
-}
-
-.header-content p {
-    font-size: 18px;
-    margin-top: 10px;
-    max-width: 600px;
-    /*largura do texto a 600px, para que não se espalhe muito pela tela.*/
-    /*Centraliza o conteúdo dentro do seu container.*/
-    margin-left: auto;
-    margin-right: auto;
-}
 
 
 .hamburguer{
@@ -129,6 +128,10 @@ nav ul li a {
     background-color: #ffffff;
     margin: 4px;
     transition: all 0.3s;
+}
+
+.userway_buttons_wrapper {
+margin-top: 100px;
 }
 
 /*final da nav*/

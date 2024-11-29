@@ -1,95 +1,138 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="../img/logo (2).png" />
     <link rel="stylesheet" href="../css/Chat.css">
     <link rel="stylesheet" href="../css/responsivo.css">
     <link rel="stylesheet" href="../css/button.css">
     <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="icon" type="image/x-icon" href="../img/icon.png">
     <script src="../js/script.js"></script>
+    <!-- Título da página -->
     <title>Acess All Areas</title>
 </head>
-<body id="bodyon" style="background-color: #f0f5f5;">
-    <!-- Menu -->
-    <header style="background-color: #c3d9d9;">
-        <div class="navbar">
+
+<body id="bodyon">
+    <!-- header -->
+    <header>
+        <div class="navbar"> <!--Contém a barra de navegação.-->
             <div class="logo">
-                <h1 style="color: #2b5d5d;">AcessAllAreas</h1>
+                <img src="../img/logo.png"> <!--logotipo-->
             </div>
+
             <nav>
                 <ul>
-                    <li><a href="../index.html" style="color: #2b5d5d;">Início</a></li>
-                    <li><a href="../index.html" style="color: #2b5d5d;">Sobre</a></li>
-                    <li><a href="Mapa.html" style="color: #2b5d5d;">Mapa</a></li>
-                    <li><a href="Depoimentos.html" style="color: #2b5d5d;">Depoimentos</a></li>
-                    <li><a href="Chat.html" style="color: #2b5d5d;">Chat</a></li>
-                    <li><a href="Login.html" style="color: #2b5d5d;">Login</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html">Sobre</a></li>
+                    <li><a href="../pages/Mapa.html">Mapa</a></li>
+                    <li><a href="../pages/Depoimentos.html">Depoimentos</a></li>
+                    <li><a href="../pages/Chat.html">Chat</a></li>
                 </ul>
             </nav>
+
+
+            <!-- Adicionando o campo de pesquisa -->
+            <form class="search-bar" action="#" method="get">
+
+                <!--placeholder="Search..." define o texto que aparecerá 
+                no campo de pesquisa antes de o usuário digitar algo-->
+                <a href="Login.html">Login</a>
+            </form>
+
+            <!-- Botão menu responsivo -->
+            <div class="hamburguer" onclick="mostrarmenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
         </div>
     </header>
 
-    <!-- Menu Lateral -->
+    <!-- Conteúdo principal -->
     <div class="container">
-        <div class="side-bar" style="background-color: #3b7d7d; color: #ffffff;">
+
+        <!-- Menu Lateral-->
+        <div class="side-bar" style="background-color: #00655b; color: #ffffff;">
             <div class="side-bar-brand" style="text-align: center;">
-                <img src="../img/chat (2).png" alt="Informações de Profissionais" style="width: 80%; margin-bottom: 20px;">
+                <!-- Imagem representativa -->
+                <img src="../img/chat (2).png" alt="Informações de Profissionais"
+                    style="width: 60%; margin-bottom: 20px;">
             </div>
             <div class="list-item" style="padding: 10px 20px;">
+                <!--descrição -->
                 <p style="font-size: 1.1em; line-height: 1.6;">
-                    Bem-vindo ao nosso espaço de apoio! Este é um lugar seguro e acolhedor para Pessoas com Deficiência (PCD) compartilharem suas experiências, desafios e conquistas.
+                    Bem-vindo ao nosso espaço de apoio! Este é um lugar seguro e acolhedor para Pessoas com Deficiência
+                    (PCD) compartilharem suas experiências, desafios e conquistas.
                 </p>
                 <p style="font-size: 1.1em; line-height: 1.6;">
-                    Nosso objetivo é ouvir, apoiar e criar conexões, ajudando você a enfrentar as dificuldades do dia a dia. Juntos, acreditamos em construir uma comunidade forte, que promove compreensão, respeito e inclusão.
+                    Nosso objetivo é ouvir, apoiar e criar conexões, ajudando você a enfrentar as dificuldades do dia a
+                    dia. Juntos, acreditamos em construir uma comunidade forte, que promove compreensão, respeito e
+                    inclusão.
                 </p>
                 <p style="font-size: 1.1em; line-height: 1.6;">
                     Sinta-se à vontade para conversar e encontrar apoio com quem entende o valor da empatia.
                 </p>
             </div>
-            
         </div>
 
-        <!-- Chat -->
+        <!-- Área do Chat -->
         <div class="chat-container">
             <div class="chat">
-                <div class="message" style="background-color: #c3d9d9; border-radius: 10px; padding: 10px; margin: 10px 0;">
-                    <div class="user" style="font-weight: bold; color: #2b5d5d;">Profissional</div>
+                <!-- Mensagem do profissional -->
+
+                <div class="message"
+                    style="background-color: #c3d9d9; border-radius: 10px; padding: 10px; margin: 10px 0;">
+                    <div class="user" style="font-weight: bold; color: #053029;">Profissional</div>
                     <div class="text">Olá, como posso ajudar?</div>
                     <div class="time" style="font-size: 0.8em; color: #555;">16:18</div>
                 </div>
-                <!-- Botões de respostas rápidas abaixo da mensagem -->
+
+                <!-- Botões de respostas -->
                 <div class="quick-replies">
-                    <button onclick="addQuickReply('Gostaria de agendar uma consulta')" style="background-color: #2b5d5d; color: #ffffff; margin: 5px;">Gostaria de agendar uma consulta</button>
-                    <button onclick="addQuickReply('Estou com dúvidas sobre...')" style="background-color: #2b5d5d; color: #ffffff; margin: 5px;">Estou com dúvidas sobre...</button>
-                    <button onclick="addQuickReply('Preciso de ajuda com...')" style="background-color: #2b5d5d; color: #ffffff; margin: 5px;">Preciso de ajuda com...</button>
+                    <button onclick="agendarConsulta()" style="background-color: #2b5d5d; color: #ffffff; margin: 5px;">
+                        Gostaria de agendar uma consulta
+                    </button>
+                    <button onclick="addQuickReply('Estou com dúvidas sobre...')"
+                        style="background-color: #2b5d5d; color: #ffffff; margin: 5px;">
+                        Estou com dúvidas sobre...
+                    </button>
+                    <button onclick="addQuickReply('Preciso de ajuda com...')"
+                        style="background-color: #2b5d5d; color: #ffffff; margin: 5px;">
+                        Preciso de ajuda com...
+                    </button>
                 </div>
-            </div>
-
-            <!-- Caixa de envio de mensagem -->
-            <div class="send">
-                <input type="text" id="messageInput" placeholder="Digite sua mensagem" aria-label="Digite sua mensagem">
-                <button id="sendMessage" style="background-color: #2b5d5d; color: #ffffff;">Enviar</button>
-            </div>
-
-            <!-- Libras -->
-            <div vw class="enabled">
-                <div vw-access-button class="active"></div>
-                <div vw-plugin-wrapper>
-                    <div class="vw-plugin-top-wrapper"></div>
+                <!-- Caixa de envio -->
+                <div class="send">
+                    <input type="text" id="messageInput" placeholder="Digite sua mensagem"
+                        aria-label="Digite sua mensagem">
+                    <button id="sendMessage" style="background-color: #2b5d5d; color: #ffffff;">Enviar</button>
                 </div>
+
             </div>
         </div>
-    </div>
 
-    <!-- Scripts -->
-    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>
-        new window.VLibras.Widget('https://vlibras.gov.br/app');
-    </script>
-    <script src="../js/auto-contraste.js"></script>
-    <script src="../js/main.js"></script>
-    <script src="../js/chat.js"></script>
+        <!-- Scripts de Acessibilidade -->
+        <script>
+            (function (d) {
+                var s = d.createElement("script");
+                s.setAttribute("data-account", "YOUR-WIDGET-CODE-HERE");
+                s.setAttribute("src", "https://cdn.userway.org/widget.js");
+                (d.body || d.head).appendChild(s);
+            })(document)
+        </script>
+
+        <!-- Script adicional de acessibilidade -->
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <!-- Outros Scripts JS -->
+        <script src="../js/auto-contraste.js"></script>
+        <script src="../js/main.js"></script>
+        <script src="../js/chat.js"></script>
+        <script src="../js/mapa.js"></script>
+        <script src="../js/nav.js"></script>
 </body>
+
 </html>

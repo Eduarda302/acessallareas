@@ -11,85 +11,8 @@ html, body {
   padding: 0;
 }
 
-/* Estilos para a barra de pesquisa */
-.search-bar {
-  /*Define o container para a barra de pesquisa como um 
-  "flexbox", alinhando o campo de texto e o botão no centro */
-  display: flex;
-  /*alinha os elementos dentro 
-  (campo de entrada e botão) em uma linha horizontal.*/
-  align-items: center;
-}
-
-.search-bar input {
-  padding: 10px;
-  /*Adiciona espaçamento interno ao redor 
-  do texto dentro do campo de entrada*/
-  border: 2px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-  margin-right: 10px;
-  /* Espaço entre o campo de pesquisa e o botão */
-}
-
-.search-bar button {
-  background-color: #5db076;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  /*espaçamento interno ao botão. Isso faz com que ele fique mais "alto" 
-  (10px no topo e embaixo) e mais "largo" (20px nas laterais).*/
-  border-radius: 5px;
-  /*cantos do botão arredondados.*/
-  cursor: pointer;
-  /*cursor do mouse para uma "mãozinha"*/
-}
-
-.search-bar button:hover {
-  background-color: #5db076;
-
-}
-
-/* Estilos da barra de navegação */
 .navbar {
-  display: flex;
-  /*alinhar os itens em linha*/
-  justify-content: space-between;
-  /*distribuir o espaço entre o logo, o menu e o botão.*/
-  align-items: center;
-  padding: 30px;
-  background-color: #D9E2CE;
-
-}
-
-.logo h1 {
-  font-size: 24px;
-  color: #333;
-}
-
-nav ul {
-  list-style-type: none;
-  /*Remove os marcadores da lista*/
-  display: flex;
-
-}
-
-nav ul li {
-  margin-right: 20px;
-  margin: 0 20px;
-  /* Aplica espaçamento de 20px entre os itens */
-  justify-content: space-between;
-  /* Alinha o conteúdo com espaçamento automático */
-  padding: 10px 20px;
-  /* Espaçamento interno nos links */
-}
-
-nav ul li a {
-  text-decoration: none;
-  /*Remove o sublinhado dos links.*/
-  color: #333;
-  font-weight: bold;
-
+  margin-bottom: 25px !important;
 }
 
 .cta-button button {
@@ -329,7 +252,7 @@ nav ul li a {
 
 .user {
   font-weight: bold;
-  color: #0f6633;
+  color: #0d381f;
   margin-bottom: 5%;
 }
 
@@ -389,11 +312,11 @@ nav ul li a {
 #sendMessage {
   display: block;
   width: 20%;
-  padding: 10px;
+  padding: 10px 20px;
   margin-top: 10px;
   background-color: #26c0a6;
   color: #fff;
-  border-radius: 5px 0 0 3px; 
+  border-radius: 5px; /* Aplique um valor para bordas arredondadas em todos os lados */
   border: 1px solid #ddd;
   cursor: pointer;
 }
@@ -484,12 +407,3 @@ nav ul li a {
   }
 }
 
-/*libras*/
-
-.libras-container {
-  background: #ffffff;
-  position: relative;
-  height: 100vh; /* Ocupa toda a altura da tela */
-  display: flex;
-  justify-content: space-between;
-}

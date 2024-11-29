@@ -9,7 +9,6 @@
 body {
     background-color: #ffffff93;
 }
-
 /* Inicio da página Home*/
 
 .banner-container {
@@ -376,7 +375,6 @@ p {
     gap: 20px;
     max-width: 100px;
     margin-bottom: 50px;
-    margin-left: 195px;
 }
 
 .social-media {
@@ -599,16 +597,6 @@ p {
     }
 }
 
-@media (max-width: 480px) {
-    .contact-form input {
-        width: 330px;
-        padding: 30px;
-        border: 1px solid #ddd;
-        margin: 10px;
-        border-radius: 5px;
-        font-size: 16px;
-    }
-}
 
 @media (max-width: 480px) {
     .contact-form textarea {
