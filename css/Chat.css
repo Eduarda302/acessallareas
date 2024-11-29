@@ -14,41 +14,7 @@ html, body {
   padding: 0;
   box-sizing: border-box; /* Inclui bordas e padding no cálculo das dimensões */
 }
-/* ======= HEADER E NAVEGAÇÃO ======= */
-.navbar {
-  display: flex;
-  justify-content: space-between; /* Espaço entre logo e menu */
-  align-items: center;
-  padding: 20px;
-  background-color: #1456ac;
-  gap: 15px; /* Espaçamento entre os itens */
-}
 
-.logo h1 {
-  font-size: 25px;
-  color: #333;
-}
-
-nav ul {
-  list-style: none; /* Remove os marcadores da lista */
-  display: flex;
-  gap: 15px; /* Espaçamento entre links */
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  padding: 8px 12px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease; /* Efeito suave no hover */
-}
-
-nav ul li a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-/* Botão de chamada para ação */
 .cta-button button {
   background-color: #1a73e8;
   color: white;
@@ -56,42 +22,14 @@ nav ul li a:hover {
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
 .cta-button button:hover {
   background-color: #155cb5;
 }
 
-/* ======= BARRA DE PESQUISA ======= */
-.search-bar {
-  display: flex;
-  align-items: center;
-}
 
-.search-bar input {
-  padding: 10px;
-  border: 2px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-  margin-right: 10px;
-}
-
-.search-bar button {
-  background-color: #5db076;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.search-bar button:hover {
-  background-color: #3e8e57;
-}
-
-/* ======= CONTAINER PRINCIPAL ======= */
+/* Estilos para o contêiner principal */
 .container {
   display: flex;
   justify-content: space-between;
