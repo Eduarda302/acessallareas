@@ -129,8 +129,6 @@ main {
   color: rgb(0, 0, 0);
 }
 
-/*Footer*/
-
 
 /* deixando o card responsivo para celular */
 @media (max-width: 480px) {

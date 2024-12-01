@@ -16,7 +16,8 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 70px;
-    background-color: #eaf5ea; /* Fundo branco */
+    background-color: #eaf5ea;
+    /* Fundo branco */
     max-width: 1900px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -28,13 +29,15 @@ body {
 .text-content h1 {
     font-size: 2.5em;
     margin: 0 0 20px;
-    color: #333; /* Cor do texto principal */
+    color: #333;
+    /* Cor do texto principal */
     margin-left: 90px;
     display: inline-block;
 }
 
 .text-content .highlight {
-    color: #009688; /* Cor verde para destacar "Juntos por um mundo melhor" */
+    color: #009688;
+    /* Cor verde para destacar "Juntos por um mundo melhor" */
     font-size: 20px;
     margin-left: 90px;
 }
@@ -42,7 +45,8 @@ body {
 .text-content p {
     margin: 0 0 20px;
     font-size: 1.1em;
-    color: #555; /* Cor mais clara para o texto */
+    color: #555;
+    /* Cor mais clara para o texto */
     margin-left: 90px;
 }
 
@@ -65,8 +69,57 @@ body {
     max-width: 550px;
     height: auto;
     border-radius: 8px;
-    margin-left: 20px; /* Espaçamento entre texto e imagem */
+    margin-left: 20px;
+    /* Espaçamento entre texto e imagem */
     margin-right: 150px;
+}
+
+
+/* Responsividade para smartphones */
+@media (max-width: 480px) {
+    .image-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .image-content img {
+        max-width: 350px;
+        margin-top: 10%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-container {
+        display: block;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-content p {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-content button {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-content .highlight {
+        margin-left: 0px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .text-content h1 {
+        margin-left: 0px;
+    }
 }
 
 
@@ -76,11 +129,12 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 2300px;
+    max-width: 2000px;
     margin: 20px auto;
     margin-top: 1%;
     margin-bottom: 1%;
-    gap: 1px; /* Espaçamento entre os blocos */
+    gap: 1px;
+    /* Espaçamento entre os blocos */
 }
 
 .service-box {
@@ -100,16 +154,21 @@ body {
     /* Animação ao passar o mouse */
 }
 
-.service-box{
+.service-box {
     background-color: #2e3c41;
     color: white;
     width: 10px;
 }
 
 .icon img {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     margin-bottom: 15px;
+    border-radius: 5px;
+}
+#sobre{
+    width: 100%;
+
 }
 
 h3 {
@@ -120,14 +179,6 @@ h3 {
 p {
     font-size: 1rem;
     text-align: start;
-}
-
-/* Responsividade para tablets */
-@media (max-width: 768px) {
-    .service-box {
-        flex-basis: calc(50% - 20px);
-        /* Metade da largura para tablets */
-    }
 }
 
 /* Responsividade para smartphones */
@@ -190,18 +241,15 @@ p {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin: 0px;
     width: 100%;
-    padding: 100px;
-   
-    
+    padding: 30px;
 }
 
 .about p {
-    margin-top: 3%;
     font-size: large;
     text-align: left;
-    margin: auto;
+    margin: 40px;
+    margin-left: 60px;
 }
 
 .about h1 {
@@ -210,7 +258,7 @@ p {
     margin-bottom: 5%;
     text-align: center;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 70px;
     margin-bottom: 20px;
 }
 
@@ -226,26 +274,48 @@ p {
     width: 93%;
 }
 
+/* "Ler mais" da sessão sobre com carrossel*/
+.content {
+    max-width: 600px;
+    margin: auto;
+}
+
+.hidden-text {
+    display: none;
+}
+
+.read-more-btn {
+    background-color: #009688;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 30px;
+}
+
+.read-more-btn:hover {
+    background-color: #0c3733;
+}
+
 /*carrossel*/
 .carousel-container {
-    width: 300%;
+    width: 90%;
     height: 360px;
     overflow: hidden;
     border: 2px solid #e0e0e0;
     position: relative;
-    margin-top: 10px;
-    margin-right: 30px;
-    margin-left: 10px;
+    margin-right: 60px;
+    margin-left: 60px;
 }
 
 .carousel-slides {
     display: flex;
     width: 100%;
     height: 100%;
-    animation: slideAnimation 12s infinite;
+    animation: slideAnimation 15s infinite;
 }
-
-
 
 .slide {
     min-width: 100%;
@@ -253,30 +323,52 @@ p {
 }
 
 .slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 110%;
+    height: 110%;
+    object-fit: contain;
 }
 
 @keyframes slideAnimation {
-    10% { transform: translateX(0%); }
-    25% { transform: translateX(-100%); }
-    50% { transform: translateX(-200%); }
-    25% { transform: translateX(-100%); }
-    60% { transform: translateX(-200%); }
+    20% {
+        transform: translateX(0%);
+    }
+
+    20% {
+        transform: translateX(-100%);
+    }
+
+    20% {
+        transform: translateX(-200%);
+    }
+
+    20% {
+        transform: translateX(-100%);
+    }
+
+    20% {
+        transform: translateX(-200%);
+    }
 }
 
 
 /* Responsividade para smartphones */
 @media (max-width: 480px) {
-    .about h1 {
-        position: 0;
+    .carousel-container {
+        width: 80%;
+        height: 300px;
+        margin-top: 20px;
+        margin-left: 34px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ong-info {
+        width: 360px;
+        display: block;
     }
 }
 
 /*Sessão 'sobre nós'*/
-
-/* Título da Seção */
 .service-section h1 {
     color: #000000;
     font-size: 32px;
@@ -286,41 +378,39 @@ p {
 
 /* Contêiner Principal dos Cartões */
 .service-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
     gap: 20px;
-    width: 100%;
-    max-width: 1500px;
+    max-width: 100px;
     margin-bottom: 50px;
+}
+
+.social-media {
+    width: 10px;
 }
 
 /* Responsividade para smartphones */
 @media (max-width: 480px) {
     .service-cards {
-        margin-bottom: 0;
-        margin-left: 0;
+        display: grid;
+        width: 90px;
+        margin-left: 90px;
+        margin-right: 900px;
     }
-
-    .card {
-        margin: 10px;
-    }
-}
+} 
 
 /* Estilo do Cartão */
 .card {
     background-color: #ffffff;
-    padding: 20px;
+    padding: 50px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0.1, 0.1, 0.1, 0.1);
+    box-shadow: 1px 4px 10px rgba(0.1, 0.1, 0.1, 0.4);
     transition: transform 0.3s, box-shadow 0.3s;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
+    margin-right: 70px;
 }
 
 /* Estilo do Ícone */
-.icon img {
+.Photo img {
     width: 130px;
     height: 130px;
     margin-bottom: 15px;
@@ -380,6 +470,7 @@ p {
     margin-bottom: 20px;
 }
 
+/* Responsividade para smartphones */
 @media (max-width: 480px) {
     .history-content {
         display: table-column-group;
@@ -468,7 +559,7 @@ p {
     margin: 10px;
     border-radius: 5px;
     font-size: 16px;
-    margin-left: 10px;
+    margin-left: 0px;
 }
 
 .contact-form textarea {
@@ -498,14 +589,57 @@ p {
     margin-top: 100px;
 }
 
+/* Responsividade para smartphones */
 @media (max-width: 480px) {
-    .contact-section{
-        
+    .contact-form .form-row {
+        display: flex;
+        gap: 0px;
+        flex-direction: column;
     }
 }
 
 @media (max-width: 480px) {
-    .contact-form h2{
-        flex-direction: column-reverse;
+    .contact-form h2 {
+        font-size: 25px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .contact-form textarea {
+        height: 100px;
+        width: 330px;
+        margin-left: 10px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .contact-form button {
+        padding: 12px 130px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form {
+        max-width: 60%;
+        margin: 0%;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form p {
+
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-image img {
+        width: 90%;
+        max-width: 99%;
+        margin-top: 10px;
+        margin-left: initial;
     }
 }
