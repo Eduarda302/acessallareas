@@ -77,19 +77,23 @@ body {
 
 /* Responsividade para smartphones */
 @media (max-width: 480px) {
-    .image-content img {
-        margin-top: 30px;
-        margin-left: 3px;
-        margin-right: 300px;
-        margin-bottom: 0px;
+    .image-content{
         display: flex;
-        width: 310px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .image-content img {
+        max-width: 350px;
+        margin-top: 10%;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 }
 
 @media (max-width: 480px) {
     .banner-container {
         display: block;
+        flex-direction: column;
     }
 }
 
@@ -162,7 +166,10 @@ body {
     margin-bottom: 15px;
     border-radius: 5px;
 }
+#sobre{
+    width: 100%;
 
+}
 
 h3 {
     font-size: 1.5rem;
