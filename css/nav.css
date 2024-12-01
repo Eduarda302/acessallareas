@@ -7,8 +7,10 @@ body {
 
 .logo img {
     position: absolute;
-    width: 120px;
+    width: 110px;
+    height: 100px;
     top: 0;
+    
   }
 /* Estilos para a barra de pesquisa */
 .search-bar {
@@ -82,6 +84,7 @@ nav ul {
     color: #ffffff;
     font-weight: bold;
     text-align: center;
+    margin: 20px;
   
   
   }
