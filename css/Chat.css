@@ -58,7 +58,9 @@ html, body {
   left: -400px !important;
   /* Move o elemento para a esquerda (-480px) com importância */
 }
-
+.btn-chat {
+  display: none;
+}
 
 
 /* Estilos para a marca na barra lateral */
