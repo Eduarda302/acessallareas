@@ -22,7 +22,6 @@
             <div class="logo">
                 <img src="../img/logo.png"> <!--logotipo-->
             </div>
-
             <nav>
                 <ul>
                     <li><a href="../index.html">Home</a></li>
@@ -39,7 +38,7 @@
 
                 <!--placeholder="Search..." define o texto que aparecerá 
                 no campo de pesquisa antes de o usuário digitar algo-->
-                <a href="Login.html">Login</a>
+                <a href="../pages/Login.html">Login</a>
             </form>
 
             <!-- Botão menu responsivo -->
@@ -56,7 +55,7 @@
     <div class="container">
 
         <!-- Menu Lateral-->
-        <div class="side-bar" style="background-color: #00655b; color: #ffffff;">
+        <div class="side-bar" style="background-color: #2e4e58    ; color: #ffffff;">
             <div class="side-bar-brand" style="text-align: center;">
                 <!-- Imagem representativa -->
                 <img src="../img/chat (2).png" alt="Informações de Profissionais"
@@ -76,8 +75,12 @@
                 <p style="font-size: 1.1em; line-height: 1.6;">
                     Sinta-se à vontade para conversar e encontrar apoio com quem entende o valor da empatia.
                 </p>
+
+                <button class="btn-chat">Iniciar chat</button>
             </div>
+
         </div>
+
 
         <!-- Área do Chat -->
         <div class="chat-container">
@@ -114,25 +117,40 @@
 
             </div>
         </div>
+    </div>
 
-        <!-- Scripts de Acessibilidade -->
-        <script>
-            (function (d) {
-                var s = d.createElement("script");
-                s.setAttribute("data-account", "YOUR-WIDGET-CODE-HERE");
-                s.setAttribute("src", "https://cdn.userway.org/widget.js");
-                (d.body || d.head).appendChild(s);
-            })(document)
-        </script>
 
-        <!-- Script adicional de acessibilidade -->
-        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-        <!-- Outros Scripts JS -->
-        <script src="../js/auto-contraste.js"></script>
-        <script src="../js/main.js"></script>
-        <script src="../js/chat.js"></script>
-        <script src="../js/mapa.js"></script>
-        <script src="../js/nav.js"></script>
+    <button onclick="autocontrastehome()" id="btnTop" title="Auto-Contraste" style="background-color: #2e4e58;"><span
+            class="material-symbols-outlined">
+        </span><img src="../img/logo3-removebg-preview.png" width="70px" height="100px">
+        <p>Auto Contraste</p>
+    </button>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
+    <!-- Scripts de Acessibilidade -->
+    <script>
+        (function (d) {
+            var s = d.createElement("script");
+            s.setAttribute("data-account", "YOUR-WIDGET-CODE-HERE");
+            s.setAttribute("src", "https://cdn.userway.org/widget.js");
+            (d.body || d.head).appendChild(s);
+        })(document)
+    </script>
+
+    <!-- Script adicional de acessibilidade -->
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <!-- Outros Scripts JS -->
+    <script src="../js/auto-contraste.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/chat.js"></script>
+    <script src="../js/mapa.js"></script>
+    <script src="../js/nav.js"></script>
 </body>
 
 </html>

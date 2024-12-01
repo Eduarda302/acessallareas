@@ -1,18 +1,18 @@
+/* ======= CONFIGURAÇÕES GERAIS ======= */
 /* Certifique-se de que html e body ocupam a altura total da tela */
 html, body {
   height: 100%;
   margin: 0;
-  overflow: hidden; /* Remove a rolagem */
   font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  overflow: hidden; /* Remove a rolagem vertical */
+  overflow-x: hidden; /* Remove a rolagem horizontal */
 }
 
 * {
   margin: 0;
   padding: 0;
-}
-
-.navbar {
-  margin-bottom: 25px !important;
+  box-sizing: border-box; /* Inclui bordas e padding no cálculo das dimensões */
 }
 
 .cta-button button {
@@ -31,12 +31,26 @@ html, body {
 
 /* Estilos para o contêiner principal */
 .container {
-  background: #e1e5f7;
-  width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Opcional: centraliza verticalmente os elementos */
+  align-items: center;
   height: 100vh; /* Ocupa toda a altura da tela */
+  background: #e1e5f7;
+}
+
+/* Estilos para a barra lateral */
+.container .side-bar {
+  height: 100vh; /* Ocupa toda a altura da tela */
+  width: 500px; /* Largura padrão para desktop */
+  background: #4A7856;
+  padding: 20px;
+  position: relative; /* Troca para relative para alinhar melhor */
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  max-width: 50%; /* Limita a largura para telas menores */
+  overflow-y: auto; /* Permite rolagem se o conteúdo exceder */
+  color: #000000; /* Texto em um tom escuro para contraste */
+  border-right: 2px solid #000000; /* Linha de separação opcional */
 }
 
 /* Estilos para modificar a posição do elemento com a classe "position" */
@@ -44,17 +58,10 @@ html, body {
   left: -400px !important;
   /* Move o elemento para a esquerda (-480px) com importância */
 }
-
-/* Estilos para a barra lateral */
-.container .side-bar {
-  height: 100%; /* Barra lateral ocupa a altura total do contêiner */
-  width: 550px;
-  background: #4A7856;
-  padding: 20px;
-  position: relative; /* Troca para relative para alinhar melhor */
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+.btn-chat {
+  display: none;
 }
+
 
 /* Estilos para a marca na barra lateral */
 .container .side-bar .side-bar-brand {
@@ -72,27 +79,18 @@ html, body {
 
 }
 
-
-/* Estilos para o botão na barra lateral */
-.container .side-bar .side-bar-brand .button {
-  position: relative;
-  /* Posicionamento relativo para elementos filhos */
-  -webkit-transform: rotate(45deg);
-  /* Rotação de 45 graus */
-  transform: rotate(45deg);
-  cursor: pointer;
-  /* Cursor do mouse em forma de mão ao passar por cima */
+/* Estilo do menu lateral */
+.container .side-bar .side-bar-brand {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* Estilos para as linhas do botão na barra lateral */
-.container .side-bar .side-bar-brand .button div {
-  height: 4px;
-  /* Altura das linhas */
-  width: 20px;
-  /* Largura das linhas */
-  background: #df1818;
-  /* Cor de fundo das linhas */
-  /* Borda arredondada */
+/* Estilos para botões no menu lateral */
+.container .side-bar .side-bar-brand .button {
+  position: relative;
+  transform: rotate(45deg);
+  cursor: pointer;
 }
 
 /* Estilos específicos para a primeira linha do botão na barra lateral */
@@ -123,25 +121,6 @@ html, body {
   /* Cor do texto */
 }
 
-/*footer*/
-.footer-lateral {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 10px;
-  background-color: #5a7150;
-  text-align: center;
-  font-size: 20px;
-  color: #555;
-}
-.footer-lateral a {
-  color: #000000;
-  text-decoration: none;
-}
-.footer-lateral a:hover {
-  text-decoration: underline;
-}
 
 /* Estilos para o botão de menu no contêiner principal */
 .container .menu-btn {
@@ -228,17 +207,18 @@ html, body {
   }
 }
 
-/*chat*/
-
+/* ======= CHAT ======= */
 .chat-container {
   display: flex;
   flex-direction: column;
-  position: inherit;
   width: 100%;
+  height: 100vh;
   background-color: #fff5f5;
+  padding: 20px;
+  overflow: hidden; /* Remove rolagem */
   padding-left: 2%;
   padding-right: 2%;
-
+  position: inherit;
 }
 
 .message {
@@ -300,25 +280,22 @@ html, body {
 }
 
 
-
+/* Entrada de mensagens */
 #messageInput {
   width: 50%;
   padding: 10px;
-  margin-top: 10px;
   border: 1px solid #ddd;
   border-radius: 5px 0 0 5px;
 }
 
 #sendMessage {
-  display: block;
-  width: 20%;
   padding: 10px 20px;
-  margin-top: 10px;
   background-color: #26c0a6;
-  color: #fff;
-  border-radius: 5px; /* Aplique um valor para bordas arredondadas em todos os lados */
-  border: 1px solid #ddd;
+  color: white;
+  border-radius: 5px;
+  border: none;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 #sendMessage:hover {
@@ -330,25 +307,22 @@ html, body {
   animation: slidebg 2s linear infinite;
 }
 
+
+/* ======= RESPOSTAS RÁPIDAS ======= */
 .quick-replies {
-    display: flex;
-    flex-direction: column; /* Alinha os botões verticalmente */
-    gap: 10px; /* Espaçamento entre os botões */
-  
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .quick-replies button {
   background-color: #1a73e8;
   color: white;
-  border: none;
   padding: 8px 12px;
   border-radius: 5px;
+  max-width: 300px;
   cursor: pointer;
-  font-size: 14px;
-  display: block;
-  width: 100%; /* Ocupa toda a largura do container */
-  max-width: 300px; /* Largura máxima dos botões */
-  text-align: center;
+  transition: background-color 0.3s ease;
 }
 
 .quick-replies button:hover {
@@ -406,4 +380,36 @@ html, body {
     background-position: 10vw;
   }
 }
+
+.high-contrast {
+  background-color: #1a1a1a;
+  background-image: url("../img/logo3.png");
+}
+
+.high-contrast p{
+  color: white;
+}
+
+.high-contrast h1{
+  color: white;
+}
+
+.high-contrast h3{
+  color: white;
+}
+
+.high-contrast .chat-container{
+  color: white;
+  background-color: #1a1a1a;
+}
+
+.high-contrast .libras-container{
+  background: #1a1a1a;
+}
+
+.high-contrast .side-bar{
+  background: #0f2b18;
+}
+
+
 

@@ -27,7 +27,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-
     // Função para respostas automáticas do "Profissional"
     function addProfessionalMessage(text) {
         const date = new Date();
@@ -60,3 +59,4 @@ document.addEventListener('DOMContentLoaded', function () {
         addMessage(text, 'message2', 'Você');
     };
 });
+
