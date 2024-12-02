@@ -121,6 +121,27 @@ html, body {
   /* Cor do texto */
 }
 
+/* Botão para sair do chat */
+.btn-exit-chat {
+  display: none; /* Inicialmente oculto */
+  position: fixed;
+  bottom: 70px; /* Ajuste para ficar acima do botão de acessibilidade */
+  right: 20px; /* Alinhado à direita */
+  background-color: #2b5d5d;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1001; /* Garante que está acima dos outros elementos */
+}
+
+/* Exibe o botão "X" quando o chat está ativo */
+.chat-container.active ~ .btn-exit-chat {
+  display: block;
+}
 
 /* Estilos para o botão de menu no contêiner principal */
 .container .menu-btn {
@@ -348,6 +369,7 @@ html, body {
 
 }
 
+
 /* Botões de respostas rápidas */
 .button-container {
   display: flex;
@@ -411,5 +433,77 @@ html, body {
   background: #0f2b18;
 }
 
+/* Configuração para telas pequenas */
+@media (max-width: 768px) {
+  /* Menu lateral será visível por padrão */
+  .side-bar {
+      display: block;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background-color: #2e4e58;
+      z-index: 1000;
+      transition: transform 0.3s ease;
+  }
 
+  /* Botão "Iniciar" visível em telas pequenas */
+  .btn-chat-mobile {
+    display: none; /* Oculta o botão em telas grandes */
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #2b5d5d;
+      color: #ffffff;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      z-index: 1001;
+      display: none; /* Oculta o botão em telas grandes */
+  }
 
+  /* Por padrão, a área de chat fica oculta */
+  .chat-container {
+      display: none;
+  }
+
+  /* Quando o menu lateral estiver oculto e o chat ativo */
+  .side-bar.hidden {
+      display: none;
+  }
+
+  .chat-container.active {
+      display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .side-bar {
+      height: 100vh; /* Ocupa toda a altura da tela */
+      width: 100%; /* Largura total para telas pequenas */
+      position: fixed; /* Fixado para cobrir a tela */
+      top: 0;
+      left: 0;
+      overflow-y: auto; /* Scroll se o conteúdo exceder */
+      z-index: 1000; /* Garante que o menu fique acima de outros elementos */
+  }
+}
+
+/* Exibir o botão apenas em telas menores que 768px */
+@media screen and (max-width: 768px) {
+  .btn-chat-mobile {
+      display: block; /* Exibe o botão */
+      position: fixed; /* Fixado na tela */
+      bottom: 100px; /* Ajuste de posição (distância do rodapé) */
+      right: 20px; /* Ajuste de posição (distância da lateral direita) */
+      background-color: #2b5d5d;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      z-index: 1000; /* Certifique-se de que está acima de outros elementos */
+  }
+}

@@ -76,7 +76,10 @@
                     Sinta-se à vontade para conversar e encontrar apoio com quem entende o valor da empatia.
                 </p>
 
-                <button class="btn-chat">Iniciar chat</button>
+                <!-- Botão adicional para dispositivos móveis -->
+                <button class="btn-chat-mobile" onclick="iniciarChat()">Iniciar</button>
+
+
             </div>
 
         </div>
@@ -119,6 +122,8 @@
         </div>
     </div>
 
+    <!-- Botão para sair do chat -->
+    <button class="btn-exit-chat" onclick="sairChat()">x</button>
 
     <button onclick="autocontrastehome()" id="btnTop" title="Auto-Contraste" style="background-color: #2e4e58;"><span
             class="material-symbols-outlined">
