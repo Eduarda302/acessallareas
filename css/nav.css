@@ -7,11 +7,12 @@ body {
 
 .logo img {
     position: absolute;
-    width: 110px;
+    width: 115px;
     height: 100px;
     top: 0;
-    
-  }
+}
+
+
 /* Estilos para a barra de pesquisa */
 .search-bar {
     /*Define o container para a barra de pesquisa como um 
