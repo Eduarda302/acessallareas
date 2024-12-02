@@ -33,13 +33,14 @@ body {
     /* Cor do texto principal */
     margin-left: 90px;
     display: inline-block;
+    text-align: center;
 }
 
 .text-content .highlight {
     color: #009688;
     /* Cor verde para destacar "Juntos por um mundo melhor" */
     font-size: 20px;
-    margin-left: 90px;
+    margin-left: 0;
 }
 
 .text-content p {
@@ -48,6 +49,7 @@ body {
     color: #555;
     /* Cor mais clara para o texto */
     margin-left: 90px;
+    text-align: center;
 }
 
 .text-content button {
@@ -58,7 +60,7 @@ body {
     cursor: pointer;
     border-radius: 5px;
     font-size: 1em;
-    margin-left: 90px;
+    margin-left: 95px;
 }
 
 .text-content button:hover {
@@ -119,6 +121,7 @@ body {
 @media (max-width: 480px) {
     .text-content h1 {
         margin-left: 0px;
+        font-size: 30px;
     }
 }
 
@@ -254,7 +257,7 @@ p {
 
 .about h1 {
     color: #000000;
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 5%;
     text-align: center;
     margin: auto;
@@ -365,6 +368,7 @@ p {
     .ong-info {
         width: 360px;
         display: block;
+        margin-right: 10px;
     }
 }
 
@@ -382,6 +386,7 @@ p {
     gap: 20px;
     max-width: 100px;
     margin-bottom: 50px;
+    margin-left: 195px;
 }
 
 .social-media {
@@ -553,7 +558,6 @@ p {
 
 .contact-form input,
 .contact-form textarea {
-    width: 100%;
     padding: 20px;
     border: 1px solid #ddd;
     margin: 10px;
@@ -564,7 +568,7 @@ p {
 
 .contact-form textarea {
     height: 100px;
-    width: 516px;
+    width: 536px;
 }
 
 .contact-form button {
@@ -641,5 +645,13 @@ p {
         max-width: 99%;
         margin-top: 10px;
         margin-left: initial;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form input,
+.contact-form textarea {
+        width: 327px;
+        margin-left: 10px;
     }
 }
