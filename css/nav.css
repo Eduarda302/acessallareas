@@ -143,7 +143,7 @@ margin-top: 100px;
 
 @media (min-width: 768px) {
     nav {
-        display: flex !important; /* Sempre visível em telas grandes */
+        display: block !important; /* Sempre visível em telas grandes */
     }
 
     .hamburguer {
