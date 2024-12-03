@@ -53,6 +53,13 @@ body {
     background-color: #028578;
 
 }
+nav.hidden {
+    display: none;
+}
+
+nav.ativo {
+    display: flex;
+}
 
 
 /* Estilos da barra de navegação */
@@ -66,8 +73,6 @@ body {
     background-color: #00655b;
 }
 
-
-
 nav ul {
     display: flex;
     list-style: none;
@@ -77,7 +82,6 @@ nav ul {
 
   nav ul li {
     margin: 0 45px;
-    font-size: large;
   }
 
   nav ul li a {
@@ -86,8 +90,6 @@ nav ul {
     font-weight: bold;
     text-align: center;
     margin: 20px;
-  
-  
   }
 
   nav ul li a:hover {
@@ -119,7 +121,6 @@ nav ul {
     
 
 
-
 .hamburguer{
     display: none;
     flex-direction: column;
@@ -139,6 +140,17 @@ margin-top: 100px;
 }
 
 /*final da nav*/
+
+@media (min-width: 768px) {
+    nav {
+        display: flex !important; /* Sempre visível em telas grandes */
+    }
+
+    .hamburguer {
+        display: none; /* Esconde o botão hambúrguer */
+    }
+}
+
 
 /* deixando a nav responsiva para celular */
 @media (max-width: 760px) {

@@ -1,10 +1,13 @@
-function mostrarmenu(){
-    const nav = document.querySelector("nav")
-
-    if(nav.style.display === "none" ){
-         nav.style.display = "flex";
-    }else{
-         nav.style.display = "none"
-    }
-        
-}
+function mostrarmenu() {
+     const nav = document.querySelector("nav");
+ 
+     // Alterna entre as classes 'hidden' e 'ativo'
+     if (nav.classList.contains("hidden")) {
+         nav.classList.remove("hidden");
+         nav.classList.add("ativo");
+     } else {
+         nav.classList.remove("ativo");
+         nav.classList.add("hidden");
+     }
+ }
+ 
