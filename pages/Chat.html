@@ -125,10 +125,22 @@
     <!-- Botão para sair do chat -->
     <button class="btn-exit-chat" onclick="sairChat()">x</button>
 
-    <button onclick="autocontrastehome()" id="btnTop" title="Auto-Contraste" style="background-color: #2e4e58;"><span
-            class="material-symbols-outlined">
-        </span><img src="../img/logo3-removebg-preview.png" width="70px" height="100px">
-        <p>Auto Contraste</p>
+    <!--auto-contraste-->
+    <button onclick="autocontrastehome()" id="btnTop" title="Auto-Contraste" style="background-color: #00655b; 
+    border-radius: 50px; 
+    padding: 10px 20px; 
+    color: white; 
+    border: none; 
+    font-size: 16px; 
+    cursor: pointer; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease, transform 0.3s ease; "
+     onmouseover="this.style.backgroundColor='#3c6673'; this.style.transform='scale(1.05)';"
+     onmouseout="this.style.backgroundColor='#2e4e58'; this.style.transform='scale(1)';"
+     onmousedown="this.style.transform='scale(0.95)';"
+     onmouseup="this.style.transform='scale(1.05)';">
+   <span class="material-symbols-outlined"></span>
+   <p style="margin: 0;">Auto<br>Contraste</p>
     </button>
 
     <div vw class="enabled">
