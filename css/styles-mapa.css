@@ -103,6 +103,11 @@ main {
   padding: 20px;
 }
 
+.card-back p{
+ text-align: left;
+
+}
+
 .flip-button {
   margin-top: 15px;
   padding: 5px 10px;
