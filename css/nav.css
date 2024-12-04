@@ -12,6 +12,10 @@ body {
     top: 0;
 }
 
+.ativo {
+    text-decoration: underline !important;
+}
+
 
 /* Estilos para a barra de pesquisa */
 .search-bar {
@@ -143,7 +147,7 @@ margin-top: 100px;
 
 @media (min-width: 768px) {
     nav {
-        display: flex !important; /* Sempre visível em telas grandes */
+        display: block !important; /* Sempre visível em telas grandes */
     }
 
     .hamburguer {
