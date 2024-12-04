@@ -1,61 +1,31 @@
-
-@media screen and (min-widht: 600px) {
-    /*nav*/
-
-    body {
-        font-size: 16px;
-    }
-
-
-    .menu{
-        display: flex;
-        justify-content: space-between;
-    }
-
-
-    nav ul {
-        flex-direction: row;
-        width: 20%;
-    }
-
-    .grid-dos-quedrados{
-        display: flex;
-        flex-direction: column;
-        width: 400px;
-    }
-
-    }
-@media screen and (min-widht: 760px) {
-
-    body {
-        font-size: 16px;
-    }
-
-
-    footer{
-        display: flex;
-        width: auto;
-    }
-     
-    .card-membros{
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-    }
-
-    .grid-dos-quedrados{
-        display: flex;
-        flex-direction: row;
-        width: 400px;
-    }
-}
-
-@media screen and (min-widht: 800px){
-    .grid-dos-quedrados{
-        display: flex;
-        flex-direction: row;
-        width: 400px;
-    }
+.btn-chat {
+    background-color: #009688 ;
+    color: white;
+    border: none;
+    text-decoration: none;
+    padding: 20px 20px;
+    /*espaçamento interno ao botão. Isso faz com que ele fique mais "alto" 
+    (10px no topo e embaixo) e mais "largo" (20px nas laterais).*/
+    border-radius: 5px;
+    /*cantos do botão arredondados.*/
+    cursor: pointer;
+    /*cursor do mouse para uma "mãozinha"*/
 }
 
 
+/* deixando o chat responsivo para celular */
+@media (max-width: 480px) {
+    .btn-chat{
+        display: block;
+    }
+    .container{
+      flex-direction: column;
+    }
+    .container .side-ba{
+        max-width: 80%;
+    }
+    .chat-container{
+        display: none;
+    }
+    
+  }

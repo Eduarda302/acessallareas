@@ -1,176 +1,201 @@
-body {
+body, html {
     margin: 0;
-    /*Remove a margem padrão do corpo da página*/
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden; /* Remove a barra de rolagem */
+    box-sizing: border-box; /* Define o box-sizing como border-box para que as larguras e alturas incluam o padding e a borda */
 }
 
 .main-login {
-    width: 100vw;
-    /* vw é a porcentagem da largura da tela*/
-    height: 100vh;
-    /*vh altura do viewport (tela)*/
-    background: #201b2c;
-    /*cor da div (do fundo)*/
-    display: flex;
-    /* para que as coisa fique lado a lado*/
-    justify-content: center;
-    /*para centralizar o eixo x no centro*/
-    align-items: center;
-    /*para centralizar o eixo y no centro*/
-
+    width: 100vw; /* Define a largura como 100% da viewport */
+    height: 100vh; /* Define a altura como 100% da viewport */
+    background: #2e3c41; /* Define a cor de fundo */
+    display: flex; /* Define o display como flex para organizar o conteúdo em linha */
+    justify-content: center; /* Centraliza o conteúdo no eixo horizontal */
+    align-items: center; /* Centraliza o conteúdo no eixo vertical */
 }
 
 .left-login {
-    width: 50vh;
-    /*para ocupar so 50% da tela*/
-    height: 100vh;
-    /*altura*/
-    display: flex;
-    display: flex;
-    justify-content: center;
-    /*centraliza os itens horizontamente*/
-    align-items: center;
-    /*Centraliza os itens verticalmente*/
-    flex-direction: column;
-    /* para a imagem ficar na parte de baixo*/
+    width: 50vh; /* Define a largura como 50% da altura da tela */
+    height: 100vh; /* Define a altura como 100% da tela */
+    display: flex; /* Usa flex para organizar o conteúdo */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    flex-direction: column; /* Organiza o conteúdo em coluna */
+}
+
+.back-button {
+    position: absolute;
+    left: 0; /* Ajuste para posicionar ao lado da área de login */
+    transform: translateX(-150%); /* Mova para a esquerda */
+    top: 0; /* Alinhe verticalmente um pouco mais para cima */
+    font-size: 24px;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    color: #009688; /* Altera a cor do botão ao passar o mouse */
 }
 
 .left-login h1 {
-    /*titulo*/
+    /* Estilos do título */
     font-size: 3vw;
-    color:#5b8b63;
+    color: #ffffff; /* Define a cor do texto */
     width: 100%;
-    margin-top: 0;
+    margin-top: 50px; /* Adiciona espaço acima do título */
+    text-align: center; /* Centraliza o título */
 }
+
 .left-login-image {
-    width: 50vw;
-    /*tamanho da fonte*/
-
-
+    width: 60vh; /* Define a largura da imagem */
+    margin-top: 10px;
+    height: auto;
+    
+ 
 }
 
 .right-login {
-    width: 50vh;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    /*Centraliza os itens horizontalmente*/
-    align-items: center;
-    /*Centraliza os itens verticalmente*/
-
+    width: 50vh; /* Define a largura como 50% da altura da tela */
+    height: 100vh; /* Define a altura como 100% da tela */
+    display: flex; /* Usa flex para organização */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
 }
 
 .card-login {
-    width: 60%;
+    width: 60%; /* Define a largura da área de login */
     display: flex;
-    justify-content: center;
-    /*|Centraliza os itens horizontalmente*/
     align-items: center;
-    /*Centraliza os itens verticalmente*/
-    flex-direction: column;
-    /*alinha os itens em uma coluna*/
+    flex-direction: column; /* Organiza o conteúdo em coluna */
     padding: 30px 35px;
-    background: #2f2841;
-    /*cor do fundo*/
-    border-radius: 20px;
-    /*borda redonda*/
-    box-shadow: 0px 10px 40px #00000056;
-    /*sombra*/
-
+    background: #009688; /* Cor de fundo */
+    border-radius: 20px; /* Arredonda as bordas */
+    box-shadow: 0px 10px 40px #00000056; /* Adiciona uma sombra */
+    position: relative; /* Define posição relativa para o botão de voltar */
+    margin-left: auto; /* Empurra o card para a direita */
 }
 
-.card-login>h1 {
-    color: #00ff88;
-    /* cor do titulo*/
-    font-weight: 800;
-    /*texto em negrito*/
-    margin: 0;
-    /*remove a margem padrão*/
+.card-login h1 {
+    color: #ffffff; /* Cor do título */
+    font-weight: 800; /* Negrito */
+    margin: 0; /* Remove margem padrão */
 }
 
 .textfield {
-    width: 100%;
+    width: 100%; /* Largura total do campo de texto */
     display: flex;
-    flex-direction: column;
-    /*alinha os itens em uma coluna*/
-    align-items: flex-start;
-    /*alinha o conteúdo na esquerda*/
-    justify-content: center;
-    /*Centraliza verticalmente*/
-    margin: 10px 0px;
-    /*define a marge de cima e abaixo do campo de texto*/
+    flex-direction: column; /* Organiza o conteúdo em coluna */
+    align-items: flex-start; /* Alinha o conteúdo à esquerda */
+    justify-content: center; /* Centraliza verticalmente */
+    margin: 10px 0px; /* Margem acima e abaixo */
 }
 
 .textfield>input {
     width: 100%;
-    border: none;
-    /*remove a borda padrão do input*/
-    border-radius: 10px;
-    /*rendondar as bordas*/
+    border: none; /* Remove a borda */
+    border-radius: 10px; /* Arredonda as bordas */
     padding: 15px;
-    background: #514869;
-    /*cor do fundo*/
-    color: #f0ffffde;
+    background:  #329d92; /* Cor de fundo do campo de texto */
+    color: #f0ffffde; /* Cor do texto */
     font-size: 12pt;
-    box-shadow: 0px 10px 40px #00000056;
-    /*sombra*/
-    outline: none;
-    box-sizing: border-box;
+    box-shadow: 0px 10px 40px #00000056; /* Adiciona sombra */
+    outline: none; /* Remove o contorno */
+    box-sizing: border-box; /* Inclui padding e borda na largura */
 }
 
-.textfield>label {
+.textfield label {
     color: #f0ffffde;
-    margin-bottom: 10px;
-    /*Espaçamento*/
+    margin-bottom: 10px; /* Espaçamento abaixo do label */
 }
 
 .textfield>input::placeholder {
-    color: #f0ffffde
+    color: #f0ffffde; /* Cor do placeholder */
 }
 
 .btn-login {
-    width: 100%;
+    width: 100%; /* Largura total do botão */
     padding: 16px 0px;
     margin: 25px;
-    border: none;
-    /*Remove a borda*/
-    border-radius: 8px;
+    border: none; /* Remove a borda */
+    border-radius: 8px; /* Arredonda as bordas */
     outline: none;
-    text-transform: uppercase;
-    /*trasforma o texto do botão em maiusculo*/
-    font-weight: 800;
-    /*negrito do texto do botão*/
-    letter-spacing: 2px;
-    /*espaço entre a letra do botão*/
-    color: #2b134b;
-    background: #00ff88;
-    cursor: pointer;
-    /*indica que o botão é clicavel*/
-    box-shadow: 0px 10px 40px -12pcd #00ff8052;
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    font-weight: 800; /* Negrito */
+    letter-spacing: 2px; /* Espaçamento entre letras */
+    color: #ffffff; /* Cor do texto */
+    background: #0d574f; /* Cor de fundo */
+    cursor: pointer; /* Cursor de ponteiro para indicar que é clicável */
+    box-shadow: 0px 10px 40px -12pcd #00ff8052; /* Sombra do botão */
+}
+.back-button {
+    position: absolute; /* Posiciona o botão */
+    top: 20px; /* Ajusta a distância do topo */
+    left:20px; /* Ajusta a distância da lateral */
+    font-size: 24px; /* Tamanho da seta */
+    color: white; /* Cor da seta */
+    text-decoration: none; /* Remove o sublinhado */
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo transparente */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 50%; /* Torna o botão redondo */
+    display: flex; /* Centraliza o conteúdo */
+    align-items: center; 
+    justify-content: center;
+    transition: all 0.3s ease; /* Efeito suave de hover */
+  }
+
+/* Estiliza o parágrafo com a mensagem de registro */
+.signup-link {
+    text-align: center; /* Centraliza o texto */
+    margin-top: 10px; /* Espaço acima do link */
+    color: #f0ffffde; /* Cor do texto */
 }
 
-/*adicionando resposividade*/
-@media (max-width: 480px) {
+/* Estiliza o link "Clique aqui" dentro do parágrafo */
+.signup-link a {
+    color: #ffffff; /* Cor do link */
+    text-decoration: none; /* Remove a sublinha do link */
+}
 
-    .main-login{
-       flex-direction: column;
+/* Adiciona um efeito ao passar o mouse sobre o link */
+.signup-link a:hover {
+    text-decoration: underline; /* Adiciona um sublinhado ao passar o cursor */
+}
+.userway_buttons_wrapper {
+    margin-top: 100px;
     }
-    .left-login{
-        height: 30vw;
+
+/* Adiciona responsividade para telas pequenas */
+@media (max-width: 480px) {
+    .main-login {
+        flex-direction: column; /* Alinha os elementos em coluna */
+        padding: 5px;
+    }
+
+    .left-login {
+        height: 30vw; /* Ajusta a altura */
     }
 
     .left-login h1 {
-        /*titulo*/
+        /* Estilo do título */
         font-size: 20px;
         text-align: center;
     }
 
     .left-login-image {
-        display: none;
-        /*tamanho da fonte*/
+        display: none; /* Oculta a imagem em telas pequenas */
     }
-    .card-login{
-        height: 70%;
-        
+
+    .card-login {
+        height: 70%; /* Ajusta a altura do card */
+        margin-left: 0;
+
+
     }
-    
+
+    .right-login{
+        width: 40vh;
+    }
 }

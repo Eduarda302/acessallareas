@@ -1,47 +1,45 @@
-body {
+
+body, html {
     margin: 0;
-    /*Remove a margem padrão do corpo da página*/
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden; /* Remove a barra de rolagem */
+    box-sizing: border-box;
 }
+
 
 .main-cadastro {
     width: 100vw;
-    /* vw é a porcentagem da largura da tela*/
     height: 100vh;
-    /*vh altura do viewport (tela)*/
     background: #2e3c41;
-    /*cor da div (do fundo)*/
     display: flex;
-    /* para que as coisa fique lado a lado*/
     justify-content: center;
-    /*para centralizar o eixo x no centro*/
     align-items: center;
-    /*para centralizar o eixo y no centro*/
-
 }
 
 .left-cadastro {
     width: 50vh;
-    /*para ocupar so 50% da tela*/
     height: 100vh;
     /*altura*/
     display: flex;
-    display: flex;
     justify-content: center;
-    /*centraliza os itens horizontamente*/
     align-items: center;
-    /*Centraliza os itens verticalmente*/
     flex-direction: column;
-    /* para a imagem ficar na parte de baixo*/
 }
 
-.left-cadastro>h1 {
-    /*titulo*/
+.left-cadastro h1 {
     font-size: 3vw;
-    color: #93e0aa;
+    width: 100%;
+    margin-top: 100px; /* Adiciona mais espaçamento para descer */
+    text-align: center; /* Centraliza o texto */
+    color: #ffffff;
 }
 
 .left-cadastro-image {
-    width: 50vw;
+   
+    width: 60vh; /* Define a largura da imagem */
+    height: auto;
     /*tamanho da fonte*/
 
 
@@ -51,123 +49,173 @@ body {
     width: 50vh;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     /*Centraliza os itens horizontalmente*/
     align-items: center;
-    /*Centraliza os itens verticalmente*/
-
 }
 
 .card-cadastro {
+    position: relative;
     width: 60%;
     display: flex;
     justify-content: center;
-    /*|Centraliza os itens horizontalmente*/
     align-items: center;
-    /*Centraliza os itens verticalmente*/
     flex-direction: column;
-    /*alinha os itens em uma coluna*/
     padding: 30px 35px;
-    background: #2f2841;
+    background: #009688;
     /*cor do fundo*/
     border-radius: 20px;
-    /*borda redonda*/
     box-shadow: 0px 10px 40px #00000056;
     /*sombra*/
+    margin-left: auto; /* Empurra o card para a direita */
+    
 
 }
 
-.card-cadastro>h1 {
-    color: #93e0aa;
+.card-cadastro h1 {
+    color: #ffffff;
     /* cor do titulo*/
     font-weight: 800;
-    /*texto em negrito*/
     margin: 0;
-    /*remove a margem padrão*/
 }
 
 .textfield {
     width: 100%;
     display: flex;
     flex-direction: column;
-    /*alinha os itens em uma coluna*/
     align-items: flex-start;
-    /*alinha o conteúdo na esquerda*/
     justify-content: center;
-    /*Centraliza verticalmente*/
-    margin: 10px 0px;
-    /*define a marge de cima e abaixo do campo de texto*/
+    margin: 10px 0;
 }
 
-.textfield>input {
+.textfield input {
     width: 100%;
     border: none;
-    /*remove a borda padrão do input*/
     border-radius: 10px;
-    /*rendondar as bordas*/
     padding: 15px;
-    background: #514869;
+    background:  #329d92;
     /*cor do fundo*/
     color: #f0ffffde;
     font-size: 12pt;
     box-shadow: 0px 10px 40px #00000056;
-    /*sombra*/
     outline: none;
     box-sizing: border-box;
 }
 
-.textfield>label {
+.textfield label {
     color: #f0ffffde;
     margin-bottom: 10px;
-    /*Espaçamento*/
 }
 
-.textfield>input::placeholder {
-    color: #f0ffffde
+.textfield input::placeholder {
+    color: #f0ffffde;
 }
 
 .btn-cadastro {
     width: 100%;
-    padding: 16px 0px;
+    padding: 16px 0;
     margin: 25px;
     border: none;
-    /*Remove a borda*/
     border-radius: 8px;
     outline: none;
     text-transform: uppercase;
-    /*trasforma o texto do botão em maiusculo*/
     font-weight: 800;
-    /*negrito do texto do botão*/
     letter-spacing: 2px;
     /*espaço entre a letra do botão*/
-    color: #2b134b;
-    background: #93e0aa;
+    color: #ffffff;
+    background:  #0d574f;
     cursor: pointer;
-    /*indica que o botão é clicavel*/
     box-shadow: 0px 10px 40px -12pcd #00ff8052;
-
+}
+.back-button {
+    position: absolute;
+    left: 0; /* Ajuste para posicionar ao lado da área de login */
+    transform: translateX(-150%); /* Mova para a esquerda */
+    top: 0; /* Alinhe verticalmente um pouco mais para cima */
+    font-size: 24px;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-@media (max-width: 480px){
-    .main-cadastro{
+.back-button:hover {
+    color:#009688 ; /* Altera a cor do botão ao passar o mouse */
+}
+.back-button {
+    position: absolute; /* Posiciona o botão */
+    top: 20px; /* Ajusta a distância do topo */
+    left: 20px; /* Ajusta a distância da lateral */
+    font-size: 24px; /* Tamanho da seta */
+    color: white; /* Cor da seta */
+    text-decoration: none; /* Remove o sublinhado */
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo transparente */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 50%; /* Torna o botão redondo */
+    display: flex; /* Centraliza o conteúdo */
+    align-items: center; 
+    justify-content: center;
+    transition: all 0.3s ease; /* Efeito suave de hover */
+  }
+
+  .userway_buttons_wrapper {
+    margin-top: 100px;
+    }
+
+/* Responsividade para dispositivos menores */
+
+@media (max-width: 768px) {
+    .main-cadastro {
         flex-direction: column;
-     }
-     .left-cadastro{
-         height: 30vw;
-     }
- 
-     .left-cadastro h1 {
-         /*titulo*/
-         font-size: 20px;
-         text-align: center;
-     }
-     .left-cadastro-image {
-         display: none;
-         /*tamanho da fonte*/
-     }
-     .card-cadastro{
-         height: 80%;
-         
-     }
-     
+        padding: 5px;
+    }
+
+    .left-cadastro {
+        width: 80%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .left-cadastro h1 {
+        font-size: 24px;
+    }
+
+    .left-cadastro-image {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .right-cadastro {
+        width: 80%;
+        height: auto;
+    }
+
+    .card-cadastro {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .left-cadastro {
+        height: auto;
+    }
+
+    .left-cadastro h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .left-cadastro-image {
+        display: none;
+    }
+
+    .card-cadastro {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .btn-cadastro {
+        font-size: 14px;
+        padding: 12px 0;
+    }
 }

@@ -1,89 +1,18 @@
+/* ======= CONFIGURAÇÕES GERAIS ======= */
+/* Certifique-se de que html e body ocupam a altura total da tela */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  overflow: hidden; /* Remove a rolagem vertical */
+  overflow-x: hidden; /* Remove a rolagem horizontal */
+}
+
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: 'poppins', sans-serif;
-}
-
-/* Estilos para a barra de pesquisa */
-.search-bar {
-  /*Define o container para a barra de pesquisa como um 
-  "flexbox", alinhando o campo de texto e o botão no centro */
-  display: flex;
-  /*alinha os elementos dentro 
-  (campo de entrada e botão) em uma linha horizontal.*/
-  align-items: center;
-}
-
-.search-bar input {
-  padding: 10px;
-  /*Adiciona espaçamento interno ao redor 
-  do texto dentro do campo de entrada*/
-  border: 2px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-  margin-right: 10px;
-  /* Espaço entre o campo de pesquisa e o botão */
-}
-
-.search-bar button {
-  background-color: #1a73e8;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  /*espaçamento interno ao botão. Isso faz com que ele fique mais "alto" 
-  (10px no topo e embaixo) e mais "largo" (20px nas laterais).*/
-  border-radius: 5px;
-  /*cantos do botão arredondados.*/
-  cursor: pointer;
-  /*cursor do mouse para uma "mãozinha"*/
-}
-
-.search-bar button:hover {
-  background-color: #155cb5;
-
-}
-
-/* Estilos da barra de navegação */
-.navbar {
-  display: flex;
-  /*alinhar os itens em linha*/
-  justify-content: space-between;
-  /*distribuir o espaço entre o logo, o menu e o botão.*/
-  align-items: center;
-  padding: 20px;
-  background-color: #D9E2CE;
-
-}
-
-.logo h1 {
-  font-size: 24px;
-  color: #333;
-}
-
-nav ul {
-  list-style-type: none;
-  /*Remove os marcadores da lista*/
-  display: flex;
-
-}
-
-nav ul li {
-  margin-right: 20px;
-  margin: 0 20px;
-  /* Aplica espaçamento de 20px entre os itens */
-  justify-content: space-between;
-  /* Alinha o conteúdo com espaçamento automático */
-  padding: 10px 20px;
-  /* Espaçamento interno nos links */
-}
-
-nav ul li a {
-  text-decoration: none;
-  /*Remove o sublinhado dos links.*/
-  color: #333;
-  font-weight: bold;
-
+  box-sizing: border-box; /* Inclui bordas e padding no cálculo das dimensões */
 }
 
 .cta-button button {
@@ -102,15 +31,26 @@ nav ul li a {
 
 /* Estilos para o contêiner principal */
 .container {
-  background: #e1e5f7;
-  /* Cor de fundo do contêiner principal */
-  position: relative;
-  /* Altura igual à altura da janela do navegador */
-  width: 100%;
-  /* Largura igual à largura da janela do navegador */
   display: flex;
   justify-content: space-between;
-  height: 95vh;
+  align-items: center;
+  height: 100vh; /* Ocupa toda a altura da tela */
+  background: #e1e5f7;
+}
+
+/* Estilos para a barra lateral */
+.container .side-bar {
+  height: 100vh; /* Ocupa toda a altura da tela */
+  width: 500px; /* Largura padrão para desktop */
+  background: #4A7856;
+  padding: 20px;
+  position: relative; /* Troca para relative para alinhar melhor */
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  max-width: 50%; /* Limita a largura para telas menores */
+  overflow-y: auto; /* Permite rolagem se o conteúdo exceder */
+  color: #000000; /* Texto em um tom escuro para contraste */
+  border-right: 2px solid #000000; /* Linha de separação opcional */
 }
 
 /* Estilos para modificar a posição do elemento com a classe "position" */
@@ -118,28 +58,10 @@ nav ul li a {
   left: -400px !important;
   /* Move o elemento para a esquerda (-480px) com importância */
 }
-
-/* Estilos para a barra lateral */
-.container .side-bar {
-  height: auto;
-  width: 500px;
-  /* Largura da barra lateral */
-  background: #f0f0f1;
-  /* Cor de fundo da barra lateral */
-  padding: 0px;
-  width: 550px;
-  /* Largura da barra lateral */
-  background: #5a7150;
-  /* Cor de fundo da barra lateral */
-  padding: 20px;
-  /* Espaçamento interno da barra lateral */
-  position: inherit;
-  /* Posicionamento absoluto em relação ao contêiner principal */
-  -webkit-transition: all 0.5s ease;
-  /* Transição suave de propriedades durante 0.5 segundos (para animações) */
-  transition: all 0.5s ease;
-
+.btn-chat {
+  display: none;
 }
+
 
 /* Estilos para a marca na barra lateral */
 .container .side-bar .side-bar-brand {
@@ -157,27 +79,18 @@ nav ul li a {
 
 }
 
-
-/* Estilos para o botão na barra lateral */
-.container .side-bar .side-bar-brand .button {
-  position: relative;
-  /* Posicionamento relativo para elementos filhos */
-  -webkit-transform: rotate(45deg);
-  /* Rotação de 45 graus */
-  transform: rotate(45deg);
-  cursor: pointer;
-  /* Cursor do mouse em forma de mão ao passar por cima */
+/* Estilo do menu lateral */
+.container .side-bar .side-bar-brand {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* Estilos para as linhas do botão na barra lateral */
-.container .side-bar .side-bar-brand .button div {
-  height: 4px;
-  /* Altura das linhas */
-  width: 20px;
-  /* Largura das linhas */
-  background: #df1818;
-  /* Cor de fundo das linhas */
-  /* Borda arredondada */
+/* Estilos para botões no menu lateral */
+.container .side-bar .side-bar-brand .button {
+  position: relative;
+  transform: rotate(45deg);
+  cursor: pointer;
 }
 
 /* Estilos específicos para a primeira linha do botão na barra lateral */
@@ -208,25 +121,6 @@ nav ul li a {
   /* Cor do texto */
 }
 
-/*footer*/
-.footer-lateral {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 10px;
-  background-color: #5a7150;
-  text-align: center;
-  font-size: 20px;
-  color: #555;
-}
-.footer-lateral a {
-  color: #000000;
-  text-decoration: none;
-}
-.footer-lateral a:hover {
-  text-decoration: underline;
-}
 
 /* Estilos para o botão de menu no contêiner principal */
 .container .menu-btn {
@@ -260,8 +154,8 @@ nav ul li a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 170px;
-  height: 150px;
+  width: 180px;
+  height: 190px;
 }
 
 
@@ -313,17 +207,18 @@ nav ul li a {
   }
 }
 
-/*chat*/
-
+/* ======= CHAT ======= */
 .chat-container {
   display: flex;
   flex-direction: column;
-  position: inherit;
   width: 100%;
+  height: 100vh;
   background-color: #fff5f5;
+  padding: 20px;
+  overflow: hidden; /* Remove rolagem */
   padding-left: 2%;
   padding-right: 2%;
-
+  position: inherit;
 }
 
 .message {
@@ -337,7 +232,7 @@ nav ul li a {
 
 .user {
   font-weight: bold;
-  color: #0f6633;
+  color: #0d381f;
   margin-bottom: 5%;
 }
 
@@ -359,7 +254,7 @@ nav ul li a {
   justify-content: right;
   align-items: end;
   margin: 10px 0;
-  background-color: #26c0a6;
+  background-color: #a6c7c7;
   margin-left: 65%;
   padding: 10px;
   border-radius: 10px;
@@ -384,31 +279,23 @@ nav ul li a {
 
 }
 
-.send {
-  display: flex;
-  width: 80%;
-  position: absolute;
-  bottom: 10px;
 
-}
-
+/* Entrada de mensagens */
 #messageInput {
-  width: 100%;
+  width: 50%;
   padding: 10px;
-  margin-top: 10px;
   border: 1px solid #ddd;
   border-radius: 5px 0 0 5px;
 }
 
 #sendMessage {
-  display: block;
-  width: 20%;
-  padding: 10px;
-  margin-top: 10px;
+  padding: 10px 20px;
   background-color: #26c0a6;
-  color: #fff;
+  color: white;
+  border-radius: 5px;
   border: none;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 #sendMessage:hover {
@@ -420,21 +307,109 @@ nav ul li a {
   animation: slidebg 2s linear infinite;
 }
 
+
+/* ======= RESPOSTAS RÁPIDAS ======= */
+.quick-replies {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.quick-replies button {
+  background-color: #1a73e8;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  max-width: 300px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quick-replies button:hover {
+  background-color: #155cb5;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh; /* Ocupa toda a altura da tela */
+  overflow: hidden; /* Impede rolagem no contêiner de chat */
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+/* Enviar mensagem */
+.send {
+  display: flex;
+  width: 80%;
+  position: absolute;
+  bottom: 10px;
+
+}
+
+/* Botões de respostas rápidas */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  padding: 20px 0; /* Espaçamento extra para separar do campo de envio */
+  align-items: center; /* Centraliza os botões */
+}
+
+.button-container button {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: auto; /* Largura automática para o botão */
+  max-width: 300px; /* Largura máxima para limitar o tamanho dos botões */
+  text-align: center;
+}
+
+.button-container button:hover {
+  background-color: #155cb5;
+}
+
+
 @keyframes slidebg {
   to {
     background-position: 10vw;
   }
 }
 
-/*libras*/
-
-
-.libras-container {
-  background: #ffffff;
-  /* Cor de fundo do contêiner principal */
-  position: relative;
-  height: 85vh;
-  /* Altura igual à altura da janela do navegador */
-  display: flex;
-  justify-content: space-between;
+.high-contrast {
+  background-color: #1a1a1a;
+  background-image: url("../img/logo3.png");
 }
+
+.high-contrast p{
+  color: white;
+}
+
+.high-contrast h1{
+  color: white;
+}
+
+.high-contrast h3{
+  color: white;
+}
+
+.high-contrast .chat-container{
+  color: white;
+  background-color: #1a1a1a;
+}
+
+.high-contrast .libras-container{
+  background: #1a1a1a;
+}
+
+.high-contrast .side-bar{
+  background: #0f2b18;
+}
+
+
+
