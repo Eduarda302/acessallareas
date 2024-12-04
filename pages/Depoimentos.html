@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +10,12 @@
     <link rel="stylesheet" href="../css/styles-depoimento.css"> <!-- Ligação com o arquivo CSS externo
 -->
     <link rel="stylesheet" href="../css/nav.css">
-    <div style="display: flex; align-items: center; justify-content: center; height: 200px;"></div>
+    <div style="display: flex; align-items: center; justify-content: center; height: 200p;"></div>
     <style>
         .texto {
             margin-top: 500px;
             /* Altere o valor conforme necessário */
-            
+
         }
     </style>
 
@@ -24,7 +25,7 @@
     <div class="navbar"> <!--Contém a barra de navegação.-->
         <div class="logo">
 
-            <h1>AcessAllAreas</h1> <!--logotipo e o título (o nome "WordStream").-->
+            <h1>AcessAllAreas</h1>
         </div>
         <nav>
             <ul>
@@ -36,22 +37,22 @@
             </ul>
         </nav>
 
-            <!-- Adicionando o campo de pesquisa -->
-            <form class="search-bar" action="#" method="get">
-                
-                <!--placeholder="Search..." define o texto que aparecerá 
+        <!-- Adicionando o campo de pesquisa -->
+        <form class="search-bar" action="#" method="get">
+
+            <!--placeholder="Search..." define o texto que aparecerá 
                 no campo de pesquisa antes de o usuário digitar algo-->
-                <a href="Login.html">Login</a>
-            </form>
+            <a href="Login.html">Login</a>
+        </form>
 
-            <!-- Botão menu responsivo -->
-            <div class="hamburguer" onclick="mostrarmenu()">
-                <span></span>
-                <span></span>
-                <span></span>
+        <!-- Botão menu responsivo -->
+        <div class="hamburguer" onclick="mostrarmenu()">
+            <span></span>
+            <span></span>
+            <span></span>
 
-            </div>
         </div>
+    </div>
     </header>
 
 
@@ -60,232 +61,299 @@
     <section class="about">
         <div class="ong-info">
             <div style="margin: 0 auto; text-align: center; width: 100%;">
-            <h1><p>Bem-vindo à Nossa Página de Depoimentos: Superação e Inspiração</p><br>
-
-                Aqui, compartilhamos histórias de pessoas portadoras de deficiencia (PCDs) que enfrentam desafios com
-                a falta de acessibilidade dentro das páginas na web, transformando dificuldades em aprendizado e comentando o que tem estado em falta em diferentes sites de diferentes nixos.
-                <p>Este espaço foi criado
-                para dar voz às suas experiências, mostrar como a falta de acessibilidade e  de um olhar mais empático cria barreiras para o aprendizado, limitando o contato com o conhecimento.</p>
-                 <br>
-                Além das complicações enfrentadas no dia a dia, também destacamos os momentos positivos dentro da web: conquistas,
-                inovações de sites e aprendizados que trouxeram mudanças e a sensação de inclusão de alguns usuarios em suas vidas. Cada depoimento é uma
-                celebração de força, esperança, a liberdade de falar e expressar suas reais opiniões e a prova de que juntos podemos construir um mundo mais inclusivo. <br>
-                <br> Explore, conecte-se e inspire-se!
-            </h1>
+                <header>
+                    <h1 class="titulo">Depoimentos de Superação.<br> Inspirando Inclusão na Web</h1>
+                </header>
+                <main>
+                    <section class="depoimentos">
+                        <p>
+                            Bem-vindo à nossa página de depoimentos, um espaço dedicado a compartilhar histórias
+                            inspiradoras de pessoas com deficiência (PCDs). Aqui, destacamos os desafios enfrentados
+                            devido à falta de acessibilidade na web, discutindo como isso pode limitar o acesso ao
+                            conhecimento e criar barreiras no aprendizado.
+                        </p>
+                        <p>
+                            Nosso objetivo é dar voz a essas experiências, enfatizando a importância de um olhar mais
+                            empático e inclusivo. Cada relato mostra como a superação de dificuldades pode se
+                            transformar em aprendizado e conscientização, ajudando a construir um ambiente digital mais
+                            acessível.
+                        </p>
+                        <p>
+                            Além de abordar as complicações, celebramos momentos positivos: inovações em sites,
+                            conquistas pessoais e aprendizados que trouxeram inclusão e mudanças significativas. Esses
+                            depoimentos são uma demonstração de força, esperança e liberdade de expressão.
+                        </p>
+                        <p>
+                            Convidamos você a explorar, conectar-se e inspirar-se com essas histórias, trabalhando
+                            juntos por um mundo mais acessível e inclusivo.
+                        </p>
+                    </section>
+                </main>
+            </div>
         </div>
-    </div>
         <img src="../img/injury-amico.png" alt="" srcset="">
     </section>
 
     <!-- Divisão para os cards de notícias -->
-     
+
     <section class="grid-container">
-    <div class="news-cards">
-        <div class="card ruim 0">
-            <img src="../img/___4_-removebg-preview.png" alt="Notícia 1">
-            <div class="card-content">
-                <!--depoimento ruim-->
-                <h3>Para uma pessoa que não possui mãos, navegar na internet pode ser um desafio considerável.</h3>
+        <div class="news-cards">
+            <div class="card ruim 0">
+                <img src="../img/Aspas-branco.png" alt="Notícia 1">
+                <div class="card-content">
+                    <!--depoimento ruim-->
+                    <h3>Para uma pessoa que não possui mãos, navegar na internet pode ser um desafio considerável.</h3>
+                    <span class="hidden-text">
+                        <p>Muitas interfaces são feitas para uso com mouse e teclado, o que pode dificultar a navegação.
+                            Apesar de tecnologias como reconhecimento de voz e controle por cabeça, nem todos os sites
+                            têm suporte, tornando a experiência frustrante. Elementos pequenos ou que bloqueiam a
+                            precisão também são barreiras. É essencial priorizar a acessibilidade para garantir uma
+                            experiência</p>
+                    </span>
+                    <button class="read-more-btn">Ler mais</button>
+                </div>
+            </div>
+            <div class="card bom 1">
+                <img src="../img/Aspas-branco.png" alt="Notícia 1">
+                <div class="card-content">
 
-                <p>Muitas interfaces são feitas para uso com mouse e teclado, o que pode dificultar a navegação. Apesar de tecnologias como reconhecimento de voz e controle por cabeça, nem todos os sites têm suporte, tornando a experiência frustrante. Elementos pequenos ou que bloqueiam a precisão também são barreiras. É essencial priorizar a acessibilidade para garantir uma experiência</p>
+                    <!--depoimento bom-->
+                    <h3>Navegar pela web sem as cordas vocais foi como abrir um novo mundo pra mim.</h3>
+                    <span class="hidden-text">
+                        <p> Uso um sistema de texto preditivo que funciona super bem para navegar e me comunicar.
+                            Consigo
+                            escrever rápido e expressar o que quero sem precisar falar. Além disso, com dispositivos que
+                            entendem gestos e rastreamento ocular, posso acessar, escrever e responder mensagens sem
+                            problemas.
+                            O teclado virtual, junto com o software assistivo, facilita a escrita e corrige erros. </p>
+                    </span>
+                    <button class="read-more-btn">Ler mais</button>
+                </div>
+            </div>
+            <div class="card ruim 2">
+                <img src="../img/Aspas-branco.png" alt="Notícia 1">
+                <div class="card-content">
+                    <!--comentario bom-->
+                    <h3>Para uma pessoa com síndrome de Down, navegar na internet pode ser tanto uma ferramenta poderosa
+                        quanto um desafio.</h3>
+                    <span class="hidden-text">
+                        <p> Por um lado, a internet oferece acesso a informações, entretenimento e a
+                            possibilidade de se conectar com outras pessoas, o que pode ser muito positivo.
+                            muitos sites têm uma estrutura complexa e usam linguagem difícil, o que pode dificultar a
+                            compreensão. Além disso, a sobrecarga de informações visuais pode ser desorientadora.<br>
+                            Conteúdos
+                            com
+                            imagens e textos simples, além de vídeos que incluem legendas ou narração, podem ajudar a
+                            tornar a
+                            experiência online mais acessível e agradável.</p>
+                    </span>
+                    <button class="read-more-btn">Ler mais</button>
+                </div>
+            </div>
+            <div class="card bom 3">
+                <img src="../img/Aspas-branco.png" alt="Notícia 1">
+                <div class="card-content">
+                    <!--comentario ruim-->
+                    <h3>Para uma pessoa cega, navegar na internet pode ser um desafio significativo.</h3>
+                    <span class="hidden-text">
+                        <p> Muitas vezes, os sites
+                            não são otimizados para leitores de tela, o que torna difícil acessar informações.<br>
+                            Além disso, muitos elementos visuais, como imagens e vídeos, não têm descrições textuais,
+                            deixando
+                            lacunas no conteúdo. A estrutura confusa de alguns sites pode dificultar a navegação, e a
+                            falta de
+                            compatibilidade com tecnologia assistiva pode tornar a experiência ainda mais frustrante.
+                        </p>
+                    </span>
+                    <button class="read-more-btn">Ler mais</button>
+                </div>
+            </div>
+            <div class="card ruim">
+                <img src="../img/Aspas-branco.png" alt="Notícia 2">
+                <div class="card-content">
+                    <!--comentario ruim-->
+                    <h3>Navegar na internet para quem é surdo pode ser bem frustrante às vezes.</h3>
+                    <span class="hidden-text">
+                        <p>Muitos sites e vídeos ainda não têm legendas ou interpretação em Libras, então boa parte do
+                            conteúdo
+                            acaba inacessível. Além disso, conteúdos em áudio, como podcasts e mensagens de voz,
+                            raramente têm
+                            uma transcrição disponível. Isso dificulta bastante o acesso à informação e a participação
+                            em redes
+                            sociais ou sites de notícia.</p>
+                    </span>
+                    <button class="read-more-btn">Ler mais</button>
+                </div>
+            </div>
+            <div class="card bom ">
+                <img src="../img/Aspas-branco.png" alt="Notícia 3">
+                <div class="card-content">
+                    <!--comentario ruim-->
+                    <h3>Navegar na internet pode ser bem complicado pra quem é autista</h3>
+                    <span class="hidden-text">
+                        <p>Tem tanto estímulo visual e sonoro, pop-up, vídeo que toca sozinho… é um exagero.<br>Sem
+                            contar a
+                            confusão de alguns sites, com botões e menus que não fazem muito sentido. A linguagem também
+                            é um
+                            problema, cheia de gírias e metáforas que podem deixar qualquer um perdido.</p>
+                        </span>
+                        <button class="read-more-btn">Ler mais</button>
+
+                </div>
             </div>
         </div>
-        <div class="card bom 1">
-            <img src="../img/___3_-removebg-preview.png" alt="Notícia 1">
-            <div class="card-content">
-                
-                <!--depoimento bom-->
-                <h3>Navegar pela web sem as cordas vocais foi como abrir um novo mundo pra mim.</h3>
+        <div class="news-cards">
+            <div class="card ruim">
+                <img src="../img/Aspas-branco.png" alt="Notícia 1">
+                <div class="card-content">
+                    <!--Comentario bom-->
 
-                <p> Uso um sistema de texto preditivo que funciona super bem para navegar e me comunicar. Consigo
-                    escrever rápido e expressar o que quero sem precisar falar. Além disso, com dispositivos que
-                    entendem gestos e rastreamento ocular, posso acessar, escrever e responder mensagens sem problemas.
-                    O teclado virtual, junto com o software assistivo, facilita a escrita e corrige erros. </p>
+                    <h3>Olha, como alguém que não tem mãos, tenho que dizer que navegar pela web foi uma experiência
+                        libertadora e cheia de novas possibilidades! </h3>
+                    <span class="hidden-text">
+                        <p> Antes, a internet parecia um espaço um pouco fechado
+                            pra mim, algo que eu sabia que era útil mas não tinha total acesso.<br>
+                            Conseguir navegar foi graças a algumas ferramentas que fazem a diferença, como softwares de
+                            voz
+                            para texto, que me permitem “falar” o que quero pesquisar ou escrever, e leitores de tela
+                            que tornam
+                            cada informação mais acessível. Além disso, comandos por movimento ocular e dispositivos
+                            adaptados
+                            me ajudam a controlar o cursor e clicar em itens. Com essas tecnologias, consigo fazer
+                            praticamente
+                            tudo o que eu faria com as mãos, desde ler notícias até usar redes sociais e fazer compras
+                            online.
+                            Isso tudo me deu uma autonomia enorme.</p>
+                    </span>
+                    <button class="read-more-btn">Ler mais</button>
+                </div>
             </div>
-        </div>
-        <div class="card ruim 2">
-            <img src="../img/___4_-removebg-preview.png" alt="Notícia 1">
-            <div class="card-content">
-                <!--comentario bom-->
-                <h3>Para uma pessoa com síndrome de Down, navegar na internet pode ser tanto uma ferramenta poderosa
-                    quanto um desafio.</h3>
-
-                <p> Por um lado, a internet oferece acesso a informações, entretenimento e a
-                    possibilidade de se conectar com outras pessoas, o que pode ser muito positivo.
-                    muitos sites têm uma estrutura complexa e usam linguagem difícil, o que pode dificultar a
-                    compreensão. Além disso, a sobrecarga de informações visuais pode ser desorientadora.<br> Conteúdos
-                    com
-                    imagens e textos simples, além de vídeos que incluem legendas ou narração, podem ajudar a tornar a
-                    experiência online mais acessível e agradável.</p>
+            <div class="card bom">
+                <img src="../img/Aspas-branco.png" alt="Notícia 1">
+                <div class="card-content">
+                    <!--comentario bom-->
+                    <h3>Navegar pela web sem ter as cordas vocais foi como abrir um mundo totalmente novo e empoderador
+                        pra
+                        mim. </h3>
+                    <span class="hidden-text">
+                        <p> Eu uso um sistema de texto preditivo, que funciona muito bem com aplicativos de navegação e
+                            comunicação. Posso escrever e expressar o que quero rapidamente, sem precisar falar. Além
+                            disso, com
+                            dispositivos que entendem comandos gestuais e até rastreamento ocular, consigo acessar,
+                            escrever e
+                            até responder mensagens sem limitações.
+                            Um dos grandes trunfos pra mim foi poder usar teclados virtuais, especialmente com o apoio
+                            de
+                            software assistivo, que facilita a escrita e ainda corrige erros automaticamente. </p>
+                    </span>
+                    <button class="read-more-btn">Ler mais</button>
+                </div>
             </div>
-        </div>
-        <div class="card bom 3">
-            <img src="../img/___3_-removebg-preview.png" alt="Notícia 1">
-            <div class="card-content">
-                <!--comentario ruim-->
-                <h3>Para uma pessoa cega, navegar na internet pode ser um desafio significativo.</h3>
-
-                <p> Muitas vezes, os sites
-                    não são otimizados para leitores de tela, o que torna difícil acessar informações.<br>
-                    Além disso, muitos elementos visuais, como imagens e vídeos, não têm descrições textuais, deixando
-                    lacunas no conteúdo. A estrutura confusa de alguns sites pode dificultar a navegação, e a falta de
-                    compatibilidade com tecnologia assistiva pode tornar a experiência ainda mais frustrante.</p>
+            <div class="card ruim">
+                <img src="../img/Aspas-branco.png" alt="Notícia 1">
+                <div class="card-content">
+                    <!--comentario bom-->
+                    <h3>Navegar pela web foi uma das melhores descobertas que fiz!</h3>
+                    <span class="hidden-text">
+                        <p> Poder acessar a internet me ajudou a
+                            aprender muitas coisas novas e a encontrar lugares onde posso conversar e brincar com outras
+                            pessoas.<br>
+                            Para navegar, eu conto com alguns ajustes e apoio. Uso sites que têm layouts mais simples,
+                            com
+                            ícones
+                            e botões grandes, o que me ajuda a entender melhor onde preciso clicar. Além disso, meu
+                            computador
+                            tem configurações que tornam o texto mais claro e, às vezes, uso um leitor de tela que lê as
+                            coisas
+                            em voz alta para mim. A ajuda da minha família e dos meus professores foi essencial, porque
+                            eles me
+                            ensinaram a usar a internet com segurança e mostraram várias maneiras de fazer isso sozinho.
+                            Agora, posso encontrar coisas que gosto e aprender mais sobre tudo o que me interessa, com
+                            essas adaptações. </p>
+                    </span>
+                    <button class="read-more-btn">Ler mais</button>
+                </div>
             </div>
-        </div>
-        <div class="card ruim">
-            <img src="../img/aspa2.png" alt="Notícia 2">
-            <div class="card-content">
-                <!--comentario ruim-->
-                <h3>Navegar na internet para quem é surdo pode ser bem frustrante às vezes.</h3>
-
-                <p>Muitos sites e vídeos ainda não têm legendas ou interpretação em Libras, então boa parte do conteúdo
-                    acaba inacessível. Além disso, conteúdos em áudio, como podcasts e mensagens de voz, raramente têm
-                    uma transcrição disponível. Isso dificulta bastante o acesso à informação e a participação em redes
-                    sociais ou sites de notícia.</p>
+            <div class="card bom ">
+                <img src="../img/Aspas-branco.png" alt="Notícia 1">
+                <div class="card-content">
+                    <!--comentario bom-->
+                    <h3>Navegar pela web, mesmo sendo cego, foi uma das experiências mais libertadoras que já tive.</h3>
+                    <span class="hidden-text">
+                        <p>Eu consigo navegar principalmente com a ajuda de um leitor de tela, que lê em voz alta o que
+                            está na
+                            tela. Isso me permite entender tudo, desde textos simples até conteúdos mais complexos. Além
+                            disso,
+                            muitos sites e aplicativos estão se tornando mais acessíveis, com descrições em áudio e
+                            interfaces
+                            que facilitam a navegação. Isso torna a experiência muito mais agradável.
+                            Ter apoio de amigos e familiares também foi fundamental. Eles me mostraram como usar a
+                            tecnologia e
+                            me ajudaram a entender como navegar de forma segura. </p>
+                    </span>
+                    <button class="read-more-btn">Ler mais</button>
+                </div>
             </div>
-        </div>
-        <div class="card bom ">
-            <img src="../img/aspa1.png" alt="Notícia 3">
-            <div class="card-content">
-                <!--comentario ruim-->
-                <h3>Navegar na internet pode ser bem complicado pra quem é autista</h3>
-
-                <p>Tem tanto estímulo visual e sonoro, pop-up, vídeo que toca sozinho… é um exagero.<br>Sem contar a
-                    confusão de alguns sites, com botões e menus que não fazem muito sentido. A linguagem também é um
-                    problema, cheia de gírias e metáforas que podem deixar qualquer um perdido.</p>
+            <div class="card ruim">
+                <img src="../img/Aspas-branco.png" alt="Notícia 2">
+                <div class="card-content">
+                    <!--comentario bom-->
+                    <h3>Navegar pela web é uma das coisas mais legais que já experimentei, especialmente sendo
+                        deficiente
+                        auditivo. </h3>
+                        <span class="hidden-text">
+                    <p> A
+                        internet me dá uma chance incrível de me conectar com as pessoas e acessar informações de
+                        maneiras
+                        que são muito mais fáceis para mim.Consegui navegar na web porque muitos sites agora têm
+                        recursos
+                        acessíveis, como legendas e
+                        transcrições, o que facilita muito a compreensão do conteúdo. Além disso, a comunidade online é
+                        muito acolhedora e sempre há espaço para discutir temas que me interessam. Eu uso aplicativos de
+                        mensagens e redes sociais que me permitem me comunicar com amigos e familiares rapidamente, o
+                        que me
+                        ajuda a manter o contato e a me sentir parte do grupo.</p>
+                    </span>
+                    <button class="read-more-btn">Ler mais</button>
+                </div>
+                    </div>
             </div>
-        </div>
-    </div>
-    <div class="news-cards">
-        <div class="card ruim">
-            <img src="../img/aspa2.png" alt="Notícia 1">
-            <div class="card-content">
-                <!--Comentario bom-->
-
-                <h3>Olha, como alguém que não tem mãos, tenho que dizer que navegar pela web foi uma experiência
-                    libertadora e cheia de novas possibilidades! </h3>
-
-                <p> Antes, a internet parecia um espaço um pouco fechado
-                    pra mim, algo que eu sabia que era útil mas não tinha total acesso.<br>
-                    Conseguir navegar foi graças a algumas ferramentas que fazem a diferença, como softwares de voz
-                    para texto, que me permitem “falar” o que quero pesquisar ou escrever, e leitores de tela que tornam
-                    cada informação mais acessível. Além disso, comandos por movimento ocular e dispositivos adaptados
-                    me ajudam a controlar o cursor e clicar em itens. Com essas tecnologias, consigo fazer praticamente
-                    tudo o que eu faria com as mãos, desde ler notícias até usar redes sociais e fazer compras online.
-
-                    Isso tudo me deu uma autonomia enorme.</p>
-            </div>
-        </div>
-        <div class="card bom">
-            <img src="../img/aspa1.png" alt="Notícia 1">
-            <div class="card-content">
-                <!--comentario bom-->
-                <h3>Navegar pela web sem ter as cordas vocais foi como abrir um mundo totalmente novo e empoderador pra
-                    mim. </h3>
-
-                <p> Eu uso um sistema de texto preditivo, que funciona muito bem com aplicativos de navegação e
-                    comunicação. Posso escrever e expressar o que quero rapidamente, sem precisar falar. Além disso, com
-                    dispositivos que entendem comandos gestuais e até rastreamento ocular, consigo acessar, escrever e
-                    até responder mensagens sem limitações.
-                    Um dos grandes trunfos pra mim foi poder usar teclados virtuais, especialmente com o apoio de
-                    software assistivo, que facilita a escrita e ainda corrige erros automaticamente. </p>
-            </div>
-        </div>
-        <div class="card ruim">
-            <img src="../img/aspa2.png" alt="Notícia 1">
-            <div class="card-content">
-                <!--comentario bom-->
-                <h3>Navegar pela web foi uma das melhores descobertas que fiz!</h3>
-
-                <p> Poder acessar a internet me ajudou a
-                    aprender muitas coisas novas e a encontrar lugares onde posso conversar e brincar com outras
-                    pessoas.<br>
-                    Para navegar, eu conto com alguns ajustes e apoio. Uso sites que têm layouts mais simples, com
-                    ícones
-                    e botões grandes, o que me ajuda a entender melhor onde preciso clicar. Além disso, meu computador
-                    tem configurações que tornam o texto mais claro e, às vezes, uso um leitor de tela que lê as coisas
-                    em voz alta para mim. A ajuda da minha família e dos meus professores foi essencial, porque eles me
-                    ensinaram a usar a internet com segurança e mostraram várias maneiras de fazer isso sozinho.
-                    Agora, posso encontrar coisas que gosto e aprender mais sobre tudo o que me interessa, com
-                    essas adaptações. </p>
-            </div>
-        </div>
-        <div class="card bom ">
-            <img src="../img/aspa1.png" alt="Notícia 1">
-            <div class="card-content">
-                <!--comentario bom-->
-                <h3>Navegar pela web, mesmo sendo cego, foi uma das experiências mais libertadoras que já tive.</h3>
-
-                <p>Eu consigo navegar principalmente com a ajuda de um leitor de tela, que lê em voz alta o que está na
-                    tela. Isso me permite entender tudo, desde textos simples até conteúdos mais complexos. Além disso,
-                    muitos sites e aplicativos estão se tornando mais acessíveis, com descrições em áudio e interfaces
-                    que facilitam a navegação. Isso torna a experiência muito mais agradável.
-                    Ter apoio de amigos e familiares também foi fundamental. Eles me mostraram como usar a tecnologia e
-                    me ajudaram a entender como navegar de forma segura. </p>
-            </div>
-        </div>
-        <div class="card ruim">
-            <img src="../img/aspa2.png" alt="Notícia 2">
-            <div class="card-content">
-                <!--comentario bom-->
-                <h3>Navegar pela web é uma das coisas mais legais que já experimentei, especialmente sendo deficiente
-                    auditivo. </h3>
-
-                <p> A
-                    internet me dá uma chance incrível de me conectar com as pessoas e acessar informações de maneiras
-                    que são muito mais fáceis para mim.Consegui navegar na web porque muitos sites agora têm recursos
-                    acessíveis, como legendas e
-                    transcrições, o que facilita muito a compreensão do conteúdo. Além disso, a comunidade online é
-                    muito acolhedora e sempre há espaço para discutir temas que me interessam. Eu uso aplicativos de
-                    mensagens e redes sociais que me permitem me comunicar com amigos e familiares rapidamente, o que me
-                    ajuda a manter o contato e a me sentir parte do grupo.</p>
-            </div>
-        </div>
-        <div class="card bom">
-            <img src="../img/aspa1.png" alt="Notícia 3">
-            <div class="card-content">
-                <!--comentario bom-->
-                <h3>Navegar pela web tem sido uma experiência incrível pra mim!</h3>
-                <p> Ter acesso à internet me permite
-                    explorar assuntos que realmente me interessam e me ajuda a me conectar com outras pessoas que têm
-                    interesses semelhantes.Consegui navegar principalmente por causa das ferramentas e aplicativos que
-                    facilitam o uso da
-                    internet. Muitos sites têm layouts simples e informações organizadas, o que me ajuda a encontrar o
-                    que quero sem me sentir sobrecarregado. Além disso, eu uso programas de leitura de tela e texto
-                    preditivo, que me ajudam a escrever e entender melhor o que estou procurando.</p>
-            </div>
-        </div>
-    </div>
-    <!--Footer-->
-    <footer style="background-color: #004d40; color: #ffffff; padding: 20px 0; text-align: center;">
-        <div style="max-width: 1200px; margin: auto; padding: 5px;">
-            <p style="font-size: 16px; font-weight: bold; margin: 10px 0;">AcessAllAreas</p>
             
-            <div style="margin: 10px 0;">
-                <a href="https://www.linkedin.com/company/afesu/posts/?feedView=all" target="_blank" style="color: #ffffff; text-decoration: none; margin: 0 10px;">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" style="width: 24px; vertical-align: middle; margin-right: 5px;">
-                    LinkedIn
-                </a>
-            </div>
-    
-            <p style="font-size: 13px; margin: 10px 0;">
-                © 2024 AcessAllAreas. Todos os direitos reservados.
-            </p>
-        
         </div>
-    </footer>
-    <script>
-        (function (d) {
-            var s = d.createElement("script");
-            s.setAttribute("data-account", "YOUR-WIDGET-CODE-HERE");
-            s.setAttribute("src", "https://cdn.userway.org/widget.js");
-            (d.body || d.head).appendChild(s);
-        })(document)
-    </script>
+        <!--Footer-->
+        <footer style="background-color: #004d40; color: #ffffff; padding: 20px 0; text-align: center;">
+            <div style="max-width: 1200px; margin: auto; padding: 5px;">
+                <p style="font-size: 16px; font-weight: bold; margin: 10px 0;">AcessAllAreas</p>
 
-    <!-- Script adicional de acessibilidade -->
-    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script src="../js/nav.js"></script>
+                <div style="margin: 10px 0;">
+                    <a href="https://www.linkedin.com/company/afesu/posts/?feedView=all" target="_blank"
+                        style="color: #ffffff; text-decoration: none; margin: 0 10px;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
+                            alt="LinkedIn" style="width: 24px; vertical-align: middle; margin-right: 5px;">
+                        LinkedIn
+                    </a>
+                </div>
+
+                <p style="font-size: 13px; margin: 10px 0;">
+                    © 2024 AcessAllAreas. Todos os direitos reservados.
+                </p>
+
+            </div>
+        </footer>
+        <script>
+            (function (d) {
+                var s = d.createElement("script");
+                s.setAttribute("data-account", "YOUR-WIDGET-CODE-HERE");
+                s.setAttribute("src", "https://cdn.userway.org/widget.js");
+                (d.body || d.head).appendChild(s);
+            })(document)
+        </script>
+
+        <!-- Script adicional de acessibilidade -->
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script src="../js/nav.js"></script>
+        <script src="../js/depoimento.js"></script>
 
 </body>
+
 </html>

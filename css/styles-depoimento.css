@@ -82,6 +82,60 @@ h2 {
     width: 30%;
 }
 
+
+.content {
+    max-width: 600px;
+    margin: auto;
+}
+
+
+.hidden-text {
+    display: none;
+}
+
+.read-more-btn {
+    background-color: #009688;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 30px;
+}
+
+.read-more-btn:hover {
+    background-color: #0c3733;
+}
+/* Estilo do título */
+.titulo {
+    text-align: center;
+    font-size: 2.0rem;
+    color: #113a2f;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Estilo da seção de depoimentos */
+.depoimentos {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    background: #ffffff00;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Parágrafos */
+.depoimentos p {
+    margin-bottom: 40px;
+    text-align: justify;
+    font-size: 19px;
+    color: #000000;
+}
+
 .image img {
     width: 100%;
     height: 150px;
