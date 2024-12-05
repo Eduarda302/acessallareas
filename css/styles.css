@@ -278,7 +278,7 @@ p {
 
 /* "Ler mais" da sessão sobre com carrossel*/
 .content {
-    max-width: 600px;
+    max-width: 6000px;
     margin: auto;
 }
 
@@ -383,22 +383,18 @@ p {
 .service-cards {
     display: flex;
     gap: 20px;
-    max-width: 100px;
     margin-bottom: 50px;
-    margin-left: 195px;
+    justify-content: center;
 }
 
 .social-media {
-    width: 10px;
+    width: 100%;
 }
 
 /* Responsividade para smartphones */
 @media (max-width: 480px) {
     .service-cards {
         display: grid;
-        width: 90px;
-        margin-left: 90px;
-        margin-right: 900px;
     }
 } 
 
@@ -410,7 +406,6 @@ p {
     box-shadow: 1px 4px 10px rgba(0.1, 0.1, 0.1, 0.4);
     transition: transform 0.3s, box-shadow 0.3s;
     text-align: center;
-    margin-right: 70px;
 }
 
 /* Estilo do Ícone */
@@ -567,7 +562,7 @@ p {
 
 .contact-form textarea {
     height: 100px;
-    width: 536px;
+    width: 503px;
 }
 
 .contact-form button {
@@ -585,11 +580,13 @@ p {
 }
 
 .contact-image img {
-    width: 1100px;
-    max-width: 45%;
+    width: block;
+    max-width: 50%;
     height: auto;
     margin-left: 20%;
     margin-top: 100px;
+    align-items: center;
+    justify-content: end;
 }
 
 /* Responsividade para smartphones */

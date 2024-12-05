@@ -12,6 +12,10 @@ body {
     top: 0;
 }
 
+.ativo {
+    text-decoration: underline !important;
+}
+
 
 /* Estilos para a barra de pesquisa */
 .search-bar {
