@@ -14,12 +14,12 @@
     <header>
         <div class="navbar"> <!--Contém a barra de navegação.-->
             <div class="logo">
-                <img src="./img/semslogan.png"> <!--logotipo-->
+                <img src="./img/logo.png"> <!--logotipo-->
             </div>
 
-            <nav>
+            <nav class="hidden">
                 <ul>
-                    <li><a href="./index.html">Home</a></li>
+                    <li><a class="ativo" href="./index.html">Home</a></li>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="./pages/Mapa.html">Mapa</a></li>
                     <li><a href="./pages/Depoimentos.html">Depoimentos</a></li>
@@ -31,7 +31,7 @@
             <!-- Adicionando o campo de pesquisa -->
             <form class="search-bar" action="#" method="get">
                 
-                <!--placeholder="Search..." define o texto que aparecerá 
+                <!--placeholder="Search.." define o texto que aparecerá 
                 no campo de pesquisa antes de o usuário digitar algo-->
                 <a href="./pages/Login.html">Login</a>
             </form>
@@ -41,7 +41,6 @@
                 <span></span>
                 <span></span>
                 <span></span>
-
             </div>
         </div>
 
@@ -63,9 +62,9 @@
     <!--Sessão de Cards-->
     <section class="services-section">
         <div class="service-box">
-            <div class="icon">
+            <div class="icon" onclick="window.location.href='pages/Mapa.html'">
                 <!-- Exemplo de ícone -->
-                <img src="img/search-location.png" alt="Serviços oferecidos no site ">
+                <img src="img/search-location.png" alt="Icon de mapa">
             </div>
             <h3>MAPAS</h3>
             <p>Nosso site oferece Mapas de Viagens que destacam rotas e locais acessíveis, facilitando o planejamento de
@@ -75,8 +74,8 @@
             </p>
         </div>
         <div class="service-box">
-            <div class="icon">
-                <img src="img/introduction (1).png" alt="E-Commerce Completo">
+            <div class="icon" onclick="window.location.href='pages/Depoimentos.html'">
+                <img src="img/introduction (1).png" alt="Icon de depoimentos">
             </div>
             <h3>DEPOIMENTOS</h3>
             <p>Na seção de Depoimentos, você encontrará relatos inspiradores de pessoas com deficiência que
@@ -86,8 +85,8 @@
                 objetivos.</p>
         </div>
         <div class="service-box">
-            <div class="icon">
-                <img src="img/messages-question.png" alt="Logo de chat">
+            <div class="icon" onclick="window.location.href='pages/Chat.html'">
+                <img src="img/messages-question.png" alt="Icon de chat">
             </div>
             <h3>CHAT</h3>
             <p>Nosso Chat para tirar dúvidas é uma ferramenta interativa que permite que você se conecte em tempo real
@@ -106,19 +105,18 @@
                 compartilhar sua experiência ou esclarecer dúvidas? Nosso chat está aqui para ajudar! Conecte-se com
                 nossa equipe e encontre informações, apoio e orientação.
             </p>
-            <a href="#" class="cta-button2">Botão de conversa</a>
+            <a href="./pages/Chat.html" class="cta-button2">Botão de conversa</a>
         </div>
     </div>
 
 
-    <!--Sessão de texto e foto-->
+    <!--Sessão de texto e carrossel-->
     <section class="about">
         <div class="ong-info">
             <div class="carousel-container">
                 <div class="carousel-slides">
-                    <div class="slide"><img src="img/World Down Syndrome day-bro.png"
-                            alt="Crianças com Sindrome de Down"></div>
-                    <div class="slide"><img src="img/disabled athletes-bro.png" alt="Atletas com deficiência"></div>
+                    <div class="slide"><img src="img/World Down Syndrome day-bro.png" alt="Crianças com Sindrome de Down"></div>
+                    <div class="slide"><img src="img/disabled athletes-bro.png" alt="Atletas portadoras de deficiência"></div>
                     <div class="slide"><img src="img/Autism-bro.png" alt="Criança com Autismo"></div>
                 </div>
             </div>
@@ -152,8 +150,6 @@
     <!--Sessão de conversa2-->
     <div class="conversa2-section">
         <div class="cta2">
-            <p></p>
-
         </div>
     </div>
 
@@ -175,7 +171,7 @@
 
                         <a href="https://github.com/cibell2023" target="_blank"
                             style="color: #ffffff; text-decoration: none; margin: 0 10px;">
-                            <img src="../img/git.png" alt="github"
+                            <img src="./img/git.png" alt="github"
                                 style="width: 29px; vertical-align: middle; margin-right: 5px;">
 
                         </a>
@@ -184,7 +180,7 @@
 
             <div class="card">
                 <div class="Photo">
-                    <img src="img/eduarda.jfif" alt="Foto da Cibelly">
+                    <img src="img/eduarda.jfif" alt="Foto da Eduarda">
                 </div>
                 <h3>Eduarda</h3>
                 <div style="margin: 10px 0;">
@@ -195,7 +191,7 @@
 
                         <a href="https://github.com/Eduarda302" target="_blank"
                             style="color: #ffffff; text-decoration: none; margin: 0 10px;">
-                            <img src="../img/git.png" alt="github"
+                            <img src="./img/git.png" alt="github"
                                 style="width: 29px; vertical-align: middle; margin-right: 5px;">
 
                         </a>
@@ -205,7 +201,7 @@
 
             <div class="card">
                 <div class="Photo">
-                    <img src="img/melany2.jpg" alt="Foto da Cibelly">
+                    <img src="img/melany2.jpg" alt="Foto da Melany">
                 </div>
                 <h3>Melany</h3>
                 <div style="margin: 10px 0;">
@@ -216,7 +212,7 @@
 
                         <a href="https://github.com/MelanyRamos13" target="_blank"
                             style="color: #ffffff; text-decoration: none; margin: 0 10px;">
-                            <img src="../img/git.png" alt="github"
+                            <img src="./img/git.png" alt="github"
                                 style="width: 29px; vertical-align: middle; margin-right: 5px;">
 
                         </a>
@@ -226,7 +222,7 @@
 
             <div class="card">
                 <div class="Photo">
-                    <img src="img/poliane2.jpg" alt="Foto da Cibelly">
+                    <img src="img/poliane2.jpg" alt="Foto da Poliane">
                 </div>
                 <h3>Poliane</h3>
                 <div style="margin: 10px 0;">
@@ -237,7 +233,7 @@
 
                         <a href="https://github.com/PolianeAraujo" target="_blank"
                             style="color: #ffffff; text-decoration: none; margin: 0 10px;">
-                            <img src="../img/git.png" alt="github"
+                            <img src="./img/git.png" alt="github"
                                 style="width: 29px; vertical-align: middle; margin-right: 5px;">
 
                         </a>
@@ -247,26 +243,24 @@
 
             <div class="card">
                 <div class="Photo">
-                    <img src="img/taina2.jpg" alt="Foto da Cibelly">
+                    <img src="img/taina2.jpg" alt="Foto da Taina">
                 </div>
                 <h3>Taina</h3>
                 <div style="margin: 10px 0;">
-                    <a href="https://www.linkedin.com/company/afesu/posts/?feedView=all" target="_blank"
+                    <a href="https://www.linkedin.com/in/taina-santos-39006432a/" target="_blank"
                         style="color: #ffffff; text-decoration: none; margin: 0 10px;">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
                             alt="LinkedIn" style="width: 27px; vertical-align: middle; margin-right: 5px;">
 
                         <a href="https://github.com/tainajesus533" target="_blank"
                             style="color: #ffffff; text-decoration: none; margin: 0 10px;">
-                            <img src="../img/git.png" alt="github"
+                            <img src="./img/git.png" alt="github"
                                 style="width: 29px; vertical-align: middle; margin-right: 5px;">
 
                         </a>
                 </div>
             </div>
         </div>
-
-
     </section>
 
     <!--sessão sobre o porque criamos esse site-->
@@ -340,7 +334,7 @@
         </div>
 
         <div class="contact-image">
-            <img src="img/Chat bot-bro.png" alt="Equipe trabalhando">
+            <img src="img/Chat bot-bro.png" alt="Bot pronto para atende-los">
         </div>
     </section>
 
@@ -374,7 +368,7 @@
     </footer>
 </body>
 
-<script src="js/index.js"></script>
-<script src="/js/nav.js"></script>
+<script src="./js/index.js"></script>
+<script src="./js/nav.js"></script>
 
 </html>
