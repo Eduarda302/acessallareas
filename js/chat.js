@@ -60,3 +60,24 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 });
 
+function iniciarChat() {
+    const sideBar = document.querySelector('.side-bar');
+    const chatContainer = document.querySelector('.chat-container');
+    const btnExitChat = document.querySelector('.btn-exit-chat');
+
+    // Ocultar o menu lateral e exibir o chat
+    sideBar.style.display = 'none';
+    chatContainer.classList.add('active');
+    btnExitChat.style.display = 'block'; // Exibe o botão "X"
+}
+
+function sairChat() {
+    const sideBar = document.querySelector('.side-bar');
+    const chatContainer = document.querySelector('.chat-container');
+    const btnExitChat = document.querySelector('.btn-exit-chat');
+
+    // Exibir o menu lateral e ocultar o chat
+    sideBar.style.display = 'block';
+    chatContainer.classList.remove('active');
+    btnExitChat.style.display = 'none'; // Oculta o botão "X"
+}
