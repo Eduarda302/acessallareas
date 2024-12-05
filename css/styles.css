@@ -395,9 +395,6 @@ p {
 @media (max-width: 480px) {
     .service-cards {
         display: grid;
-        width: 90px;
-        margin-left: 90px;
-        margin-right: 900px;
     }
 } 
 
